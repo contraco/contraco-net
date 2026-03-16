@@ -722,11 +722,17 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "contraco",
+    "alternateName": "contraco USA",
     "url": "https://contraco.net/",
-    "logo": "https://contraco.net/assets/brand/contraco-logo.png",
-    "description": "Premium transformation consulting combining strategic clarity, technological intelligence, and psychological depth.",
-    "email": "mailto:transformation@contraco.net",
-    "telephone": "+1-312-940-0326",
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https://contraco.net/Logo_rectangle.svg",
+        "width": 400,
+        "height": 100
+    },
+    "description": "Digital transformation consulting firm established in 1998. 28 years of experience across Fortune 500 companies in the United States, Germany, Russia and South Korea.",
+    "email": "transformation@contraco.net",
+    "telephone": "+13129400326",
     "address": {
         "@type": "PostalAddress",
         "streetAddress": "1209 10th Ln.",
@@ -736,7 +742,74 @@
         "addressCountry": "US"
     },
     "foundingDate": "1998",
-    "areaServed": ["United States", "Global"]
+    "founder": {
+        "@type": "Person",
+        "name": "Frank Meltke",
+        "jobTitle": "Transformation Consultant",
+        "url": "https://www.linkedin.com/in/frankmeltke"
+    },
+    "areaServed": [
+        {
+            "@type": "Country",
+            "name": "United States"
+        },
+        {
+            "@type": "Country",
+            "name": "Germany"
+        },
+        {
+            "@type": "Country",
+            "name": "Russia"
+        },
+        {
+            "@type": "Country",
+            "name": "South Korea"
+        }
+    ],
+    "sameAs": [
+        "https://www.linkedin.com/company/contraco",
+        "https://contraco.com",
+        "https://contraco.de",
+        "https://contraco.ru",
+        "https://contraco.co.kr"
+    ],
+    "knowsAbout": [
+        "Digital Transformation",
+        "AI Strategy",
+        "Change Management",
+        "Organizational Design",
+        "Pricing Psychology"
+    ],
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Transformation Consulting Services",
+        "itemListElement": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "AI Strategy Consulting",
+                    "url": "https://contraco.net/ai-strategy-framework.html"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Digital Transformation Consulting",
+                    "url": "https://contraco.net/"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Organizational Design for the AI Era",
+                    "url": "https://contraco.net/organizational-design-ai.html"
+                }
+            }
+        ]
+    }
 }
 </script>
 
