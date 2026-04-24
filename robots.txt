@@ -31,5 +31,33 @@ Disallow: /yandex_*.html
 User-agent: Yandex
 Allow: /yandex_3d4a640028515d1b.html
 
+# Block AI training crawlers - proprietary methodology content
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
 # XML Sitemap location
 Sitemap: https://contraco.net/sitemap.xml
