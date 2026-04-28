@@ -425,6 +425,18 @@
             box-shadow: var(--shadow-medium);
         }
 
+        .form-privacy-notice {
+            font-size: 0.82rem;
+            color: var(--warm-gray-dark);
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+
+        .form-privacy-notice a {
+            color: var(--primary-red);
+            text-decoration: underline;
+        }
+
         /* Footer - Match English site exactly */
         .footer {
             background: #1a1a1a;
@@ -703,6 +715,7 @@
                                 <textarea id="message" name="message" class="form-textarea" placeholder="Tell us about your transformation challenge — we've likely solved it before..." required></textarea>
                             </div>
                             
+                            <p class="form-privacy-notice">By submitting this form, you acknowledge our <a href="/privacy-statement.html">Privacy Statement</a>, including the legal basis, retention periods, and your rights of access and erasure.</p>
                             <button type="submit" class="form-button">
                                 Start the Conversation
                             </button>
