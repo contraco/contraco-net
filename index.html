@@ -716,197 +716,153 @@
             }
         }
     </style>
-    <!-- Organization + WebSite Schema -->
+<!-- Unified Entity Graph: contraco.net -->
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "contraco",
-    "alternateName": "contraco USA",
-    "url": "https://contraco.net/",
-    "image": "https://contraco.net/Logo_rectangle.svg",
-    "logo": {
-        "@type": "ImageObject",
-        "url": "https://contraco.net/Logo_rectangle.svg",
-        "width": 400,
-        "height": 100
-    },
-    "description": "Digital transformation consulting firm established in 1998. 28 years of experience across Fortune 500 companies in the United States, Germany, Russia and South Korea.",
-    "email": "transformation@contraco.net",
-    "telephone": "+13129400326",
-    "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1209 10th Ln.",
-        "addressLocality": "Ava",
-        "addressRegion": "MO",
-        "postalCode": "65608",
-        "addressCountry": "US"
-    },
-    "foundingDate": "1998",
-    "founder": {
-        "@type": "Person",
-        "name": "Frank Meltke",
-        "jobTitle": "Founder & CEO",
-        "sameAs": [
-            "https://www.wikidata.org/wiki/Q139680598",
-            "https://orcid.org/0009-0006-9001-0078",
-            "https://scholar.google.com/citations?user=Md3quCcAAAAJ",
-            "https://www.linkedin.com/in/frankmeltke",
-            "https://www.google.com/search?kgmid=/g/11rqtzq613"
-        ],
-        "knowsAbout": [
-            "Digital Transformation",
-            "AI Adoption and Change Management",
-            "Organisational Design for the AI Era",
-            "Information Retrieval",
-            "Search Systems",
-            "The Resonance Method",
-            "Pricing Psychology",
-            "Behavioural Economics",
-            "Cross-Cultural Transformation",
-            "Enterprise AI Strategy"
-        ],
-        "hasCredential": [
-            {
-                "@type": "EducationalOccupationalCredential",
-                "credentialCategory": "degree",
-                "name": "Diplom",
-                "educationalLevel": "Graduate",
-                "recognizedBy": {
-                    "@type": "EducationalOrganization",
-                    "name": "Fachhochschule des Bundes für öffentliche Verwaltung"
-                }
+    "@graph": [
+        {
+            "@type": "WebSite",
+            "@id": "https://contraco.net/#website",
+            "url": "https://contraco.net/",
+            "name": "contraco",
+            "description": "AI & Digital Transformation Consulting",
+            "significantLink": [
+                "https://contraco.net/about.html",
+                "https://contraco.net/press.html",
+                "https://contraco.net/insights.html",
+                "https://contraco.net/resonance-method.html"
+            ]
+        },
+        {
+            "@type": "Organization",
+            "@id": "https://contraco.net/#organization",
+            "name": "contraco",
+            "alternateName": "contraco USA",
+            "url": "https://contraco.net/",
+            "image": "https://contraco.net/Logo_rectangle.svg",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://contraco.net/Logo_rectangle.svg",
+                "width": 400,
+                "height": 100
+            },
+            "description": "Digital transformation consulting firm established in 1998. 28 years of experience across Fortune 500 companies in the United States, Germany, Russia and South Korea.",
+            "email": "transformation@contraco.net",
+            "telephone": "+13129400326",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1209 10th Ln.",
+                "addressLocality": "Ava",
+                "addressRegion": "MO",
+                "postalCode": "65608",
+                "addressCountry": "US"
+            },
+            "foundingDate": "1998",
+            "founder": { "@id": "https://meltke.com/#person" },
+            "areaServed": "Global",
+            "brand": {
+                "@type": "Brand",
+                "name": "contraco",
+                "url": "https://contraco.com/brand.html"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q139681815",
+                "https://www.linkedin.com/company/contraco",
+                "https://contraco.com",
+                "https://contraco.de",
+                "https://contraco.ru",
+                "https://contraco.co.kr"
+            ],
+            "knowsAbout": [
+                "Digital Transformation Consulting",
+                "Enterprise AI Strategy",
+                "AI Adoption and Change Management",
+                "Organizational Design for the AI Era",
+                "Pricing Psychology and Behavioural Economics",
+                "Digital Transformation ROI Measurement",
+                "Vendor Selection and Technology Procurement",
+                "Cross-Cultural Transformation in DACH, CIS and APAC Markets",
+                "The Psychology of AI Resistance",
+                "Scaling AI from Pilot to Enterprise"
+            ],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Transformation Consulting Services",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "AI Strategy Framework: From Pilot to Enterprise Scale",
+                            "description": "Strategic framework for scaling AI initiatives beyond proof of concept to full enterprise deployment.",
+                            "url": "https://contraco.net/ai-strategy-framework.html"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "AI Adoption Research and Change Management",
+                            "description": "Research-backed frameworks addressing the psychological barriers that cause 73% of AI transformations to fail.",
+                            "url": "https://contraco.net/ai-adoption-research.html"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Organizational Design for the AI Era",
+                            "description": "Structural frameworks for designing AI-ready organisations, drawn from 50+ Fortune 500 transformations.",
+                            "url": "https://contraco.net/organizational-design-ai.html"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Digital Transformation ROI Measurement",
+                            "description": "CFO-focused financial frameworks for measuring and maximising transformation investment returns.",
+                            "url": "https://contraco.net/digital-transformation-roi.html"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Vendor Selection Mastery",
+                            "description": "Strategic framework for technology vendor selection covering total cost of ownership, risk scoring and partnership fit.",
+                            "url": "https://contraco.net/vendor-selection-mastery.html"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "The Resonance Method",
+                            "description": "contraco proprietary transformation methodology combining strategic clarity, technological intelligence and psychological depth.",
+                            "url": "https://contraco.net/resonance-method.html"
+                        }
+                    }
+                ]
             }
-        ]
-    },
-    "areaServed": "Global",
-    "brand": {
-        "@type": "Brand",
-        "name": "contraco",
-        "url": "https://contraco.com/brand.html"
-    },
-    "sameAs": [
-        "https://www.linkedin.com/company/contraco",
-        "https://contraco.com",
-        "https://contraco.de",
-        "https://contraco.ru",
-        "https://contraco.co.kr"
-    ],
-    "knowsAbout": [
-        "Digital Transformation Consulting",
-        "Enterprise AI Strategy",
-        "AI Adoption and Change Management",
-        "Organizational Design for the AI Era",
-        "Pricing Psychology and Behavioural Economics",
-        "Digital Transformation ROI Measurement",
-        "Vendor Selection and Technology Procurement",
-        "Cross-Cultural Transformation in DACH, CIS and APAC Markets",
-        "The Psychology of AI Resistance",
-        "Scaling AI from Pilot to Enterprise"
-    ],
-    "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Transformation Consulting Services",
-        "itemListElement": [
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "AI Strategy Framework: From Pilot to Enterprise Scale",
-                    "description": "Strategic framework for scaling AI initiatives beyond proof of concept to full enterprise deployment.",
-                    "url": "https://contraco.net/ai-strategy-framework.html"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "AI Adoption Research and Change Management",
-                    "description": "Research-backed frameworks addressing the psychological barriers that cause 73% of AI transformations to fail.",
-                    "url": "https://contraco.net/ai-adoption-research.html"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Organizational Design for the AI Era",
-                    "description": "Structural frameworks for designing AI-ready organisations, drawn from 50+ Fortune 500 transformations.",
-                    "url": "https://contraco.net/organizational-design-ai.html"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Digital Transformation ROI Measurement",
-                    "description": "CFO-focused financial frameworks for measuring and maximising transformation investment returns.",
-                    "url": "https://contraco.net/digital-transformation-roi.html"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Vendor Selection Mastery",
-                    "description": "Strategic framework for technology vendor selection covering total cost of ownership, risk scoring and partnership fit.",
-                    "url": "https://contraco.net/vendor-selection-mastery.html"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "The Resonance Method",
-                    "description": "contraco proprietary transformation methodology combining strategic clarity, technological intelligence and psychological depth.",
-                    "url": "https://contraco.net/resonance-method.html"
-                }
-            }
-        ]
-    }
-}
-</script>
-
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "contraco",
-    "url": "https://contraco.net/",
-    "description": "AI & Digital Transformation Consulting",
-    "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://contraco.net/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-    },
-    "significantLink": [
-        "https://contraco.net/about.html",
-        "https://contraco.net/press.html",
-        "https://contraco.net/insights.html",
-        "https://contraco.net/resonance-method.html"
-    ]
-}
-</script>
-<!-- Person Entity: Frank Meltke -->
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Frank Meltke",
-    "url": "https://meltke.com",
-    "jobTitle": "Founder & CEO",
-    "worksFor": {
-        "@type": "Organization",
-        "name": "contraco",
-        "url": "https://contraco.com"
-    },
-    "sameAs": [
-        "https://www.wikidata.org/wiki/Q139680598",
-        "https://www.linkedin.com/in/frankmeltke",
-        "https://orcid.org/0009-0006-9001-0078",
-        "https://scholar.google.com/citations?user=Md3quCcAAAAJ",
-        "https://www.google.com/search?kgmid=/g/11rqtzq613",
-        "https://www.researchgate.net/profile/Frank-Meltke"
+        },
+        {
+            "@type": "Person",
+            "@id": "https://meltke.com/#person",
+            "name": "Frank Meltke",
+            "url": "https://meltke.com",
+            "jobTitle": "Founder & CEO",
+            "worksFor": { "@id": "https://contraco.net/#organization" },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q139680598",
+                "https://www.linkedin.com/in/frankmeltke",
+                "https://orcid.org/0009-0006-9001-0078",
+                "https://scholar.google.com/citations?user=Md3quCcAAAAJ",
+                "https://www.google.com/search?kgmid=/g/11rqtzq613",
+                "https://www.researchgate.net/profile/Frank-Meltke"
+            ]
+        }
     ]
 }
 </script>
