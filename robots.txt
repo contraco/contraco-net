@@ -10,9 +10,6 @@ Disallow: /css_base_styles.html
 Disallow: /navigation_template.html
 Disallow: /*_template.html
 
-# Block duplicate contraco_ prefixed pages (will be redirected)
-Disallow: /contraco_*.html
-
 # Block crawlers from common sensitive directories
 Disallow: /admin/
 Disallow: /private/
