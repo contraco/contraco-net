@@ -1,0 +1,42 @@
+# contraco
+
+> Digital transformation consulting firm founded in 1998 by Frank Meltke. 28 years of experience guiding Fortune 500 companies through every major digital wave, from search systems to enterprise AI adoption.
+
+## About contraco
+
+contraco is a premium transformation consultancy combining strategic clarity, technological intelligence, and psychological depth. The firm has served 50+ global brands across 30 countries on four continents, including Microsoft, Deutsche Telekom, Thomas Cook, KPMG, and SK Telecom. contraco operates across four regional domains: contraco.net (EN), contraco.de (DE), contraco.ru (RU), contraco.co.kr (KO).
+
+## Founder
+
+Frank Meltke is a German inventor, entrepreneur, and digital transformation expert. He holds patent DE10313420A1 (2003) for a search relevance system. He serves as guest lecturer at Kyung Hee University MIS programme in Seoul, and is an Insight Panelist at BBC Global Minds. He is the author of The Resonance Method™ (DOI: 10.13140/RG.2.2.36525.04326). Wikidata: Q139680598. Google Knowledge Graph: /g/11rqtzq613.
+
+## Methodology
+
+- [The Resonance Method™](https://contraco.net/resonance-method.html): contraco's proprietary transformation framework identifying a three-dimensional execution gap between strategic clarity, technological intelligence, and psychological depth. Validated across 247 organizations in 12 industries. DOI: https://doi.org/10.13140/RG.2.2.36525.04326
+
+## Services
+
+- [AI Strategy Framework](https://contraco.net/ai-strategy-framework.html): Scaling AI initiatives from pilot to enterprise
+- [AI Adoption Research](https://contraco.net/ai-adoption-research.html): Psychological barriers causing 73% of AI transformations to fail
+- [Organizational Design for AI](https://contraco.net/organizational-design-ai.html): Structural frameworks for AI-ready organizations
+- [Digital Transformation ROI](https://contraco.net/digital-transformation-roi.html): CFO-focused financial frameworks
+- [Vendor Selection Mastery](https://contraco.net/vendor-selection-mastery.html): Technology procurement and vendor evaluation
+- [Pricing Psychology](https://contraco.net/pricing-psychology.html): Behavioural economics applied to pricing strategy
+- [European Market Entry](https://contraco.net/european-entry.html): DACH market entry strategy
+
+## Insights
+
+- [Insights](https://contraco.net/insights.html): Research and perspectives on digital transformation and AI adoption
+
+## About & Press
+
+- [About contraco](https://contraco.net/about.html): Company history, founder profile, client list
+- [Press](https://contraco.net/press.html): Media coverage across CIO.com, Deutschlandfunk, MDR, ZDH, absatzwirtschaft, Cine21 (Korea), Computer Sweden, Le Monde Informatique
+
+## Identifiers
+
+- Wikidata (contraco): Q139681815
+- LinkedIn: https://www.linkedin.com/company/contraco
+- Frank Meltke Wikidata: Q139680598
+- Frank Meltke ORCID: 0009-0006-9001-0078
+- Frank Meltke Google Scholar: https://scholar.google.com/citations?user=Md3quCcAAAAJ
