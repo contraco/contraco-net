@@ -9,7 +9,7 @@ jobs:
   build-vcard:
     runs-on: ubuntu-latest
     env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # Modernizes the runner to eliminate the Node warning
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
     - name: Checkout Public Repository Code
@@ -48,13 +48,19 @@ jobs:
         cat photo_base64.txt >> base_card.vcf
         echo "END:VCARD" >> base_card.vcf
 
-        # 4. Move the finished file to your public folder
-        mv base_card.vcf ./public/x9_2f81ba0bc.vcf
+        # 4. Smart Layout Detection: Place the file where your website lives
+        if [ -d "./public" ]; then
+          mv base_card.vcf ./public/x9_2f81ba0bc.vcf
+        elif [ -d "./docs" ]; then
+          mv base_card.vcf ./docs/x9_2f81ba0bc.vcf
+        else
+          mv base_card.vcf ./x9_2f81ba0bc.vcf
+        fi
 
     - name: Commit and Push Compiled vCard to Site
       run: |
         git config --global user.name "GitHub Actions Bot"
         git config --global user.email "actions@github.com"
-        git add ./public/x9_2f81ba0bc.vcf
+        git add .
         git commit -m "Automated update: Compiled master vCard with secure profile image" || exit 0
         git push
