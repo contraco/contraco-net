@@ -1,0 +1,53 @@
+name: Compile and Deploy Secure Contact Card
+
+on:
+  push:
+    branches:
+      - main  # Triggers the script automatically whenever you update your site
+
+jobs:
+  build-vcard:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Public Repository Code
+      uses: actions/checkout@v4
+
+    - name: Securely Fetch Raw vCard Template
+      run: |
+        curl -H "Authorization: token ${{ secrets.VAULT_ACCESS_TOKEN }}" \
+             -H "Accept: application/vnd.github.v3.raw" \
+             -o base_card.vcf \
+             -L https://api.github.com/repos/contraco/vault/contents/x9_2f81ba0bc.vcf
+
+    - name: Securely Fetch High-Res Portrait
+      run: |
+        curl -H "Authorization: token ${{ secrets.VAULT_ACCESS_TOKEN }}" \
+             -H "Accept: application/vnd.github.v3.raw" \
+             -o profile.jpg \
+             -L https://api.github.com/repos/contraco/vault/contents/13x18-1M0B4672.jpg
+
+    - name: Process Image and Compile Final Master vCard
+      run: |
+        # 1. Resize the image to 300x300 pixels to optimize for mobile networks
+        convert profile.jpg -resize 300x300 optimized_photo.jpg
+
+        # 2. Convert image binary to clean 72-character wrapped Base64 text
+        base64 optimized_photo.jpg | awk '{print " " $0}' > photo_base64.txt
+
+        # 3. Inject the photo block into the vCard right before the END marker
+        sed -i '/END:VCARD/d' base_card.vcf
+        echo "PHOTO;TYPE=JPEG;ENCODING=BASE64:" >> base_card.vcf
+        cat photo_base64.txt >> base_card.vcf
+        echo "END:VCARD" >> base_card.vcf
+
+        # 4. Move the finished file to your public folder (adjust folder name if necessary)
+        mv base_card.vcf ./public/x9_2f81ba0bc.vcf
+
+    - name: Commit and Push Compiled vCard to Site
+      run: |
+        git config --global user.name "GitHub Actions Bot"
+        git config --global user.email "actions@github.com"
+        git add ./public/x9_2f81ba0bc.vcf
+        git commit -m "Automated update: Compiled master vCard with secure profile image" || exit 0
+        git push
