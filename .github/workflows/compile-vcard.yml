@@ -3,15 +3,22 @@ name: Compile and Deploy Secure Contact Card
 on:
   push:
     branches:
-      - main  # Triggers the script automatically whenever you update your site
+      - main
 
 jobs:
   build-vcard:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # Modernizes the runner to eliminate the Node warning
 
     steps:
     - name: Checkout Public Repository Code
       uses: actions/checkout@v4
+
+    - name: Install Image Processing Utilities
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y imagemagick
 
     - name: Securely Fetch Raw vCard Template
       run: |
@@ -29,19 +36,19 @@ jobs:
 
     - name: Process Image and Compile Final Master vCard
       run: |
-        # 1. Resize the image to 300x300 pixels to optimize for mobile networks
+        # 1. Resize the image cleanly
         convert profile.jpg -resize 300x300 optimized_photo.jpg
 
         # 2. Convert image binary to clean 72-character wrapped Base64 text
         base64 optimized_photo.jpg | awk '{print " " $0}' > photo_base64.txt
 
-        # 3. Inject the photo block into the vCard right before the END marker
+        # 3. Inject the photo block right before the END marker
         sed -i '/END:VCARD/d' base_card.vcf
         echo "PHOTO;TYPE=JPEG;ENCODING=BASE64:" >> base_card.vcf
         cat photo_base64.txt >> base_card.vcf
         echo "END:VCARD" >> base_card.vcf
 
-        # 4. Move the finished file to your public folder (adjust folder name if necessary)
+        # 4. Move the finished file to your public folder
         mv base_card.vcf ./public/x9_2f81ba0bc.vcf
 
     - name: Commit and Push Compiled vCard to Site
