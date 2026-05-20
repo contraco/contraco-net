@@ -1084,6 +1084,7 @@
                         <p>The human gives the agent explicit, time-bound or context-specific permission to execute a specific purchase within strict boundaries. Example: "Buy 5 additional licenses of this software if the price drops below $40 per user per month before Friday." The agent holds secure access to tokenized payment credentials via rails such as Google Pay, Stripe Agentic Suite, or secure virtual cards and executes the final API handshake autonomously.</p>
                         <div class="level-section-head">Boundary Safeguards</div>
                         <p>Requires explicit, hard-coded constraints. If any variable falls outside the human's precise mandate (unexpected tax, shipping delay, undisclosed fee), the transaction aborts and escalates back to Level 2 for human review.</p>
+                        <p>At Google I/O 2026, Google announced <a href="https://techcrunch.com/2026/05/19/googles-new-universal-cart-wants-to-follow-your-entire-shopping-journey-across-the-internet/" target="_blank" rel="noopener" style="color: var(--primary-red);">Agent Payments Protocol (AP2)</a>, its infrastructure for exactly this pattern: agents authorized to complete purchases within user-defined brand, product, and budget constraints. When conditions are met, the agent executes. When they are not, it stops.</p>
                         <div class="friction-row">
                             <span class="friction-label">Friction</span>
                             <div class="friction-dots">
@@ -1111,6 +1112,7 @@
                         <p>The agent processes broad, multi-item outcome-based objectives rather than single-SKU commands. It orchestrates, splits, and consolidates multi-merchant transactions inside a single virtualized environment. Operating on unified data layers such as Google's Universal Commerce Protocol or the OpenAI-Amazon ACP, it can evaluate live inventory stability, calculate distinct regional tax liabilities across different vendors, pool multiple items into a Universal Cart, and execute separate downstream payments simultaneously under a single pre-authorized global budget.</p>
                         <div class="level-section-head">The Hand-off</div>
                         <p>The human provides a high-level operational objective. The agent dynamically manages the fragmented merchant landscape to deliver that outcome without returning for approval at each vendor boundary.</p>
+                        <p>Google's <a href="https://blog.google/intl/en-africa/company-news/google-shopping-cart/" target="_blank" rel="noopener" style="color: var(--primary-red);">Universal Cart</a>, announced at Google I/O 2026 and rolling out summer 2026, is the first large-scale public implementation of this layer: a single cart spanning Search, Gemini, YouTube, and Gmail, operating across merchants via the <a href="https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/" target="_blank" rel="noopener" style="color: var(--primary-red);">Universal Commerce Protocol</a>. Level 4 is no longer theoretical.</p>
                         <div class="friction-row">
                             <span class="friction-label">Friction</span>
                             <div class="friction-dots">
@@ -1168,17 +1170,17 @@
                         <div class="pillar-item">
                             <div class="pillar-number">01</div>
                             <div class="pillar-title">Machine-Legible Feeds</div>
-                            <div class="pillar-desc">Real-time, structured data pipelines from merchants. Not brittle web-scraping. Not cached product catalogs. Live, schema-consistent, API-native data that an agent can trust to make financial commitments.</div>
+                            <div class="pillar-desc">Real-time, structured data pipelines from merchants. Not brittle web-scraping. Not cached product catalogs. Live, schema-consistent, API-native data that an agent can trust to make financial commitments. Google's Conversational Attributes (GML 2026) formalize this: supplemental product-level data feeds that enable agents to answer contextual questions beyond core attributes. Merchants without structured feeds will not exist to an agent at Level 4.</div>
                         </div>
                         <div class="pillar-item">
                             <div class="pillar-number">02</div>
                             <div class="pillar-title">Persistent Identity Vaults</div>
-                            <div class="pillar-desc">Deeply trusted, tokenized payment networks that allow secure, machine-driven financial settlement without exposing card numbers, routing codes, or credentials to the agent layer itself.</div>
+                            <div class="pillar-desc">Deeply trusted, tokenized payment networks that allow secure, machine-driven financial settlement without exposing card numbers, routing codes, or credentials to the agent layer itself. Google's Agent Payments Protocol (AP2), announced at Google I/O 2026, is this pillar going live: cryptographically bounded spend authorization that lets an agent settle a transaction without ever holding the underlying credential.</div>
                         </div>
                         <div class="pillar-item">
                             <div class="pillar-number">03</div>
                             <div class="pillar-title">Virtualized Cart Protocol</div>
-                            <div class="pillar-desc">The architectural ability to decouple the frontend purchase experience from individual, siloed merchant checkout funnels. A universal basket that spans vendor boundaries is not a UX feature; it is a system integration challenge.</div>
+                            <div class="pillar-desc">The architectural ability to decouple the frontend purchase experience from individual, siloed merchant checkout funnels. A universal basket that spans vendor boundaries is not a UX feature; it is a system integration challenge. Google's Universal Cart, rolling out summer 2026, is the first mainstream deployment of this protocol across Search, Gemini, YouTube, and Gmail simultaneously.</div>
                         </div>
                     </div>
                 </div>
