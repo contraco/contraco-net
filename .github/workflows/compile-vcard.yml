@@ -67,6 +67,7 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/contraco/contraco-net.git
         git add .
         # Avoids empty commit failures if the file didn't change
         git diff-index --quiet HEAD || git commit -m "Automated update: Compiled master vCard with secure profile image"
