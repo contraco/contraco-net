@@ -322,7 +322,7 @@
             margin-bottom: 48px;
         }
 
-        /* Progress bar — visual representation of 6 levels */
+        /* Progress bar - visual representation of 6 levels */
         .level-progress {
             display: flex;
             justify-content: center;
@@ -1355,7 +1355,7 @@
             });
         });
 
-        // Analytics — CTA tracking
+        // Analytics - CTA tracking
         if (typeof gtag !== 'undefined') {
             document.querySelectorAll('.cta-button, .cta-secondary').forEach(function(btn) {
                 btn.addEventListener('click', function() {
@@ -1370,7 +1370,19 @@
     </script>
 
 <script>
-  window.goatcounter = { path: function(p) { return location.host + p } }
+  
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "contraco", "item": "https://contraco.net/" },
+    { "@type": "ListItem", "position": 2, "name": "Insights", "item": "https://contraco.net/insights.html" },
+    { "@type": "ListItem", "position": 3, "name": "Framework for Agentic Commerce", "item": "https://contraco.net/framework-agentic-commerce.html" }
+  ]
+}
+</script>
+window.goatcounter = { path: function(p) { return location.host + p } }
 </script>
 <script data-goatcounter="https://contraco.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>

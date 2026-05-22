@@ -615,7 +615,19 @@
         });
     </script>
 <script>
-  window.goatcounter = { path: function(p) { return location.host + p } }
+  
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "contraco", "item": "https://contraco.net/" },
+    { "@type": "ListItem", "position": 2, "name": "The Consulting Addiction", "item": "https://contraco.net/consulting-addiction.html" },
+    { "@type": "ListItem", "position": 3, "name": "Part 1: Executive Muscle Atrophy", "item": "https://contraco.net/consulting-addiction-1-executive-muscle-atrophy.html" }
+  ]
+}
+</script>
+window.goatcounter = { path: function(p) { return location.host + p } }
 </script>
 <script data-goatcounter="https://contraco.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
