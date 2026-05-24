@@ -899,6 +899,85 @@
             .hero-title { font-size: 2.2rem; }
             .overview-grid { grid-template-columns: 1fr 1fr; }
         }
+
+        /* ─── Threat Section ─────────────────────────── */
+        .threat-section {
+            background: #0e0e0e;
+            color: white;
+            padding: 120px 0 100px;
+        }
+
+        .threat-section .container {
+            max-width: 860px;
+        }
+
+        .threat-eyebrow {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--primary-red);
+            margin-bottom: 36px;
+            display: block;
+        }
+
+        .threat-lead {
+            font-family: var(--font-serif);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 600;
+            line-height: 1.15;
+            color: white;
+            margin-bottom: 48px;
+        }
+
+        .threat-lead .accent {
+            color: var(--primary-red);
+        }
+
+        .threat-body {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            border-left: 2px solid rgba(192, 0, 0, 0.4);
+            padding-left: 36px;
+            margin-bottom: 60px;
+        }
+
+        .threat-body p {
+            font-size: 1.08rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .threat-body p strong {
+            color: white;
+            font-weight: 600;
+        }
+
+        .threat-verdict {
+            background: var(--primary-red);
+            padding: 32px 40px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            line-height: 1.6;
+            color: white;
+        }
+
+        .threat-verdict span {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            opacity: 0.8;
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .threat-section { padding: 80px 0 70px; }
+            .threat-body { padding-left: 20px; }
+            .threat-verdict { padding: 24px 20px; }
+        }
     </style>
 </head>
 <body>
@@ -929,6 +1008,23 @@
             </div>
         </div>
     </nav>
+
+    <!-- Threat Section -->
+    <section class="threat-section">
+        <div class="container">
+            <span class="threat-eyebrow">The Structural Shift</span>
+            <h2 class="threat-lead">The era of the digital storefront<br>is <span class="accent">ending.</span></h2>
+            <div class="threat-body">
+                <p>We are rapidly moving from human-driven e-commerce to <strong>Agentic Commerce.</strong> Autonomous AI agents are no longer just research assistants. They are becoming fully authorized transactional proxies that negotiate and purchase on behalf of the user.</p>
+                <p>When the human checkout button disappears, the traditional customer journey collapses. These agents do not care about your beautifully designed frontend or your psychological pricing tricks. <strong>They bypass the UI completely</strong> and interact directly with your APIs. They scrape raw data for price, availability, and core specifications.</p>
+                <p>If your architecture is not prepared for machine-to-machine negotiation, your product becomes a faceless commodity. Your margins will erode because the AI cannot perceive the qualitative difference between your premium offering and the cheapest alternative on the market.</p>
+            </div>
+            <div class="threat-verdict">
+                <span>The New Battleground</span>
+                The new battleground is API readiness. You must encode your brand value and your quality into machine-readable protocols.
+            </div>
+        </div>
+    </section>
 
     <main class="main-content">
 
@@ -1374,8 +1470,6 @@
         }
     </script>
 
-<script>
-  
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -1387,7 +1481,8 @@
   ]
 }
 </script>
-window.goatcounter = { path: function(p) { return location.host + p } }
+<script>
+  window.goatcounter = { path: function(p) { return location.host + p } }
 </script>
 <script data-goatcounter="https://contraco.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
