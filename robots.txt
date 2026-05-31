@@ -4,13 +4,9 @@
 # Allow all crawlers to access main content
 User-agent: *
 Allow: /
-
-# Block template files and utilities
 Disallow: /css_base_styles.html
 Disallow: /navigation_template.html
 Disallow: /*_template.html
-
-# Block crawlers from common sensitive directories
 Disallow: /admin/
 Disallow: /private/
 Disallow: /wp-admin/
