@@ -256,10 +256,10 @@ for url in urls:
     )
     try:
         with urllib.request.urlopen(req) as resp:
-            print(f"✅ {url} — {resp.status}")
+            print(f"OK {url} - {resp.status}")
             success += 1
     except Exception as e:
-        print(f"❌ {url} — {e}")
+        print(f"FAIL {url} - {e}")
         fail += 1
 
 print(f"\nGoogle Indexing API: {success} submitted, {fail} failed")
