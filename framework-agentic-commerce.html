@@ -975,7 +975,7 @@
     "@type": "WebPage",
     "url": "https://contraco.net/framework-agentic-commerce.html",
     "name": "The Agentic Commerce Framework: Levels of Autonomous Buying | contraco",
-    "dateModified": "2026-06-20",
+    "dateModified": "2026-06-21",
     "isPartOf": { "@id": "https://contraco.net/" }
 }
 </script>
@@ -1133,7 +1133,7 @@
                         <div class="pillar-item">
                             <div class="pillar-number">02</div>
                             <div class="pillar-title">Persistent Identity Vaults</div>
-                            <div class="pillar-desc">Deeply trusted, tokenized payment networks that allow secure, machine-driven financial settlement without exposing card numbers, routing codes, or credentials to the agent layer itself. Google's Agent Payments Protocol (AP2), announced at Google I/O 2026, is this pillar going live: cryptographically bounded spend authorization that lets an agent settle a transaction without ever holding the underlying credential.</div>
+                            <div class="pillar-desc">Deeply trusted, tokenized payment networks that allow secure, machine-driven financial settlement without exposing card numbers, routing codes, or credentials to the agent layer itself. Google's Agent Payments Protocol (AP2), announced at Google I/O 2026, is this pillar going live: cryptographically bounded spend authorization that lets an agent settle a transaction without ever holding the underlying credential. Most corporate identity providers, including Microsoft Entra, were built around human single sign-on and conditional access policies; they have no native concept of a delegated, spend-bounded machine identity. That gap, not the model's capability, is what AP2-style protocols exist to close.</div>
                         </div>
                         <div class="pillar-item">
                             <div class="pillar-number">03</div>
@@ -1141,6 +1141,9 @@
                             <div class="pillar-desc">The architectural ability to decouple the frontend purchase experience from individual, siloed merchant checkout funnels. A universal basket that spans vendor boundaries is not a UX feature; it is a system integration challenge. Google's Universal Cart, rolling out summer 2026, is the first mainstream deployment of this protocol across Search, Gemini, YouTube, and Gmail simultaneously.</div>
                         </div>
                     </div>
+                    <p style="color: var(--warm-gray-medium); font-size: 1rem; line-height: 1.7; max-width: 800px; margin-top: 32px;">
+                        Most enterprise security architecture was built around a human at a keyboard: a session ID, a browser fingerprint, a web application firewall tuned to flag scripted traffic. An authorized agent transacting at Level 3 or above is, by design, scripted traffic moving at machine speed. It does not hold a session the way a browser does, and it does not pause for a CAPTCHA. The three pillars above are not optional refinements to agentic commerce; they are the only architecture that lets a machine buyer through the front door without security teams quietly disabling the controls built to keep automated traffic out. Skip them, and the outcome is not "no agentic commerce." It is agents bypassing tokenization and API boundaries entirely, because procurement pressure moves faster than security review.
+                    </p>
                 </div>
             </div>
         </section>
@@ -1154,6 +1157,8 @@
                     <p class="section-intro">
                         Where you sit on this ladder today determines what investments will actually
                         generate ROI versus what will only add technical complexity without unlocking capability.
+                        It also determines who is exposed when something goes wrong: liability for an agent's
+                        actions does not stay theoretical once that agent has executed a transaction.
                     </p>
                 </div>
                 <div class="implication-grid">
@@ -1165,6 +1170,7 @@
                             <li>Tokenized payment rails that do not expose credentials to the model</li>
                             <li>Escalation triggers that return control to humans when bounds are exceeded</li>
                             <li>Audit logging that captures every transactional decision the agent makes</li>
+                            <li>Legal counsel sign-off on who is liable when an agent executes a binding purchase outside its mandate; that liability does not disappear because no human clicked the button</li>
                         </ul>
                     </div>
                     <div class="impl-card">
