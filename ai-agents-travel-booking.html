@@ -31,7 +31,16 @@
     <link rel="alternate" href="https://contraco.com/" hreflang="ko" />
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+@font-face { font-family: 'Crimson Text'; font-style: normal; font-weight: 400; src: url('/fonts/crimson-text-v21-latin-regular.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Crimson Text'; font-style: normal; font-weight: 600; src: url('/fonts/crimson-text-v21-latin-600.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Crimson Text'; font-style: italic; font-weight: 400; src: url('/fonts/crimson-text-v21-latin-italic.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 300; src: url('/fonts/inter-v20-latin-300.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; src: url('/fonts/inter-v20-latin-regular.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 500; src: url('/fonts/inter-v20-latin-500.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; src: url('/fonts/inter-v20-latin-600.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 700; src: url('/fonts/inter-v20-latin-700.woff2') format('woff2'); font-display: swap; }
+</style>
 
     <!-- Complete Favicon Set -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -83,7 +92,7 @@
         "@type": "Event",
         "name": "Die Buchung, die Sie nie gesehen haben: Wenn KI-Agenten das Reiseportal ersetzen",
         "description": "Frank Meltke speaks at the fvw|TravelTalk Kongress in Leipzig on how AI agents research, compare, and book travel without a human ever reaching an operator's homepage.",
-        "startDate": "2026-09-16",
+        "startDate": "2026-09-16T11:25:00+02:00",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "eventStatus": "https://schema.org/EventScheduled",
         "location": {
@@ -122,7 +131,7 @@
         "@type": "WebPage",
         "url": "https://contraco.net/ai-agents-travel-booking.html",
         "name": "When AI Agents Replace the Travel Portal",
-        "dateModified": "2026-06-20",
+        "dateModified": "2026-06-30",
         "isPartOf": { "@id": "https://contraco.net/" }
     }
     </script>
@@ -158,13 +167,55 @@
             --shadow-hover: 0 20px 60px rgba(0,0,0,0.15);
         }
 
-        body { margin: 0; font-family: var(--font-sans); color: var(--deep-charcoal); background: var(--warm-white); line-height: 1.7; }
-        .container { max-width: var(--container-max); margin: 0 auto; padding: 0 24px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
-        .event-banner { background: var(--primary-red); color: #fff; padding: 18px 0; text-align: center; font-size: 0.95rem; }
+        body { font-family: var(--font-sans); color: var(--deep-charcoal); background: var(--warm-white); line-height: 1.7; }
+        .container { max-width: var(--container-max); margin: 0 auto; padding: 0 40px; }
+
+        /* ─── Event Banner ───────────────────────────── */
+        .event-banner { background: var(--primary-red); color: #fff; padding: 12px 0; text-align: center; font-size: 0.9rem; position: fixed; top: 0; left: 0; right: 0; z-index: 1100; }
         .event-banner a { color: #fff; text-decoration: underline; font-weight: 600; }
 
-        .hero { padding: 80px 0 60px; text-align: center; }
+        /* ─── Header / Nav ───────────────────────────── */
+        .header {
+            background: rgba(248, 246, 243, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 16px 0;
+            position: fixed;
+            top: 40px;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        .logo { display: flex; align-items: center; text-decoration: none; }
+        .logo img { height: 50px; width: auto; transition: transform 0.3s ease; }
+        .logo:hover img { transform: scale(1.05); }
+        .logo-fallback { font-size: 1.6rem; font-weight: 700; color: var(--primary-red); font-family: var(--font-serif); display: none; }
+        .logo.logo-failed img { display: none; }
+        .logo.logo-failed .logo-fallback { display: block; }
+        .menu-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--deep-charcoal); }
+        .nav-menu { display: flex; align-items: center; gap: 35px; }
+        .nav-menu ul { display: flex; list-style: none; gap: 30px; align-items: center; }
+        .nav-link { text-decoration: none; color: var(--deep-charcoal); font-weight: 500; font-size: 0.92rem; transition: color 0.3s ease; position: relative; }
+        .nav-link:hover { color: var(--primary-red); }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -5px; left: 0; background-color: var(--primary-red); transition: width 0.3s ease; }
+        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+        .language-switcher { display: flex; gap: 8px; }
+        .lang-link { text-decoration: none; color: var(--warm-gray-medium); font-weight: 500; font-size: 0.85rem; padding: 4px 8px; border-radius: 4px; transition: all 0.3s ease; }
+        .lang-link:hover { color: var(--primary-red); background-color: var(--warm-white); }
+        .lang-link.active { color: var(--primary-red); background-color: var(--warm-white); font-weight: 600; }
+
+        /* ─── Page Content ───────────────────────────── */
+        .hero { padding: 160px 0 60px; text-align: center; }
         .hero h1 { font-family: var(--font-serif); font-size: 3rem; margin: 0 0 12px; color: var(--deep-charcoal); }
         .hero .subtitle { font-family: var(--font-serif); font-style: italic; font-size: 1.4rem; color: var(--warm-gray-dark); margin: 0 0 30px; }
         .event-meta { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; font-size: 0.95rem; color: var(--warm-gray-dark); margin-bottom: 20px; }
@@ -183,14 +234,36 @@
         .related-link:hover { text-decoration: underline; }
 
         .cta-section { background: var(--deep-charcoal); color: #fff; text-align: center; padding: 70px 0; }
-        .cta-section h2 { color: #fff; font-family: var(--font-serif); }
+        .cta-section h2 { color: #fff; font-family: var(--font-serif); margin-bottom: 16px; }
         .cta-button { display: inline-block; background: var(--primary-red); color: #fff; padding: 14px 32px; border-radius: 4px; text-decoration: none; font-weight: 600; margin: 10px 8px; transition: var(--transition-fast); }
-        .cta-button:hover { background: #D11919; }
+        .cta-button:hover { background: #D63E20; transform: translateY(-2px); }
         .cta-button.secondary { background: transparent; border: 1px solid #fff; }
+        .cta-button.secondary:hover { background: white; color: var(--deep-charcoal); }
+
+        /* ─── Footer ─────────────────────────────────── */
+        .footer { background: #1a1a1a; color: var(--warm-gray-light); padding: 50px 0 35px; }
+        .footer-content { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; align-items: start; margin-bottom: 32px; }
+        .footer-links { display: flex; gap: 25px; flex-wrap: wrap; margin-bottom: 16px; }
+        .footer-links a { color: var(--warm-gray-light); text-decoration: none; font-size: 0.95rem; transition: color 0.3s ease; }
+        .footer-links a:hover { color: var(--primary-red); }
+        .company-info h4 { color: var(--primary-red); font-size: 1.1rem; margin-bottom: 16px; font-family: var(--font-serif); }
+        .company-info p { margin-bottom: 8px; line-height: 1.6; font-size: 0.95rem; }
+        .company-info strong { color: var(--warm-gray-light); }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px; text-align: center; font-size: 0.85rem; }
+        .footer-privacy-links { margin-bottom: 16px; }
+        .footer-privacy-links a { color: var(--warm-gray-medium); text-decoration: none; font-size: 0.85rem; transition: color 0.3s ease; }
+        .footer-privacy-links a:hover { color: var(--primary-red); }
 
         @media (max-width: 768px) {
+            .container { padding: 0 20px; }
+            .header { top: 52px; }
+            .header-content { padding: 0 20px; }
+            .nav-menu { display: none; }
+            .menu-toggle { display: block; }
+            .hero { padding-top: 160px; }
             .hero h1 { font-size: 2.1rem; }
             .hero .subtitle { font-size: 1.1rem; }
+            .footer-content { grid-template-columns: 1fr; gap: 30px; }
         }
     </style>
 </head>
@@ -202,32 +275,30 @@
     </div>
 
     <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <a href="https://contraco.net/" class="logo" id="site-logo">
-                    <img src="https://contraco.net/Logo_rectangle.svg"
-                         alt="contraco"
-                         onerror="this.parentElement.classList.add('logo-failed');">
-                    <span class="logo-fallback">contraco</span>
-                </a>
-                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-                <nav class="nav-menu" id="nav-menu">
-                    <ul>
-                        <li><a href="https://contraco.net/#services" class="nav-link">Services</a></li>
-                        <li><a href="https://contraco.net/#methodology" class="nav-link">Methodology</a></li>
-                        <li><a href="https://contraco.net/insights.html" class="nav-link">Insights</a></li>
-                        <li><a href="https://contraco.net/about.html" class="nav-link">About</a></li>
-                        <li><a href="https://contraco.net/press.html" class="nav-link active">Press</a></li>
-                        <li><a href="https://contraco.net/#contact" class="nav-link">Contact</a></li>
-                    </ul>
-                    <div class="language-switcher">
-                        <a href="https://contraco.net/ai-agents-travel-booking.html" class="lang-link active">EN</a>
-                        <a href="https://contraco.de/ai-agents-travel-booking.html" class="lang-link">DE</a>
-                        <a href="https://contraco.com/" class="lang-link">RU</a>
-                        <a href="https://contraco.com/" class="lang-link">KO</a>
-                    </div>
-                </nav>
-            </div>
+        <div class="header-content">
+            <a href="https://contraco.net/" class="logo" id="site-logo">
+                <img src="https://contraco.net/Logo_rectangle.svg"
+                     alt="contraco"
+                     onerror="this.parentElement.classList.add('logo-failed');">
+                <span class="logo-fallback">contraco</span>
+            </a>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="https://contraco.net/#services" class="nav-link">Services</a></li>
+                    <li><a href="https://contraco.net/#methodology" class="nav-link">Methodology</a></li>
+                    <li><a href="https://contraco.net/insights.html" class="nav-link">Insights</a></li>
+                    <li><a href="https://contraco.net/about.html" class="nav-link">About</a></li>
+                    <li><a href="https://contraco.net/press.html" class="nav-link active">Press</a></li>
+                    <li><a href="https://contraco.net/#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <a href="https://contraco.net/ai-agents-travel-booking.html" class="lang-link active">EN</a>
+                    <a href="https://contraco.de/ai-agents-travel-booking.html" class="lang-link">DE</a>
+                    <a href="https://contraco.com/" class="lang-link">RU</a>
+                    <a href="https://contraco.com/" class="lang-link">KO</a>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -236,10 +307,10 @@
             <h1>The Booking You Never Saw</h1>
             <p class="subtitle">When AI Agents Replace the Travel Portal</p>
             <div class="event-meta">
-                <span>📅 <strong>September 16, 2026</strong></span>
-                <span>📍 <strong>Leipzig, Germany</strong></span>
-                <span>🎤 <strong>fvw|TravelTalk Kongress</strong></span>
-                <span>🎤 <strong>Speaker: Frank Meltke</strong></span>
+                <span>&#128197; <strong>September 16, 2026</strong></span>
+                <span>&#128205; <strong>Leipzig, Germany</strong></span>
+                <span>&#127908; <strong>fvw|TravelTalk Kongress</strong></span>
+                <span>&#127908; <strong>Speaker: Frank Meltke</strong></span>
             </div>
         </div>
     </section>
@@ -323,11 +394,11 @@
                     <p><strong>Phone:</strong> +1 (312) 940-0326</p>
                 </div>
                 <div>
-                    <h4>Company Information</h4>
-                    <p><strong>contraco</strong></p>
-                    <p>1209 10th Ln.</p>
-                    <p>Ava, MO 65608</p>
-                    <p>United States</p>
+                    <h4 style="color: var(--primary-red); font-size: 1rem; margin-bottom: 12px; font-family: var(--font-serif);">Company Information</h4>
+                    <p style="font-size: 0.85rem; margin-bottom: 6px;"><strong style="color: var(--warm-gray-light);">contraco</strong></p>
+                    <p style="font-size: 0.85rem; margin-bottom: 6px;">1209 10th Ln.</p>
+                    <p style="font-size: 0.85rem; margin-bottom: 6px;">Ava, MO 65608</p>
+                    <p style="font-size: 0.85rem; margin-bottom: 6px;">United States</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -335,7 +406,7 @@
                     <a href="/privacy-statement.html">Privacy Statement</a> &bull; <a href="https://www.linkedin.com/company/contraco" rel="noopener">LinkedIn</a> &bull; <a href="https://www.linkedin.com/in/frankmeltke" rel="noopener">Frank Meltke on LinkedIn</a> &bull; <a href="https://meltke.com" rel="noopener">Frank Meltke</a>
                 </div>
                 <p>&copy; 2026 contraco. All rights reserved.</p>
-                <p style="font-size: 0.8rem;">The Resonance Method&trade; is a trademark of contraco.</p>
+                <p style="font-size: 0.8rem;">The Resonance Method&#8482; is a trademark of contraco.</p>
             </div>
         </div>
     </footer>
@@ -358,9 +429,7 @@
                 }
             }
             img.addEventListener('error', retryLoadLogo);
-            img.addEventListener('load', function() {
-                logo.classList.remove('logo-failed');
-            });
+            img.addEventListener('load', function() { logo.classList.remove('logo-failed'); });
         })();
         window.addEventListener('scroll', function() {
             const header = document.querySelector('.header');
@@ -379,11 +448,11 @@
         });
     </script>
 
-    <script>
-      window.goatcounter = { path: function(p) { return location.host + p } }
-    </script>
-    <script data-goatcounter="https://contraco.goatcounter.com/count"
-            async src="//gc.zgo.at/count.js"></script>
+<script>
+  window.goatcounter = { path: function(p) { return location.host + p } }
+</script>
+<script data-goatcounter="https://contraco.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
 
 </body>
 </html>
