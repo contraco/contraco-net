@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Control Layer: Why Agentic Commerce Is Not Decided at Checkout | contraco</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-868WGCC45D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-868WGCC45D', {
+            page_title: 'The Agentic Commerce Control Layer - contraco',
+            page_location: window.location.href
+        });
+    </script>
+
+    <link rel="canonical" href="https://contraco.net/agentic-commerce-control-layer.html">
+    <link rel="entity-manifest" href="https://contraco.net/.well-known/entity-manifest.json">
+    <link rel="jwks" href="https://contraco.net/.well-known/jwks.json">
+    <meta name="robots" content="index, follow">
+
+    <!-- International SEO hreflang -->
+    <link rel="alternate" href="https://contraco.com/" hreflang="x-default" />
+    <link rel="alternate" href="https://contraco.net/agentic-commerce-control-layer.html" hreflang="en" />
+    <link rel="alternate" href="https://contraco.de/agentic-commerce-control-layer.html" hreflang="de" />
+    <link rel="alternate" href="https://contraco.ru/agentic-commerce-control-layer.html" hreflang="ru" />
+    <link rel="alternate" href="https://contraco.co.kr/agentic-commerce-control-layer.html" hreflang="ko" />
+
+    <!-- Fonts -->
+    <style>
+@font-face { font-family: 'Crimson Text'; font-style: normal; font-weight: 400; src: url('/fonts/crimson-text-v21-latin-regular.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Crimson Text'; font-style: normal; font-weight: 600; src: url('/fonts/crimson-text-v21-latin-600.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Crimson Text'; font-style: italic; font-weight: 400; src: url('/fonts/crimson-text-v21-latin-italic.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 300; src: url('/fonts/inter-v20-latin-300.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; src: url('/fonts/inter-v20-latin-regular.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 500; src: url('/fonts/inter-v20-latin-500.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; src: url('/fonts/inter-v20-latin-600.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 700; src: url('/fonts/inter-v20-latin-700.woff2') format('woff2'); font-display: swap; }
+</style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#C00000">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#C00000">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="The battle is not fought over payment methods. It is fought in the layer above: identity, authorization, policy, audit, settlement. The neutral position is unclaimed.">
+    <meta name="keywords" content="agentic commerce, control layer, agent identity, authorization, payment rails, Visa, Mastercard, Google AP2, SAP, contraco">
+    <meta name="author" content="contraco">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://contraco.net/agentic-commerce-control-layer.html">
+    <meta property="og:title" content="The Agentic Commerce Control Layer | contraco">
+    <meta property="og:description" content="The battle is not fought over payment methods. It is fought in the layer above: identity, authorization, policy, audit, settlement. The neutral position is unclaimed.">
+    <meta property="og:logo" content="https://contraco.net/Logo_rectangle.svg">
+    <meta property="og:image" content="https://contraco.net/contraco_4K.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="contraco - The Agentic Commerce Control Layer | contraco">
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "The Agentic Commerce Control Layer | contraco",
+    "description": "The battle is not fought over payment methods. It is fought in the layer above: identity, authorization, policy, audit, settlement. The neutral position is unclaimed.",
+    "url": "https://contraco.net/agentic-commerce-control-layer.html",
+    "datePublished": "2026-08-09",
+    "dateModified": "2026-08-09",
+    "author": { "@id": "https://meltke.com/#person" },
+    "publisher": {
+        "@type": "Organization",
+        "name": "contraco",
+        "url": "https://contraco.net",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://contraco.net/Logo_rectangle.svg"
+        }
+    }
+}
+</script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "contraco", "item": "https://contraco.net/" },
+        { "@type": "ListItem", "position": 2, "name": "Insights", "item": "https://contraco.net/insights.html" },
+        { "@type": "ListItem", "position": 3, "name": "The Control Layer", "item": "https://contraco.net/agentic-commerce-control-layer.html" }
+    ]
+}
+</script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "url": "https://contraco.net/agentic-commerce-control-layer.html",
+    "name": "The Control Layer: Why Agentic Commerce Is Not Decided at Checkout | contraco",
+    "dateModified": "2026-08-09",
+    "isPartOf": { "@id": "https://contraco.net/" }
+}
+</script>
+
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --primary-red: #C00000;
+            --deep-charcoal: #404040;
+            --warm-white: #F8F6F3;
+            --warm-gray-light: #E5E2DD;
+            --warm-gray-medium: #A8A5A0;
+            --warm-gray-dark: #6B6B6B;
+            --container-max: 1200px;
+            --font-serif: 'Crimson Text', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --section-padding: 100px 0;
+            --transition-fast: all 0.3s ease;
+        }
+
+        body { font-family: var(--font-sans); line-height: 1.6; color: var(--deep-charcoal); background-color: var(--warm-white); }
+        .container { max-width: var(--container-max); margin: 0 auto; padding: 0 40px; }
+
+        /* Navigation */
+        .navbar { position: fixed; top: 0; width: 100%; background: rgba(248, 246, 243, 0.95); backdrop-filter: blur(10px); z-index: 1000; padding: 12px 0; transition: var(--transition-fast); }
+        .nav-container { position: relative; display: flex; justify-content: space-between; align-items: center; max-width: var(--container-max); margin: 0 auto; padding: 0 40px; }
+        .logo { margin-left: 60px; display: flex; align-items: center; text-decoration: none; }
+        .logo img { height: 58px; width: auto; transition: transform 0.3s ease; }
+        .logo:hover img { transform: scale(1.05); }
+        .logo-fallback { font-size: 1.8rem; font-weight: 700; color: var(--primary-red); letter-spacing: -0.02em; font-family: var(--font-serif); transition: var(--transition-fast); display: none; }
+        .logo.logo-failed img { display: none; }
+        .logo.logo-failed .logo-fallback { display: block; }
+        .nav-menu { margin-right: 60px; display: flex; list-style: none; gap: 35px; }
+        .nav-link { text-decoration: none; color: var(--deep-charcoal); font-weight: 500; font-size: 0.95rem; transition: color 0.3s ease; position: relative; }
+        .nav-link:hover, .nav-link.active { color: var(--primary-red); }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -5px; left: 0; background-color: var(--primary-red); transition: width 0.3s ease; }
+        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+        .language-switcher { display: flex; gap: 8px; margin-left: 20px; }
+        .lang-link { text-decoration: none; color: var(--warm-gray-medium); font-weight: 500; font-size: 0.85rem; padding: 4px 8px; border-radius: 4px; transition: all 0.3s ease; }
+        .lang-link:hover, .lang-link.active { color: var(--primary-red); background-color: var(--warm-white); font-weight: 600; }
+
+        /* Main Content */
+        .main-content { padding-top: 100px; }
+
+        /* Hero */
+        .hero-section { background: linear-gradient(135deg, var(--warm-white) 0%, var(--warm-gray-light) 100%); padding: 120px 0 80px; text-align: center; }
+        .hero-content { max-width: 900px; margin: 0 auto; }
+        .hero-label { display: inline-block; background: var(--primary-red); color: white; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; padding: 6px 16px; border-radius: 20px; margin-bottom: 24px; text-transform: uppercase; }
+        .hero-title { font-family: var(--font-serif); font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 600; margin-bottom: 24px; color: var(--deep-charcoal); line-height: 1.2; }
+        .hero-standfirst { font-size: 1.2rem; color: var(--warm-gray-dark); line-height: 1.7; max-width: 750px; margin: 0 auto 24px; }
+        .byline { font-size: 0.9rem; color: var(--warm-gray-medium); font-style: italic; }
+
+        /* Article Sections */
+        .article-section { padding: 80px 0; }
+        .article-section.white { background: white; }
+        .article-section.gray { background: var(--warm-gray-light); }
+        .article-container { max-width: 760px; margin: 0 auto; }
+        .section-h2 { font-family: var(--font-serif); font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 600; color: var(--deep-charcoal); margin-bottom: 28px; line-height: 1.3; }
+        .article-p { font-size: 1.05rem; line-height: 1.8; color: var(--deep-charcoal); margin-bottom: 20px; }
+        .article-p a { color: var(--primary-red); text-decoration: none; font-weight: 600; }
+        .article-p a:hover { text-decoration: underline; }
+        .source-note { font-size: 0.85rem; color: var(--warm-gray-dark); font-style: italic; margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--warm-gray-light); }
+
+        /* Diagram / Figure */
+        .figure-block { background: white; border: 1px solid var(--warm-gray-light); border-radius: 8px; padding: 32px; margin: 32px 0; overflow-x: auto; }
+        .figure-caption { font-size: 0.85rem; color: var(--warm-gray-dark); text-align: center; margin-top: 16px; font-style: italic; }
+
+        /* Data Highlight */
+        .data-highlight { background: white; border-left: 4px solid var(--primary-red); padding: 20px 24px; margin: 28px 0; border-radius: 0 8px 8px 0; }
+        .data-highlight p { font-size: 1.1rem; font-weight: 600; color: var(--deep-charcoal); margin: 0; }
+        .data-highlight .source { font-size: 0.8rem; color: var(--warm-gray-dark); font-weight: 400; margin-top: 6px; display: block; }
+
+        /* Timeline */
+        .timeline { margin: 32px 0; }
+        .timeline-item { display: grid; grid-template-columns: 140px 1fr; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--warm-gray-light); }
+        .timeline-item:last-child { border-bottom: none; }
+        .timeline-date { font-weight: 700; color: var(--primary-red); font-size: 0.95rem; padding-top: 4px; }
+        .timeline-text { font-size: 1.0rem; line-height: 1.7; color: var(--deep-charcoal); }
+        .timeline-text a { color: var(--primary-red); text-decoration: none; font-weight: 600; }
+
+        /* Closing Section */
+        .closing-section { background: white; padding: 80px 0; border-top: 3px solid var(--primary-red); }
+
+        /* CTA Section */
+        .cta-section { background: var(--deep-charcoal); color: white; text-align: center; padding: 80px 0; }
+        .cta-title { font-family: var(--font-serif); font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 600; margin-bottom: 20px; color: white; }
+        .cta-description { font-size: 1.1rem; margin-bottom: 40px; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.7; }
+        .cta-button { display: inline-flex; align-items: center; gap: 10px; background: var(--primary-red); color: white; padding: 16px 36px; text-decoration: none; border-radius: 4px; font-weight: 600; font-size: 0.95rem; transition: var(--transition-fast); }
+        .cta-button:hover { background: #D63E20; transform: translateY(-2px); color: white; text-decoration: none; }
+
+        /* Footer */
+        .footer { background: #1a1a1a; color: var(--warm-gray-light); padding: 50px 0 35px; }
+        .footer-content { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; align-items: start; margin-bottom: 32px; }
+        .footer-links { display: flex; gap: 25px; flex-wrap: wrap; margin-bottom: 16px; }
+        .footer-links a { color: var(--warm-gray-light); text-decoration: none; transition: color 0.3s ease; font-size: 0.95rem; }
+        .footer-links a:hover { color: var(--primary-red); }
+        .footer-privacy-links { margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; }
+        .footer-privacy-links a { color: var(--warm-gray-medium); text-decoration: none; font-size: 0.85rem; transition: color 0.3s ease; }
+        .footer-privacy-links a:hover { color: var(--primary-red); }
+        .company-info h4 { color: var(--primary-red); font-size: 1.1rem; margin-bottom: 16px; font-family: var(--font-serif); }
+        .company-info p { margin-bottom: 8px; line-height: 1.6; font-size: 0.95rem; }
+        .company-info strong { color: var(--warm-gray-light); }
+        .imprint-section h4 { color: var(--primary-red); font-size: 1rem; margin-bottom: 12px; font-family: var(--font-serif); }
+        .imprint-details { font-size: 0.85rem; line-height: 1.5; }
+        .imprint-details p { margin-bottom: 6px; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px; text-align: center; font-size: 0.85rem; }
+
+        @media (max-width: 768px) {
+            .container, .nav-container { padding: 0 20px; }
+            .logo { margin-left: 20px; }
+            .nav-menu { display: none; }
+            .hero-title { font-size: 2.2rem; }
+            .footer-content { grid-template-columns: 1fr; gap: 30px; }
+            .timeline-item { grid-template-columns: 1fr; gap: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="https://contraco.net/" class="logo" id="site-logo">
+                <img src="https://contraco.net/Logo_rectangle.svg" alt="contraco" onerror="this.parentElement.classList.add('logo-failed');">
+                <span class="logo-fallback">contraco</span>
+            </a>
+            <div style="display: flex; align-items: center;">
+                <ul class="nav-menu">
+                    <li><a href="https://contraco.net/" class="nav-link">Home</a></li>
+                    <li><a href="https://contraco.net/#services" class="nav-link">Services</a></li>
+                    <li><a href="https://contraco.net/#methodology" class="nav-link">Methodology</a></li>
+                    <li><a href="https://contraco.net/insights.html" class="nav-link active">Insights</a></li>
+                    <li><a href="https://contraco.net/about.html" class="nav-link">About</a></li>
+                    <li><a href="https://contraco.net/press.html" class="nav-link">Press</a></li>
+                    <li><a href="https://contraco.net/#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <a href="https://contraco.net/agentic-commerce-control-layer.html" class="lang-link active">EN</a>
+                    <a href="https://contraco.de/agentic-commerce-control-layer.html" class="lang-link">DE</a>
+                    <a href="https://contraco.ru/agentic-commerce-control-layer.html" class="lang-link">RU</a>
+                    <a href="https://contraco.co.kr/agentic-commerce-control-layer.html" class="lang-link">KO</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <!-- Hero -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-label">Strategic Framework | 12 min read</span>
+                    <h1 class="hero-title">The Control Layer: Why Agentic Commerce Is Not Decided at Checkout</h1>
+                    <p class="hero-standfirst">The battle is not fought over payment methods and reach. It is fought in the layer above: identity, authorization, policy, audit and settlement. Each major provider controls only its own system. The neutral control layer is the most valuable unclaimed position in the European market.</p>
+                    <p class="byline">By Frank Meltke, contraco | August 2026</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="article-section white">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">What the Control Layer Is</h2>
+                    <p class="article-p">In the standard model of commerce, the decision happens at checkout. A human arrives at a product page, reviews the price, confirms their payment credentials, and clicks buy. The payment network validates the transaction. Governance is implicit in the human presence.</p>
+                    <p class="article-p">In agentic commerce, the decision happens earlier and in a different layer: the agent evaluates options, selects a preferred outcome, and executes the transaction without the account holder's real-time involvement. The checkout is an automated downstream consequence of a decision already made.</p>
+                    <p class="article-p">The control layer is the infrastructure that governs this earlier decision: agent identity, authorization scope, spending policy, audit logging, and dispute traceability. Whoever controls this layer controls the effective decision point in agentic commerce, not the checkout UI that processes the result. For the maturity taxonomy of the transaction itself, see <a href="https://contraco.net/framework-agentic-commerce.html">The Agentic Commerce Framework</a>.</p>
+
+                    <!-- Layer model diagram -->
+                    <div class="figure-block" style="margin-top: 36px;">
+                        <svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:640px;display:block;margin:0 auto;" aria-label="Agentic commerce layer model">
+                            <rect width="640" height="320" fill="#F8F6F3" rx="8"/>
+                            <!-- Layer 1: AI Agent -->
+                            <rect x="40" y="24" width="560" height="52" rx="6" fill="#C00000"/>
+                            <text x="320" y="46" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">AI Agent</text>
+                            <text x="320" y="63" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.85)">Identity, instructions, mandate scope</text>
+                            <!-- Arrow -->
+                            <line x1="320" y1="76" x2="320" y2="98" stroke="#A8A5A0" stroke-width="2" marker-end="url(#arr2)"/>
+                            <!-- Layer 2: Control Layer (highlighted) -->
+                            <rect x="40" y="98" width="560" height="64" rx="6" fill="#404040" stroke="#C00000" stroke-width="2"/>
+                            <text x="320" y="124" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="white">Control Layer</text>
+                            <text x="320" y="142" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.85)">Authorization policy · Audit log · Dispute resolution · Settlement rules</text>
+                            <text x="320" y="156" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-style="italic" fill="#C00000">The unclaimed neutral position</text>
+                            <!-- Arrow -->
+                            <line x1="320" y1="162" x2="320" y2="184" stroke="#A8A5A0" stroke-width="2" marker-end="url(#arr2)"/>
+                            <!-- Layer 3: Payment Rails -->
+                            <rect x="40" y="184" width="560" height="52" rx="6" fill="#E5E2DD"/>
+                            <text x="320" y="205" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#404040">Payment Rails</text>
+                            <text x="320" y="222" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#6B6B6B">Visa · Mastercard · AP2 · Multi-rail settlement</text>
+                            <!-- Arrow -->
+                            <line x1="320" y1="236" x2="320" y2="258" stroke="#A8A5A0" stroke-width="2" marker-end="url(#arr2)"/>
+                            <!-- Layer 4: ERP Posting -->
+                            <rect x="40" y="258" width="560" height="42" rx="6" fill="#E5E2DD"/>
+                            <text x="320" y="276" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#404040">ERP / Back-Office Posting</text>
+                            <text x="320" y="292" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#6B6B6B">SAP AI Agent Hub · Reconciliation · Compliance record</text>
+                            <defs>
+                                <marker id="arr2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                                    <path d="M0,0 L0,6 L8,3 z" fill="#A8A5A0"/>
+                                </marker>
+                            </defs>
+                        </svg>
+                        <p class="figure-caption">The agentic commerce layer model. The control layer sits between agent and payment rail. Diagram: contraco original.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="article-section gray">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">Visa Intelligent Commerce: Live Infrastructure</h2>
+                    <p class="article-p">Visa Intelligent Commerce launched in July 2026 with more than 30 European issuers already connected, including lastminute.com, Frasers, Cleverbridge, and BrickDepot. The Trusted Agent Protocol defines how agents are enrolled and authenticated. The Agent Directory provides merchants with a query mechanism to confirm that an agent presenting for payment is a registered, issuer-authorized entity. [Q1, Q2]</p>
+                    <p class="article-p">What Visa controls in this model: enrollment, directory lookup, and transaction validation within the Visa network. What Visa does not control: the agent's behavior outside that transaction, multi-rail settlement, or authorization policy across competing networks.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="article-section white">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">Mastercard Agent Pay: Verifiable Intent and Multi-Rail</h2>
+                    <p class="article-p">Mastercard Agent Pay introduces Verifiable Intent: a signed record linking the account holder's authorization to the specific agent and transaction. The dispute and chargeback mechanism is built on top of this signed chain. Programmatic spending limits are set by the issuer at the time of mandate issuance. [Q3]</p>
+                    <p class="article-p">Mastercard Agent Pay for Machines extends this to multi-rail settlement, meaning a single mandate can authorize transactions across payment networks and settlement systems. [Q4] This is technically significant: it is the first major attempt to build a mandate framework that is not network-bound.</p>
+                    <p class="article-p">The constraint remains the same as Visa's: Mastercard controls what happens within its own infrastructure. The authorization scope, the agent quality, and the behavior between the mandate and the execution are not addressed by the payment protocol.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="article-section gray">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">Google AP2 and the Signed Mandate</h2>
+                    <p class="article-p">Google's Agentic Payment Protocol version 0.2.0 introduced human-not-present payment execution via signed mandates, with more than 60 partners connected at launch. [Q5, Q6] The signed mandate is the key construct: the account holder issues a mandate to the agent, the agent signs transactions against that mandate, and the payment processor validates the signature.</p>
+                    <p class="article-p">AP2 is a developer-facing protocol. Its significance is in establishing the technical pattern for mandate-signed agentic payments, independent of any single network. Whether Google's ecosystem controls the dominant share of this pattern or whether it becomes an open standard is the competitive question for the next 18 months.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="article-section white">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">SAP AI Agent Hub: The ERP Integration Layer</h2>
+                    <p class="article-p">Announced at SAP Sapphire 2026, the SAP AI Agent Hub provides granular permission management and a full audit log for AI agents operating inside enterprise workflows. [Q7, Q8] Its significance is not payment processing but ERP integration: when an agent purchases, the authorization, the transaction record, and the reconciliation entry all flow through the same governed infrastructure.</p>
+                    <p class="article-p">SAP's position is the back-office end of the control layer. It governs what happens after the payment clears, not before it is initiated. Connecting the pre-purchase authorization layer to the post-purchase reconciliation layer is the integration challenge that no single provider has fully resolved.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="article-section gray">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">The Benchmark: Alipay at Scale</h2>
+                    <p class="article-p">Ant International's Alipay is processing approximately 120 million AI-agent transactions per week. [Q9] This is not a pilot or a proof of concept. It is infrastructure running at consumer scale in a single-operator, single-market context where identity, payment, and the agent layer are controlled by one entity.</p>
+                    <p class="article-p">The European market is structurally different: multiple payment networks, multiple banking regulators, multiple identity frameworks, and a consumer base that surveys show is more skeptical of single-actor control. The Alipay benchmark demonstrates what is technically achievable. It does not provide the model for the European market.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="article-section white">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">The Structural Gap: Each Provider Controls Only Its Own System</h2>
+                    <p class="article-p">Visa controls the Visa network. Mastercard controls the Mastercard network. Google controls AP2 within its ecosystem. SAP controls the ERP layer for SAP deployments. Each provider has built or is building a control layer for its own system. None of them controls, or is positioned to control, the layer across all systems.</p>
+                    <p class="article-p">The neutral control layer, which provides consistent agent identity verification, authorization policy, audit logging, and dispute resolution across payment networks, banking partners, and ERP systems, is the most structurally valuable position in the European agentic commerce market. It is also the most genuinely unclaimed.</p>
+                    <p class="article-p">For the trust dimension of this gap, see <a href="https://contraco.net/banks-agentic-commerce-trust.html">Trust Is the Bottleneck, and Banks Own It</a>. For the attribution consequence, see <a href="https://contraco.net/dark-agentic-traffic.html">Dark Agentic Traffic</a>. For the agent accountability question, see <a href="https://contraco.net/who-audits-the-ai-agent.html">Who Audits the Agent?</a> For the market timing argument, see <a href="https://contraco.net/agentic-commerce-window.html">The Window</a>. For the travel vertical where this plays out first, see <a href="https://contraco.net/first-agentic-purchase-travel.html">Europe's First Agentic Purchase Was a Trip</a>. For a dated reference chronicle of the 2026 announcements, see <a href="https://contraco.net/agentic-commerce-summer-2026.html">The Loud Summer of 2026</a>. For the dedicated diagnostics property, see <a href="https://agentic.contraco.net/" target="_blank" rel="noopener">agentic.contraco.net</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sources -->
+        <section class="article-section white">
+            <div class="container">
+                <div class="article-container">
+                    <p class="source-note"><strong>Sources:</strong></p>
+                    <ul class="source-note" style="padding-left: 1.4em; margin-top: 8px;">
+            <li>Q1: Visa Intelligent Commerce press release, July 2026. Trusted Agent Protocol, Agent Directory, 30+ European issuers.</li>
+            <li>Q2: Visa Intelligent Commerce technical documentation. Protocol detail.</li>
+            <li>Q3: Mastercard Agent Pay press release. Verifiable Intent, programmatic limits, dispute and chargeback mechanism.</li>
+            <li>Q4: Mastercard Agent Pay for Machines. Multi-rail settlement detail.</li>
+            <li>Q5: Google AP2 v0.2.0 release notes. Human-not-present payments via signed mandates, 60+ partners.</li>
+            <li>Q6: Google AP2 developer documentation.</li>
+            <li>Q7: SAP AI Agent Hub announcement, Sapphire 2026. Granular permissions, full audit log.</li>
+            <li>Q8: SAP AI Agent Hub technical detail.</li>
+            <li>Q9: Ant International / Alipay. 120M AI-agent transactions per week.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="cta-title">Strategy Conversation on Agentic Commerce Readiness</h2>
+                <p class="cta-description">Where does your organization sit relative to the control layer? We work with enterprises, financial institutions, and technology providers to map their position and design their path to the neutral infrastructure layer.</p>
+                <a href="https://contraco.net/#contact" class="cta-button">Start the strategy conversation</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="company-info">
+                    <div class="footer-links">
+                        <a href="https://contraco.net/">Home</a>
+                        <a href="https://contraco.net/about.html">About Us</a>
+                        <a href="https://contraco.net/#services">Services</a>
+                        <a href="https://contraco.net/#methodology">Methodology</a>
+                        <a href="https://contraco.net/insights.html">Insights</a>
+                        <a href="https://contraco.net/#contact">Contact</a>
+                        <a href="https://contraco.net/press.html">Press</a>
+                    </div>
+                    <h4>contraco USA</h4>
+                    <p>Premium transformation consulting combining strategic clarity, technological intelligence, and psychological depth.</p>
+                    <p><strong>Email:</strong> transformation@contraco.net</p>
+                    <p><strong>Phone:</strong> +1 (312) 940-0326</p>
+                </div>
+                <div class="imprint-section">
+                    <h4>Company Information</h4>
+                    <div class="imprint-details">
+                        <p><strong>contraco</strong></p>
+                        <p>1209 10th Ln.</p>
+                        <p>Ava, MO 65608</p>
+                        <p>United States</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-privacy-links">
+                    <a href="/privacy-statement.html">Privacy Statement</a> &bull; <a href="https://www.linkedin.com/company/contraco" rel="noopener">LinkedIn</a> &bull; <a href="https://www.linkedin.com/in/frankmeltke" rel="noopener">Frank Meltke on LinkedIn</a> &bull; <a href="https://meltke.com" rel="noopener">Frank Meltke</a>
+                </div>
+                <p>&copy; 2026 contraco. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            var logo = document.getElementById('site-logo');
+            var img = logo.querySelector('img');
+            var retryCount = 0;
+            var maxRetries = 2;
+            function retryLoadLogo() {
+                retryCount++;
+                if (retryCount <= maxRetries) {
+                    img.src = img.src + '?retry=' + retryCount;
+                } else {
+                    logo.classList.add('logo-failed');
+                }
+            }
+            img.addEventListener('error', retryLoadLogo);
+            img.addEventListener('load', function() { logo.classList.remove('logo-failed'); });
+        })();
+        window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(248, 246, 243, 0.98)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+            } else {
+                navbar.style.background = 'rgba(248, 246, 243, 0.95)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+            });
+        });
+    </script>
+    <script>
+      window.goatcounter = { path: function(p) { return location.host + p } }
+    </script>
+    <script data-goatcounter="https://contraco.goatcounter.com/count"
+            async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
