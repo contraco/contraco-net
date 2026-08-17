@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
           persist-credentials: false
 
       - name: Get changed HTML files (paths -> normalized URLs)
@@ -163,7 +163,8 @@ jobs:
             -not -name "google*.html" \
           | sort | while read -r file; do
               url="$(normalize "$file")"
-              lastmod="$(date -r "$file" +"%Y-%m-%d" 2>/dev/null || stat -c %y "$file" | cut -d' ' -f1)"
+              lastmod="$(git log -1 --format="%ci" -- "$file" 2>/dev/null | cut -d' ' -f1)"
+              lastmod="${lastmod:-$(date +"%Y-%m-%d")}"
               
               # Use existing priority/changefreq if available, otherwise use strategic defaults
               if [[ -n "${existing_priorities[$url]:-}" ]]; then
