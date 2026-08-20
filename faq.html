@@ -137,6 +137,38 @@
         },
         {
             "@type": "Question",
+            "name": "How does an agent actually execute a payment?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Not through the rails you already run. Card and account infrastructure was designed around human friction, a person present, a device recognised, a moment of confirmation, and an agent has none of those to offer. What replaces them is a separation between negotiating a purchase and executing it, with authorisation issued in advance as a programmable instruction rather than granted live. That instruction has to be verifiable by the receiving party, which is why this turns into a certificate problem rather than a payments problem. Knowing your customer becomes knowing your agent, and nobody has finished building that."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is a spending limit enough to authorise an agent?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No, and this is where most current wallet designs are weakest. A cap constrains how much can be spent. It does not identify what was bought, from whom, or on what terms, and European payment rules require authorisation to be bound to a specific amount and a specific payee. A ceiling plus a list of permitted destinations satisfies neither condition. The gap is not theoretical: it determines whether a disputed transaction can be attributed at all. Designs that ship a limit and an allowlist and call it consent have built a budgeting feature, not an authorisation."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Who captures the value when the payment pipe becomes free?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Whoever owns intent, verification, context or governance, because the pipe itself is being commoditised. Open protocols push execution toward zero margin, which strands anyone whose revenue is a percentage of transactions moving through it. Value concentrates instead in four places: the layer that decides what the agent considers at all, the layer that underwrites whether a counterparty can be trusted, the layer that supplies the machine-readable context on which selection depends, and the layer that governs and evidences the whole thing. Most enterprises are exposed across all four and have measured none of them."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Why is Asia further ahead of Europe on agentic payments?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Architecture, not technology. A market where identity, payment, messaging and merchant relationships already sit inside one platform can deploy an agent that acts end to end, because the trust relationships it needs are internal. Europe has none of that. Identity sits with one party, payment with another, the merchant relationship with a third, and the agent has to establish trust across all of them for every transaction. That fragmentation is not a defect to be engineered away, it is the market structure, and the European route runs through a protocol that makes fragmented parties mutually verifiable rather than through building a super-app that will not exist."
+            }
+        },
+        {
+            "@type": "Question",
             "name": "What is the Resonance Method?",
             "acceptedAnswer": {
                 "@type": "Answer",
@@ -747,6 +779,34 @@
                         <h2 class="faq-question">Who audits the agent itself?</h2>
                         <div class="faq-answer">
                             <p>Nobody, currently. Payment infrastructure verifies that a transaction occurred and that a mandate existed. It does not verify whether the agent <a href="https://contraco.net/who-audits-the-ai-agent.html">acted well</a> for the person who deployed it. Those are different questions with different answers, and only the first has been built. An agent that selects the more expensive option, fails to recognise a supplier conflict of interest, or optimises against the wrong objective produces a clean audit trail and a bad outcome. This gap will become visible first in regulated industries, where the obligation to explain a decision already exists independently of how the decision was made.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h2 class="faq-question">How does an agent actually execute a payment?</h2>
+                        <div class="faq-answer">
+                            <p>Not through the rails you already run. Card and account infrastructure was designed around human friction, a person present, a device recognised, a moment of confirmation, and an agent has none of those to offer. What replaces them is a <a href="https://agentic.contraco.net/how-agents-pay.html">separation between negotiating a purchase and executing it</a>, with authorisation issued in advance as a programmable instruction rather than granted live. That instruction has to be verifiable by the receiving party, which is why this turns into a certificate problem rather than a payments problem. Knowing your customer becomes knowing your agent, and nobody has finished building that.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h2 class="faq-question">Is a spending limit enough to authorise an agent?</h2>
+                        <div class="faq-answer">
+                            <p>No, and this is where most current wallet designs are weakest. A cap constrains how much can be spent. It does not identify what was bought, from whom, or on what terms, and European payment rules require authorisation to be <a href="https://agentic.contraco.net/price-cap-not-an-amount.html">bound to a specific amount and a specific payee</a>. A ceiling plus a list of permitted destinations satisfies neither condition. The gap is not theoretical: it determines whether a disputed transaction can be attributed at all. Designs that ship a limit and an allowlist and call it consent have built a budgeting feature, not an authorisation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h2 class="faq-question">Who captures the value when the payment pipe becomes free?</h2>
+                        <div class="faq-answer">
+                            <p>Whoever owns intent, verification, context or governance, because the pipe itself is being commoditised. Open protocols push execution toward zero margin, which strands anyone whose revenue is a percentage of transactions moving through it. Value concentrates instead in <a href="https://agentic.contraco.net/value-capture.html">four places</a>: the layer that decides what the agent considers at all, the layer that underwrites whether a counterparty can be trusted, the layer that supplies the machine-readable context on which selection depends, and the layer that governs and evidences the whole thing. Most enterprises are exposed across all four and have measured none of them.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h2 class="faq-question">Why is Asia further ahead of Europe on agentic payments?</h2>
+                        <div class="faq-answer">
+                            <p>Architecture, not technology. A market where identity, payment, messaging and merchant relationships already sit inside one platform can deploy an agent that acts end to end, because the trust relationships it needs are internal. Europe has none of that. Identity sits with one party, payment with another, the merchant relationship with a third, and the agent has to establish trust across all of them for every transaction. That fragmentation is not a defect to be engineered away, it is the market structure, and the European route runs through a protocol that makes fragmented parties <a href="https://agentic.contraco.net/west-vs-east.html">mutually verifiable</a> rather than through building a super-app that will not exist.</p>
                         </div>
                     </div>
                 </div>
