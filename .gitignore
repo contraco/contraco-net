@@ -25,3 +25,6 @@ node_modules/
 # Build files (if ever used)
 dist/
 build/
+
+# Claude Code local memory, never committed
+CLAUDE.local.md
