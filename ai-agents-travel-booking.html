@@ -19,6 +19,8 @@
 
     <!-- Canonical Tag -->
     <link rel="canonical" href="https://contraco.net/ai-agents-travel-booking.html">
+    <link rel="entity-manifest" href="https://contraco.net/.well-known/entity-manifest.json">
+    <link rel="jwks" href="https://contraco.net/.well-known/jwks.json">
 
     <!-- Robots Meta Tag -->
     <meta name="robots" content="index, follow">
@@ -87,6 +89,34 @@
 
     <!-- Schema.org Event -->
     <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "contraco",
+    "url": "https://contraco.net/",
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https://contraco.net/Logo_rectangle.svg",
+        "width": 400,
+        "height": 100
+    },
+    "email": "transformation@contraco.net",
+    "telephone": "+13129400326",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1209 10th Ln.",
+        "addressLocality": "Ava",
+        "addressRegion": "MO",
+        "postalCode": "65608",
+        "addressCountry": "US"
+    },
+    "foundingDate": "1998",
+    "founder": { "@id": "https://meltke.com/#person" },
+    "areaServed": "Global",
+    "sameAs": ["https://www.wikidata.org/wiki/Q139681815","https://www.linkedin.com/company/contraco","https://contraco.com","https://contraco.de","https://contraco.ru","https://contraco.co.kr"]
+}
+</script>
+    <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Event",
@@ -131,18 +161,6 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "url": "https://contraco.net/ai-agents-travel-booking.html",
-        "name": "When AI Agents Replace the Travel Portal",
-        "dateModified": "2026-07-09",
-        "isPartOf": { "@id": "https://contraco.net/" }
-    }
-    </script>
-
-    <!-- Schema.org BreadcrumbList -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "contraco", "item": "https://contraco.net/" },
@@ -151,6 +169,18 @@
         ]
     }
     </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "url": "https://contraco.net/ai-agents-travel-booking.html",
+        "name": "When AI Agents Replace the Travel Portal",
+        "dateModified": "2026-08-28",
+        "isPartOf": { "@id": "https://contraco.net/" }
+    }
+    </script>
+
+    <!-- Schema.org BreadcrumbList -->
 
     <style>
         :root {
@@ -205,7 +235,6 @@
         .logo-fallback { font-size: 1.6rem; font-weight: 700; color: var(--primary-red); font-family: var(--font-serif); display: none; }
         .logo.logo-failed img { display: none; }
         .logo.logo-failed .logo-fallback { display: block; }
-        .menu-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--deep-charcoal); }
         .nav-menu { display: flex; align-items: center; gap: 35px; }
         .nav-menu ul { display: flex; list-style: none; gap: 30px; align-items: center; }
         .nav-link { text-decoration: none; color: var(--deep-charcoal); font-weight: 500; font-size: 0.92rem; transition: color 0.3s ease; position: relative; }
@@ -262,7 +291,6 @@
             .header { top: 52px; }
             .header-content { padding: 0 20px; }
             .nav-menu { display: none; }
-            .menu-toggle { display: block; }
             .hero { padding-top: 160px; }
             .hero h1 { font-size: 2.1rem; }
             .hero .subtitle { font-size: 1.1rem; }
@@ -285,7 +313,6 @@
                      onerror="this.parentElement.classList.add('logo-failed');">
                 <span class="logo-fallback">contraco</span>
             </a>
-            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
             <nav class="nav-menu" id="nav-menu">
                 <ul>
                     <li><a href="https://contraco.net/#services" class="nav-link">Services</a></li>
@@ -416,9 +443,6 @@
     </footer>
 
     <script>
-        function toggleMenu() {
-            document.getElementById('nav-menu').classList.toggle('active');
-        }
         (function() {
             const logo = document.getElementById('site-logo');
             const img = logo.querySelector('img');
