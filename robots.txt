@@ -4,18 +4,6 @@
 # Allow all crawlers to access main content
 User-agent: *
 Allow: /
-Disallow: /css_base_styles.html
-Disallow: /navigation_template.html
-Disallow: /*_template.html
-Disallow: /admin/
-Disallow: /private/
-Disallow: /wp-admin/
-Disallow: /wp-includes/
-Disallow: /cgi-bin/
-Disallow: /.git/
-Disallow: /backup/
-Disallow: /temp/
-Disallow: /tmp/
 
 # Block verification files from other search engines
 User-agent: Googlebot
@@ -42,7 +30,7 @@ User-agent: GPTBot
 Disallow: /
 
 User-agent: Google-Extended
-Disallow: /
+Allow: /
 
 User-agent: CCBot
 Disallow: /
