@@ -2,30 +2,24 @@
 
 > Premium transformation consulting combining strategic clarity, technological intelligence, and psychological depth. Founded 1998 by Frank Meltke.
 
-contraco is a premium transformation consultancy headquartered in Ava, Missouri, USA, with offices in Leipzig, Germany and Seoul, South Korea. The firm has served 50+ global brands across 30 countries including Microsoft, Deutsche Telekom, Thomas Cook, KPMG, and SK Telecom.
+contraco is a premium transformation consultancy headquartered in Ava, Missouri, USA, with a presence in Leipzig, Germany. The firm has served more than 50 global brands across 30 countries.
+
+## Focus
+
+contraco works at the intersection where distribution architecture meets liability, in the moment AI agents begin buying on their own behalf.
+
+- Agentic commerce governance: maturity, the control layer, the delegation chain, auditability.
+- Attribution and liability: who is bound when an autonomous agent makes a declaration, and what follows for configuration, approvals and documentation.
+- AI visibility: product data, enrichment, and why offers stay invisible to agents.
+- Travel distribution: what happens when agents no longer reach the booking screen.
 
 ## Methodology
 
-The Resonance Method is contraco's proprietary framework for digital transformation, developed over 28 years. It addresses a three-dimensional execution gap: strategic clarity, technological intelligence, and psychological depth. Organisations achieving alignment across all three dimensions show a fourfold higher transformation success rate.
-
-## Key Pages
-
-- [Home](https://contraco.net/)
-- [The Resonance Method](https://contraco.net/resonance-method.html)
-- [AI Strategy Framework](https://contraco.net/ai-strategy-framework.html)
-- [Agentic Commerce](https://contraco.net/framework-agentic-commerce.html)
-- [Digital Transformation ROI](https://contraco.net/digital-transformation-roi.html)
-- [Organizational Design for AI](https://contraco.net/organizational-design-ai.html)
-- [Leading AI Transformation](https://contraco.net/leading-ai-transformation.html)
-- [Consulting Addiction](https://contraco.net/consulting-addiction.html)
-- [European Entry](https://contraco.net/european-entry.html)
-- [Press](https://contraco.net/press.html)
-- [Insights](https://contraco.net/insights.html)
-- [About](https://contraco.net/about.html)
+The Resonance Method is contraco's proprietary framework for digital transformation, developed over 28 years. It addresses a three-dimensional execution gap: strategic clarity, technological intelligence, and psychological depth.
 
 ## Founder
 
-Frank Meltke — German inventor, Wikidata Q139680598, patent DE10313420A1 (2003), guest lecturer Kyung Hee University Seoul, Insight Panelist BBC Global Minds.
+Frank Meltke, German inventor, Wikidata Q139680598, patent DE10313420A1 (2003), guest lecturer Kyung Hee University Seoul, Insight Panelist BBC Global Minds.
 
 - [Frank Meltke](https://meltke.com)
 - [Practitioner Notes on AI Governance](https://signal.meltke.com)
@@ -33,4 +27,9 @@ Frank Meltke — German inventor, Wikidata Q139680598, patent DE10313420A1 (2003
 
 ## Languages
 
-contraco operates across four domains: [English](https://contraco.net), [German](https://contraco.de), [Russian](https://contraco.ru), [Korean](https://contraco.co.kr).
+contraco publishes across four domains: [English](https://contraco.net), [German](https://contraco.de), [Russian](https://contraco.ru), [Korean](https://contraco.co.kr).
+
+## Pages
+
+<!-- AUTO-PAGES:START -->
+<!-- AUTO-PAGES:END -->
