@@ -36,6 +36,7 @@ contraco publishes across four domains: [English](https://contraco.net), [German
 - [Agentic Commerce Consulting](https://contraco.net/agentic-commerce-consulting.html)
 - [The Control Layer in Agentic Commerce](https://contraco.net/agentic-commerce-control-layer.html)
 - [The Delegation Chain: PSD2 and Agentic Payments](https://contraco.net/agentic-commerce-delegation-chain.html)
+- [Agentic Commerce Governance](https://contraco.net/agentic-commerce-governance.html)
 - [Agentic Commerce, Summer 2026: A Chronicle](https://contraco.net/agentic-commerce-summer-2026.html)
 - [The Agentic Commerce Window: Twelve Months](https://contraco.net/agentic-commerce-window.html)
 - [How AI Agents Dismantle Travel Distribution](https://contraco.net/agentic-travel-distribution.html)
