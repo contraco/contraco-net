@@ -265,6 +265,63 @@
                 "text": "By checking whether anyone can still reconstruct why a conclusion was reached. The risk AI introduces is not wrong answers, which organisations catch. It is fluent answers that nobody interrogates, accumulating into positions the organisation holds without knowing why it holds them. The practical discipline is unglamorous: require that any material conclusion carry its reasoning, its source and its author, and periodically test whether a decision made six months ago can still be explained by the people living with it."
             }
         }
+        ,
+        {
+            "@type": "Question",
+            "name": "How does consent driven commerce work in agentic payments?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Consent stops being a click at checkout and becomes a durable artefact issued before the purchase happens. The user authenticates once and signs a mandate stating what the agent may buy, from whom, up to what value and for how long. The agent then presents that mandate at authorisation instead of the user presenting a password. Everything hangs on how precisely the mandate was drawn, because it is the only place a human decision exists. A mandate naming a category and a ceiling has consented to considerably less than the transaction it will later be used to justify. The practical consequence is that consent becomes evidence you have to be able to produce afterwards, not a step you have to get past."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What role does user consent play in agentic payments?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It carries the whole of the attribution. Where no person confirms the specific transaction, consent given in advance is the only thing connecting the purchase to a human who can be held to it, so it does the work a signature used to do. Two things are routinely conflated. Consent to process data is a privacy question and is well understood. Consent to be bound by a purchase your software makes is a contractual one and is not. Most implementations collect the first and assume it covers the second. If a dispute ever tests that assumption, the question will not be whether the user agreed to your terms, but whether the user agreed to this purchase before it happened."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do agentic commerce platforms manage consent and authentication?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Through three separate things that are easy to confuse. Authentication proves who the human is, once, at the moment the mandate is granted. Agent identity proves which piece of software is acting, and the card networks and the emerging protocols now require an agent to be registered and verifiable before it can initiate anything. Consent is the signed mandate that binds the two together and states the limits. The Agent Payments Protocol and the Agentic Commerce Protocol converge on that shape, with a cryptographically signed mandate presented at authorisation and logged. What no protocol decides for you is how narrowly your own mandates are drawn, and that is where the exposure sits."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What is agent to agent authentication?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It is one piece of software proving to another that it is what it claims to be and that it acts for someone who authorised it. Human authentication answers a single question, whether the person is present. Agent to agent authentication has to answer three. Which agent is this, who does it act for, and what was it permitted to do. A merchant system receiving the request has no user in front of it and no session to trust, so it verifies a credential chain instead. This is why fragmented markets are slower than integrated ones. Where identity, payment and the merchant relationship sit with three different parties, that chain has to be established across all of them, for every transaction."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What are the compliance considerations for agentic payment implementation?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Four, and only one of them is about payments. First, attribution. For any given transaction, can you show which mandate authorised it and who granted that mandate. Second, evidence. Can you reproduce that record months later in a form a regulator or a court will accept, rather than in application logs that rotate. Third, exception handling. What your system does when a mandate is exceeded or has expired is a compliance decision and not an engineering default. Fourth, the one that gets missed. Somebody inside your organisation owns the configuration, the monitoring and the release of the agent, and where that person is not named the accountability sits nowhere. Regulation on autonomous purchasing is still forming, so what protects you today is the record."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do enterprises integrate agentic commerce protocols into existing payment infrastructure stacks?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Mostly as an authorisation layer above what they already run, rather than as a replacement for it. The protocols now in circulation sit at different heights in the stack and are not alternatives to one another. The Agentic Commerce Protocol addresses checkout and merchant integration, the Agent Payments Protocol addresses authorisation and consent, and x402 addresses machine to machine settlement. The card rails, the tokenisation and the settlement all stay. What is new is a signed mandate travelling with the transaction and an agent identity that has to be checked before authorisation. The integration work is therefore less about payments plumbing than about deciding which of your existing controls can read a mandate, and what happens to a transaction that arrives without one."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do agentic commerce frameworks handle payment exceptions?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Poorly so far, and this is where implementations break first. An exception is any transaction falling outside the mandate, being a price above the ceiling, a payee outside the permitted set, a mandate that has expired, or a good that turns out not to match the intent. The protocols specify what a valid transaction looks like and say much less about the invalid ones. Three answers are available and each is a business decision rather than a technical one. Fail the transaction and lose the sale. Escalate to the human and lose the automation. Or allow it inside a wider tolerance and carry the liability yourself. Deciding that in advance, per category and per value band, is the work, and it is why a cap is not an authorisation. Deciding it at the moment of the exception is how a dispute starts."
+            }
+        }
     ],
     "author": {
         "@type": "Person",
@@ -849,6 +906,54 @@
                         <h2 class="faq-question">Why is Asia further ahead of Europe on agentic payments?</h2>
                         <div class="faq-answer">
                             <p>Architecture, not technology. A market where identity, payment, messaging and merchant relationships already sit inside one platform can deploy an agent that acts end to end, because the trust relationships it needs are internal. Europe has none of that. Identity sits with one party, payment with another, the merchant relationship with a third, and the agent has to establish trust across all of them for every transaction. That fragmentation is not a defect to be engineered away, it is the market structure, and the European route runs through a protocol that makes fragmented parties <a href="https://agentic.contraco.net/west-vs-east.html">mutually verifiable</a> rather than through building a super-app that will not exist.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <h2 class="faq-question">How does consent driven commerce work in agentic payments?</h2>
+                        <div class="faq-answer">
+                            <p>Consent stops being a click at checkout and becomes a durable artefact issued before the purchase happens. The user authenticates once and signs a mandate stating what the agent may buy, from whom, up to what value and for how long. The agent then presents that mandate at authorisation instead of the user presenting a password. Everything hangs on how precisely the mandate was drawn, because it is the only place a human decision exists. A mandate naming a category and a ceiling has consented to considerably less than the transaction it will later be used to justify. The practical consequence is that consent becomes evidence you have to be able to produce afterwards, not a step you have to get past.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h2 class="faq-question">What role does user consent play in agentic payments?</h2>
+                        <div class="faq-answer">
+                            <p>It carries the whole of the attribution. Where no person confirms the specific transaction, consent given in advance is the only thing connecting the purchase to a human who can be held to it, so it does the work a signature used to do. Two things are routinely conflated. Consent to process data is a privacy question and is well understood. Consent to be bound by a purchase your software makes is a contractual one and is not. Most implementations collect the first and assume it covers the second. If a dispute ever tests that assumption, the question will not be whether the user agreed to your terms, but whether the user agreed to <a href="https://contraco.net/agentic-commerce-delegation-chain.html">this purchase</a> before it happened.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h2 class="faq-question">How do agentic commerce platforms manage consent and authentication?</h2>
+                        <div class="faq-answer">
+                            <p>Through three separate things that are easy to confuse. Authentication proves who the human is, once, at the moment the mandate is granted. Agent identity proves which piece of software is acting, and the card networks and the emerging protocols now require an agent to be registered and verifiable before it can initiate anything. Consent is the signed mandate that binds the two together and states the limits. The Agent Payments Protocol and the Agentic Commerce Protocol converge on that shape, with a cryptographically signed mandate presented at authorisation and <a href="https://agentic.contraco.net/how-agents-pay.html">logged</a>. What no protocol decides for you is how narrowly your own mandates are drawn, and that is where the exposure sits.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h2 class="faq-question">What is agent to agent authentication?</h2>
+                        <div class="faq-answer">
+                            <p>It is one piece of software proving to another that it is what it claims to be and that it acts for someone who authorised it. Human authentication answers a single question, whether the person is present. Agent to agent authentication has to answer three. Which agent is this, who does it act for, and what was it permitted to do. A merchant system receiving the request has no user in front of it and no session to trust, so it verifies a credential chain instead. This is why <a href="https://agentic.contraco.net/west-vs-east.html">fragmented markets are slower</a> than integrated ones. Where identity, payment and the merchant relationship sit with three different parties, that chain has to be established across all of them, for every transaction.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h2 class="faq-question">What are the compliance considerations for agentic payment implementation?</h2>
+                        <div class="faq-answer">
+                            <p>Four, and only one of them is about payments. First, attribution. For any given transaction, can you show which mandate authorised it and who granted that mandate. Second, evidence. Can you reproduce that record months later in a form a regulator or a court will accept, rather than in application logs that rotate. Third, exception handling. What your system does when a mandate is exceeded or has expired is a compliance decision and not an engineering default. Fourth, the one that gets missed. Somebody inside your organisation owns the configuration, the monitoring and the release of the agent, and where that person is not named the accountability sits nowhere. Regulation on autonomous purchasing is still forming, so what protects you today is <a href="https://contraco.net/who-audits-the-ai-agent.html">the record</a>.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h2 class="faq-question">How do enterprises integrate agentic commerce protocols into existing payment infrastructure stacks?</h2>
+                        <div class="faq-answer">
+                            <p>Mostly as an authorisation layer above what they already run, rather than as a replacement for it. The protocols now in circulation sit at different heights in the stack and are not alternatives to one another. The Agentic Commerce Protocol addresses checkout and merchant integration, the Agent Payments Protocol addresses authorisation and consent, and x402 addresses machine to machine settlement. The card rails, the tokenisation and the settlement all stay. What is new is a signed mandate travelling with the transaction and an agent identity that has to be checked before authorisation. The integration work is therefore less about payments plumbing than about deciding which of your existing controls can read a mandate, and what happens to a transaction that <a href="https://contraco.net/agentic-commerce-control-layer.html">arrives without one</a>.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h2 class="faq-question">How do agentic commerce frameworks handle payment exceptions?</h2>
+                        <div class="faq-answer">
+                            <p>Poorly so far, and this is where implementations break first. An exception is any transaction falling outside the mandate, being a price above the ceiling, a payee outside the permitted set, a mandate that has expired, or a good that turns out not to match the intent. The protocols specify what a valid transaction looks like and say much less about the invalid ones. Three answers are available and each is a business decision rather than a technical one. Fail the transaction and lose the sale. Escalate to the human and lose the automation. Or allow it inside a wider tolerance and carry the liability yourself. Deciding that in advance, per category and per value band, is the work, and it is why <a href="https://agentic.contraco.net/price-cap-not-an-amount.html">a cap is not an authorisation</a>. Deciding it at the moment of the exception is how a dispute starts.</p>
                         </div>
                     </div>
                 </div>
