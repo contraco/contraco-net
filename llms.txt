@@ -44,6 +44,7 @@ contraco publishes across four domains: [English](https://contraco.net), [German
 - [When AI Agents Replace the Travel Portal](https://contraco.net/ai-agents-travel-booking.html)
 - [AI Does Not Replace Thinking](https://contraco.net/ai-cognition-essay.html)
 - [AI Strategy Framework: Pilot to Enterprise](https://contraco.net/ai-strategy-framework.html)
+- [Autonomous Payments](https://contraco.net/autonomous-payments.html)
 - [Trust Is the Bottleneck, and Banks Own It](https://contraco.net/banks-agentic-commerce-trust.html)
 - [How to Choose the Best AI Consulting Firm](https://contraco.net/best-ai-consulting-firm.html)
 - [CFO's Guide to Digital Transformation ROI](https://contraco.net/cfo-digital-transformation-roi.html)
