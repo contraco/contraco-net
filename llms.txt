@@ -37,6 +37,7 @@ contraco publishes across four domains: [English](https://contraco.net), [German
 - [The Control Layer in Agentic Commerce](https://contraco.net/agentic-commerce-control-layer.html)
 - [The Delegation Chain: PSD2 and Agentic Payments](https://contraco.net/agentic-commerce-delegation-chain.html)
 - [Agentic Commerce Governance](https://contraco.net/agentic-commerce-governance.html)
+- [ACP, AP2 and x402 Compared](https://contraco.net/agentic-commerce-protocols-compared.html)
 - [Agentic Commerce, Summer 2026: A Chronicle](https://contraco.net/agentic-commerce-summer-2026.html)
 - [The Agentic Commerce Window: Twelve Months](https://contraco.net/agentic-commerce-window.html)
 - [How AI Agents Dismantle Travel Distribution](https://contraco.net/agentic-travel-distribution.html)
@@ -44,6 +45,7 @@ contraco publishes across four domains: [English](https://contraco.net), [German
 - [When AI Agents Replace the Travel Portal](https://contraco.net/ai-agents-travel-booking.html)
 - [AI Does Not Replace Thinking](https://contraco.net/ai-cognition-essay.html)
 - [AI Strategy Framework: Pilot to Enterprise](https://contraco.net/ai-strategy-framework.html)
+- [AP2 Mandate Explained](https://contraco.net/ap2-mandate-explained.html)
 - [Autonomous Payments](https://contraco.net/autonomous-payments.html)
 - [Trust Is the Bottleneck, and Banks Own It](https://contraco.net/banks-agentic-commerce-trust.html)
 - [How to Choose the Best AI Consulting Firm](https://contraco.net/best-ai-consulting-firm.html)
@@ -73,5 +75,5 @@ contraco publishes across four domains: [English](https://contraco.net), [German
 - [The Resonance Method™](https://contraco.net/resonance-method.html)
 - [Strategic Intelligence for AI Transformation](https://contraco.net/strategic-intelligence.html)
 - [Vendor Selection Mastery](https://contraco.net/vendor-selection-mastery.html)
-- [Who Is Liable When an AI Agent Buys?](https://contraco.net/who-audits-the-ai-agent.html)
+- [Agentic Commerce Liability](https://contraco.net/who-audits-the-ai-agent.html)
 <!-- AUTO-PAGES:END -->
