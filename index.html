@@ -1148,7 +1148,7 @@
                     Digital Transformation Veterans since 1998<br>
                     "Give 51% value, take 49% return"</em></p>
                 </div>
-                <form class="contact-form" action="mailto:transformation@contraco.net" method="POST" enctype="text/plain">
+                <form class="contact-form" id="contact-form">
                     <!-- FormSubmit configuration -->
                     <input type="hidden" name="_subject" value="New Transformation Consultation Request">
                     <input type="hidden" name="_captcha" value="true">
@@ -1300,5 +1300,32 @@
 </script>
 <script data-goatcounter="https://contraco.goatcounter.com/count"
         async src="https://gc.zgo.at/count.js"></script>
+<script>
+(function () {
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var honey = form.querySelector('[name="_honey"]');
+        if (honey && honey.value) return;
+        var parts = [];
+        var fields = form.querySelectorAll('input[name], textarea[name], select[name]');
+        for (var i = 0; i < fields.length; i++) {
+            var f = fields[i];
+            if (f.name.charAt(0) === '_') continue;
+            if (f.type === 'submit' || f.type === 'button') continue;
+            if (!f.value) continue;
+            var label = form.querySelector('label[for="' + f.id + '"]');
+            var name = label ? label.textContent.replace('*', '').trim() : f.name;
+            parts.push(name + ': ' + f.value);
+        }
+        var body = parts.join('\n\n');
+        if (body.length > 1500) body = body.slice(0, 1500) + '\n\n[message truncated]';
+        window.location.href = 'mailto:transformation@contraco.net'
+            + '?subject=' + encodeURIComponent('New enquiry from contraco.net')
+            + '&body=' + encodeURIComponent(body);
+    });
+})();
+</script>
 </body>
 </html>
