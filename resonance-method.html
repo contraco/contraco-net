@@ -1300,7 +1300,8 @@
             if (f.type === 'submit' || f.type === 'button') continue;
             if (!f.value) continue;
             var label = form.querySelector('label[for="' + f.id + '"]');
-            var name = label ? label.textContent.replace('*', '').trim() : f.name;
+            var ph = f.getAttribute('placeholder');
+            var name = label ? label.textContent.replace('*', '').trim() : (ph && ph.length <= 30 ? ph : f.name);
             parts.push(name + ': ' + f.value);
         }
         var body = parts.join('\n\n');
