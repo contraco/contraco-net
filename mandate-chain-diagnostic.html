@@ -1214,7 +1214,9 @@
         observer: {
             name: 'Observer',
             headline: 'Nothing is delegated yet, so there is nothing to govern.',
-            body: 'You are not planning to let an agent commit to anything on your behalf. That is a legitimate position and it makes the rest of this diagnostic moot. The question worth holding is which of the five links you would need first if that changed, and on your answers it is [link].'
+            body: 'You are not planning to let an agent commit to anything on your behalf. That is a legitimate position and it makes the rest of this diagnostic moot. The question worth holding is which of the five links you would need first if that changed, and on your answers it is [link].',
+            bodyTied: 'You are not planning to let an agent commit to anything on your behalf. That is a legitimate position and it makes the rest of this diagnostic moot. The question worth holding is which of the five links you would need first if that changed, and on your answers it is [first], because definition and enforcement come before the rest of the chain.',
+            bodyNoWeak: 'You are not planning to let an agent commit to anything on your behalf. That is a legitimate position and it makes the rest of this diagnostic moot. You already have the chain you would need. Nothing has to be built before you delegate, so the decision is only whether to.'
         },
         beyond: {
             name: 'Beyond Chain',
@@ -1320,10 +1322,16 @@
         var key = chooseResult(T, C, S, G, a);
         var r = RESULTS[key];
 
-        var template = (C === 3 && r.bodyNoWeak) ? r.bodyNoWeak : r.body;
+        var template = r.body;
+        if (C === 3 && r.bodyNoWeak) {
+            template = r.bodyNoWeak;
+        } else if (weakest.length > 1 && r.bodyTied) {
+            template = r.bodyTied;
+        }
 
         var body = template
             .replace(/\[link\]/g, esc(joinNames(weakestNames)))
+            .replace(/\[first\]/g, esc(LINKS[weakest[0]].name))
             .replace(/\[target\]/g, esc(TARGET_PHRASE[T] || ''))
             .replace(/\[chain\]/g, 'level ' + S)
             .replace(/\[n\]/g, String(G));
