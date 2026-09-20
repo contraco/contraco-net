@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mandate Chain Diagnostic | Frank Meltke | contraco</title>
+
+    <link rel="canonical" href="https://contraco.net/mandate-chain-diagnostic.html">
+    <link rel="entity-manifest" href="https://contraco.net/.well-known/entity-manifest.json">
+    <link rel="jwks" href="https://contraco.net/.well-known/jwks.json">
+
+    <!-- International SEO hreflang -->
+    <link rel="alternate" href="https://contraco.com/" hreflang="x-default" />
+    <link rel="alternate" href="https://contraco.net/mandate-chain-diagnostic.html" hreflang="en" />
+
+    <!-- Fonts -->
+    <style>
+@font-face { font-family: 'Crimson Text'; font-style: normal; font-weight: 400; src: url('/fonts/crimson-text-v21-latin-regular.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Crimson Text'; font-style: normal; font-weight: 600; src: url('/fonts/crimson-text-v21-latin-600.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Crimson Text'; font-style: italic; font-weight: 400; src: url('/fonts/crimson-text-v21-latin-italic.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 300; src: url('/fonts/lato-v24-latin-300.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 400; src: url('/fonts/lato-v24-latin-regular.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Lato'; font-style: italic; font-weight: 400; src: url('/fonts/lato-v24-latin-italic.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 500; src: url('/fonts/lato-v24-latin-regular.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 600; src: url('/fonts/lato-v24-latin-700.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 700; src: url('/fonts/lato-v24-latin-700.woff2') format('woff2'); font-display: swap; }
+</style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#C00000">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#C00000">
+
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Seven questions on what you intend to delegate to an AI agent and whether the mandate behind it would hold. The result is the distance between the two.">
+    <meta name="keywords" content="mandate chain, agentic commerce governance, AI agent mandate, delegation diagnostic, autonomous purchasing controls, contraco">
+    <meta name="author" content="contraco">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://contraco.net/mandate-chain-diagnostic.html">
+    <meta property="og:title" content="The Mandate Chain Diagnostic | Frank Meltke | contraco">
+    <meta property="og:description" content="Seven questions on what you intend to delegate to an AI agent and whether the mandate behind it would hold. The result is the distance between the two.">
+    <meta property="og:logo" content="https://contraco.net/Logo_rectangle.svg">
+    <meta property="og:image" content="https://contraco.net/contraco_4K.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="contraco - Agentic Commerce Consulting">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Mandate Chain Diagnostic | Frank Meltke | contraco">
+    <meta name="twitter:description" content="Seven questions on what you intend to delegate to an AI agent and whether the mandate behind it would hold. The result is the distance between the two.">
+    <meta name="twitter:image" content="https://contraco.net/contraco_4K.png">
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebPage",
+            "url": "https://contraco.net/mandate-chain-diagnostic.html",
+            "name": "The Mandate Chain Diagnostic | Frank Meltke | contraco",
+            "description": "Seven questions on what you intend to delegate to an AI agent and whether the mandate behind it would hold. The result is the distance between the two.",
+            "inLanguage": "en",
+            "datePublished": "2026-09-20",
+            "dateModified": "2026-09-20",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://contraco.net/#website",
+                "name": "contraco",
+                "url": "https://contraco.net/"
+            },
+            "publisher": { "@type": "Organization", "name": "contraco", "url": "https://contraco.net/" },
+            "author": { "@type": "Person", "@id": "https://meltke.com/#person", "name": "Frank Meltke", "url": "https://meltke.com" }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "contraco", "item": "https://contraco.net/" },
+                { "@type": "ListItem", "position": 2, "name": "Insights", "item": "https://contraco.net/insights.html" },
+                { "@type": "ListItem", "position": 3, "name": "The Mandate Chain Diagnostic", "item": "https://contraco.net/mandate-chain-diagnostic.html" }
+            ]
+        }
+    ]
+}
+</script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-red: #C00000;
+            --deep-charcoal: #404040;
+            --warm-white: #F8F6F3;
+            --warm-gray-light: #E5E2DD;
+            --warm-gray-medium: #A8A5A0;
+            --warm-gray-dark: #6B6B6B;
+            --container-max: 1200px;
+            --font-serif: 'Crimson Text', Georgia, serif;
+            --font-sans: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --section-padding: 100px 0;
+            --transition-fast: all 0.3s ease;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            color: var(--deep-charcoal);
+            background-color: var(--warm-white);
+        }
+
+        .container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(248, 246, 243, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 12px 0;
+            transition: var(--transition-fast);
+        }
+
+        .nav-container {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .logo {
+            margin-left: 60px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 58px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover img {
+            transform: scale(1.05);
+        }
+
+        .logo-fallback {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-red);
+            letter-spacing: -0.02em;
+            font-family: var(--font-serif);
+            transition: var(--transition-fast);
+            display: none;
+        }
+
+        .logo:hover .logo-fallback {
+            transform: scale(1.05);
+        }
+
+        .logo.logo-failed img {
+            display: none;
+        }
+
+        .logo.logo-failed .logo-fallback {
+            display: block;
+        }
+
+        .nav-menu {
+            margin-right: 60px;
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--deep-charcoal);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-red);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--primary-red);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+/* Language Switcher */
+        .language-switcher {
+            display: flex;
+            gap: 8px;
+            margin-left: 20px;
+        }
+
+        .lang-link {
+            text-decoration: none;
+            color: var(--warm-gray-medium);
+            font-weight: 500;
+            font-size: 0.85rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .lang-link:hover {
+            color: var(--primary-red);
+            background-color: var(--warm-white);
+        }
+
+        .lang-link.active {
+            color: var(--primary-red);
+            background-color: var(--warm-white);
+            font-weight: 600;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding-top: 100px;
+            min-height: 100vh;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--warm-white) 0%, var(--warm-gray-light) 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent 40%, rgba(234, 68, 37, 0.02) 50%, transparent 60%);
+            animation: shimmer 8s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { transform: translateX(-100%) rotate(45deg); opacity: 0; }
+            50% { transform: translateX(0) rotate(45deg); opacity: 1; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+    font-family: var(--font-sans); /* Use Inter instead of Crimson Text */
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: var(--deep-charcoal);
+}
+
+        .highlight {
+            color: var(--primary-red);
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--warm-gray-dark);
+            margin-bottom: 50px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Content Sections */
+        .content-section {
+            padding: var(--section-padding);
+        }
+
+        .content-section.white {
+            background: white;
+        }
+
+        .content-section.gray {
+            background: var(--warm-gray-light);
+        }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 60px;
+            color: var(--deep-charcoal);
+        }
+
+        .section-intro {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--warm-gray-dark);
+            margin-bottom: 50px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+
+        /* Three Pillars Section */
+
+        .cta-section {
+            background: var(--deep-charcoal);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .cta-title {
+            font-family: var(--font-serif);
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .cta-description {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--primary-red);
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transition-fast);
+            box-shadow: 0 8px 25px rgba(234, 68, 37, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(234, 68, 37, 0.3);
+            background: #D63E20;
+            color: white;
+            text-decoration: none;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .cta-button-outline {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .cta-button-outline:hover {
+            background: white;
+            color: var(--deep-charcoal);
+        }
+
+        /* Contact Form Section */
+
+        .footer {
+            background: #1a1a1a;
+            color: var(--warm-gray-light);
+            padding: 50px 0 35px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 50px;
+            align-items: start;
+            margin-bottom: 32px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+
+        .footer-links a {
+            color: var(--warm-gray-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-red);
+        }
+
+        .footer-privacy-links {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .footer-privacy-links a {
+            color: var(--warm-gray-medium);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-privacy-links a:hover {
+            color: var(--primary-red);
+        }
+
+        .company-info h4 {
+            color: var(--primary-red);
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            font-family: var(--font-serif);
+        }
+
+        .company-info p {
+            margin-bottom: 8px;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .company-info strong {
+            color: var(--warm-gray-light);
+        }
+
+        .imprint-section h4 {
+            color: var(--primary-red);
+            font-size: 1rem;
+            margin-bottom: 12px;
+            font-family: var(--font-serif);
+        }
+
+        .imprint-details {
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .imprint-details p {
+            margin-bottom: 6px;
+        }
+
+        .imprint-details strong {
+            color: var(--warm-gray-light);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 25px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        .trademark-notice {
+            margin-top: 8px;
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        /* Responsive Design */
+
+        /* Diagnostic */
+        .dx {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        .dx-note {
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
+            color: var(--warm-gray-dark);
+            border-left: 3px solid var(--warm-gray-light);
+            padding: 12px 0 12px 18px;
+            margin-bottom: 40px;
+        }
+
+        .dx-progress {
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--primary-red);
+            margin-bottom: 28px;
+            min-height: 1.4em;
+        }
+
+        .dx-q {
+            background: var(--warm-white);
+            border: 1px solid var(--warm-gray-light);
+            border-radius: 8px;
+            padding: 28px;
+            margin-bottom: 20px;
+        }
+
+        .dx-q[data-answered="true"] {
+            border-color: var(--warm-gray-medium);
+        }
+
+        .dx-q::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .dx-q legend {
+            float: left;
+            width: 100%;
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--deep-charcoal);
+            line-height: 1.4;
+            padding: 0;
+            margin-bottom: 6px;
+        }
+
+        .dx-q .dx-qnum {
+            display: block;
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--warm-gray-dark);
+            margin-bottom: 8px;
+        }
+
+        .dx-hint {
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            color: var(--warm-gray-dark);
+            margin: 10px 0 18px;
+        }
+
+        .dx-opt {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            line-height: 1.55;
+            color: var(--deep-charcoal);
+            padding: 12px 14px;
+            margin: 0 0 8px;
+            border: 1px solid transparent;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: var(--transition-fast);
+        }
+
+        .dx-opt:hover {
+            background: var(--warm-gray-light);
+        }
+
+        .dx-opt input {
+            margin: 4px 0 0;
+            flex-shrink: 0;
+            accent-color: var(--primary-red);
+            width: 18px;
+            height: 18px;
+        }
+
+        .dx-opt input:focus-visible {
+            outline: 3px solid var(--primary-red);
+            outline-offset: 3px;
+        }
+
+        .dx-opt:has(input:checked) {
+            background: var(--warm-gray-light);
+            border-color: var(--primary-red);
+        }
+
+        .dx-controls {
+            margin: 28px 0 0;
+        }
+
+        .dx-restart {
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--primary-red);
+            background: none;
+            border: 1px solid var(--primary-red);
+            border-radius: 4px;
+            padding: 10px 22px;
+            cursor: pointer;
+            transition: var(--transition-fast);
+        }
+
+        .dx-restart:hover {
+            background: var(--primary-red);
+            color: white;
+        }
+
+        .dx-result {
+            margin-top: 40px;
+        }
+
+        .dx-result:empty {
+            margin-top: 0;
+        }
+
+        .dx-card {
+            background: white;
+            border-top: 4px solid var(--primary-red);
+            border-radius: 0 0 8px 8px;
+            padding: 36px 32px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+        }
+
+        .dx-label {
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--warm-gray-dark);
+            margin-bottom: 10px;
+        }
+
+        .dx-name {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--primary-red);
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .dx-headline {
+            font-family: var(--font-serif);
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: var(--deep-charcoal);
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+
+        .dx-body {
+            font-family: var(--font-sans);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--deep-charcoal);
+            margin-bottom: 32px;
+        }
+
+        .dx-sub {
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--warm-gray-dark);
+            margin: 28px 0 14px;
+        }
+
+        .dx-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dx-links li {
+            display: flex;
+            align-items: baseline;
+            gap: 14px;
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--deep-charcoal);
+            padding: 10px 0;
+            border-bottom: 1px solid var(--warm-gray-light);
+        }
+
+        .dx-links li:last-child {
+            border-bottom: none;
+        }
+
+        .dx-links .dx-score {
+            font-weight: 700;
+            color: var(--primary-red);
+            flex-shrink: 0;
+            min-width: 2.2em;
+        }
+
+        .dx-links li.dx-weakest .dx-linkname {
+            font-weight: 700;
+        }
+
+        .dx-links .dx-tag {
+            font-size: 0.85rem;
+            color: var(--warm-gray-dark);
+        }
+
+        .dx-next {
+            counter-reset: dxstep;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dx-next li {
+            counter-increment: dxstep;
+            position: relative;
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--deep-charcoal);
+            padding: 0 0 14px 34px;
+        }
+
+        .dx-next li::before {
+            content: counter(dxstep);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: var(--primary-red);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            line-height: 22px;
+            text-align: center;
+        }
+
+        .dx-gap {
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            color: var(--deep-charcoal);
+            background: var(--warm-white);
+            border-radius: 6px;
+            padding: 16px 18px;
+            margin-top: 28px;
+        }
+
+        .dx-gap strong {
+            color: var(--primary-red);
+        }
+
+        .body-text {
+            font-family: var(--font-sans);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--deep-charcoal);
+            max-width: 780px;
+            margin: 0 auto 24px;
+        }
+
+        .body-text a {
+            color: var(--primary-red);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(192, 0, 0, 0.3);
+            transition: var(--transition-fast);
+        }
+
+        .body-text a:hover {
+            border-bottom-color: var(--primary-red);
+        }
+
+        @media (max-width: 768px) {
+            .container,
+            .nav-container {
+                padding: 0 20px;
+            }
+
+            .logo {
+                margin-left: 20px;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+            }
+
+            .footer-links {
+                justify-content: center;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .dx-q {
+                padding: 22px 18px;
+            }
+
+            .dx-card {
+                padding: 28px 20px;
+            }
+
+            .dx-name {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .dx-q legend {
+                font-size: 1.15rem;
+            }
+
+            .dx-opt {
+                padding: 12px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="https://contraco.net/" class="logo" id="site-logo">
+            <img src="https://contraco.net/Logo_rectangle.svg" alt="contraco" onerror="this.parentElement.classList.add('logo-failed');">
+            <span class="logo-fallback">contraco</span>
+        </a>
+        <div style="display: flex; align-items: center;">
+            <ul class="nav-menu">
+                <li><a href="https://contraco.net/" class="nav-link">Home</a></li>
+                <li><a href="https://contraco.net/#services" class="nav-link">Services</a></li>
+                <li><a href="https://contraco.net/#methodology" class="nav-link">Methodology</a></li>
+                <li><a href="https://contraco.net/insights.html" class="nav-link active">Insights</a></li>
+                <li><a href="https://contraco.net/about.html" class="nav-link">About</a></li>
+                <li><a href="https://contraco.net/press.html" class="nav-link">Press</a></li>
+                <li><a href="https://contraco.net/#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="language-switcher">
+                <a href="https://contraco.net/mandate-chain-diagnostic.html" class="lang-link active">EN</a>
+                <a href="https://contraco.com/" class="lang-link">DE</a>
+                <a href="https://contraco.com/" class="lang-link">RU</a>
+                <a href="https://contraco.com/" class="lang-link">KO</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">The <span class="highlight">Mandate Chain</span> Diagnostic</h1>
+                    <p class="hero-subtitle">Seven questions on what you intend to delegate to an AI agent, and whether the mandate behind it would hold. The result is the distance between the two.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- What this measures -->
+        <section class="content-section white">
+            <div class="container">
+                <h2 class="section-title">What this measures</h2>
+                <p class="body-text">Most agentic commerce readiness is assessed as a single score, which hides the thing that actually decides exposure. Delegation and control are two separate quantities, and what matters is the distance between them. An organisation planning very little and governing nothing is in a different position from one planning a great deal and governing nothing, even though both would score zero on control.</p>
+                <p class="body-text">The first two questions establish what you intend to delegate. The next five establish whether the chain that would make those purchases attributable is in place. A chain is only as strong as its weakest link, so the chain score is the minimum of the five rather than the average. An organisation with four perfect links and one absent one has an absent chain.</p>
+                <p class="body-text">The five links are definition, enforcement, reconstruction, exception ownership and revocation. They run in that order because each one depends on the one before it. There is no point enforcing a limit nobody has written down, and no point owning an exception you cannot reconstruct.</p>
+                <p class="dx-note">Nothing you enter leaves your browser. There is no form, no submission, no cookie and no storage. The result is calculated on this page and disappears when you close the tab.</p>
+            </div>
+        </section>
+
+        <!-- The diagnostic -->
+        <section class="content-section gray">
+            <div class="container">
+                <h2 class="section-title">The diagnostic</h2>
+                <div class="dx">
+                    <p class="dx-progress" id="dx-progress" role="status" aria-live="polite">Question 1 of 7</p>
+
+                    <div id="dx-questions"></div>
+
+                    <div class="dx-controls">
+                        <button type="button" class="dx-restart" id="dx-restart">Restart the diagnostic</button>
+                    </div>
+
+                    <div class="dx-result" id="dx-result" role="region" aria-live="polite" aria-label="Diagnostic result"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Where the links come from -->
+        <section class="content-section white">
+            <div class="container">
+                <h2 class="section-title">Where the five links come from</h2>
+                <p class="body-text">The chain is drawn from the argument set out across the agentic commerce work on this site. Definition and enforcement come from <a href="https://contraco.net/agentic-commerce-control-layer.html">the control layer</a>, which is the layer above payment where what an agent may consider and may commit is actually decided. Reconstruction and exception ownership come from <a href="https://contraco.net/who-audits-the-ai-agent.html">the liability question</a>, where a purchase that cannot be traced to an authorisation has nothing to attribute it to.</p>
+                <p class="body-text">The levels of delegation in the first two questions follow <a href="https://contraco.net/framework-agentic-commerce.html">the six level framework</a>. The governance framing that holds all of it together is set out in <a href="https://contraco.net/agentic-commerce-governance.html">agentic commerce governance</a>, and the questions buyers actually ask are answered directly in <a href="https://contraco.net/faq.html">the FAQ</a>.</p>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="cta-title">Discuss the result</h2>
+                <p class="cta-description">A diagnostic names the gap. Closing it is a set of decisions about scope, exceptions and accountability that are cheaper to make before the first agent transacts than after the first dispute.</p>
+                <a href="https://contraco.net/#contact" class="cta-button">Contact contraco</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="company-info">
+                    <div class="footer-links">
+                        <a href="https://contraco.net/">Home</a>
+                        <a href="https://contraco.net/about.html">About Us</a>
+                        <a href="https://contraco.net/#services">Services</a>
+                        <a href="https://contraco.net/#methodology">Methodology</a>
+                        <a href="https://contraco.net/insights.html">Insights</a>
+                        <a href="https://contraco.net/#contact">Contact</a>
+                        <a href="https://contraco.net/press.html">Press</a>
+                    </div>
+                    <h4>contraco USA</h4>
+                    <p>Premium transformation consulting combining strategic clarity, technological intelligence, and psychological depth.</p>
+                    <p><strong>Email:</strong> transformation@contraco.net</p>
+                    <p><strong>Phone:</strong> +1 (312) 940-0326</p>
+                </div>
+                <div class="imprint-section">
+                    <h4>Company Information</h4>
+                    <div class="imprint-details">
+                        <p><strong>contraco</strong></p>
+                        <p>1209 10th Ln.</p>
+                        <p>Ava, MO 65608</p>
+                        <p>United States</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-privacy-links">
+                    <a href="/privacy-statement.html">Privacy Statement</a> • <a href="https://www.linkedin.com/company/contraco" rel="noopener">LinkedIn</a> • <a href="https://www.linkedin.com/in/frankmeltke" rel="noopener">Frank Meltke on LinkedIn</a> • <a href="https://meltke.com" rel="noopener">Frank Meltke</a>
+                </div>
+                <p>&copy; 2026 contraco. All rights reserved.</p>
+                <p class="trademark-notice">The Resonance Method™ is a trademark of contraco.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Enhanced logo fallback with retry mechanism
+        (function() {
+            const logo = document.getElementById('site-logo');
+            const img = logo.querySelector('img');
+            let retryCount = 0;
+            const maxRetries = 2;
+
+            function retryLoadLogo() {
+                retryCount++;
+                if (retryCount <= maxRetries) {
+                    img.src = img.src + '?retry=' + retryCount;
+                } else {
+                    logo.classList.add('logo-failed');
+                }
+            }
+
+            img.addEventListener('error', retryLoadLogo);
+            
+            img.addEventListener('load', function() {
+                logo.classList.remove('logo-failed');
+            });
+        })();
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(248, 246, 243, 0.98)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.background = 'rgba(248, 246, 243, 0.95)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script>
+  window.goatcounter = { path: function(p) { return location.host + p } }
+</script>
+<script data-goatcounter="https://contraco.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
+<script>
+(function () {
+    'use strict';
+
+    var QUESTIONS = [
+        {
+            id: 'q1',
+            legend: 'Within the next 24 months, what do you intend an AI agent to do in your purchasing?',
+            options: [
+                { v: 1, t: 'Find and compare options, a person decides and buys.' },
+                { v: 2, t: 'Prepare the transaction, a person approves each one before it executes.' },
+                { v: 3, t: 'Complete transactions on its own within limits a person set in advance.' },
+                { v: 4, t: 'Complete transactions across suppliers and systems, including ones not individually pre-approved.' },
+                { v: 5, t: 'Operate against an objective we set, choosing for itself what to buy and from whom.' }
+            ]
+        },
+        {
+            id: 'q2',
+            legend: 'What is the largest single commitment an agent would be allowed to complete without a person seeing it first?',
+            options: [
+                { v: 2, t: 'None, a person sees everything.' },
+                { v: 3, t: 'Small recurring items only.' },
+                { v: 3, t: 'Anything inside a defined category up to a ceiling.' },
+                { v: 4, t: 'Anything inside the budget it is given.' }
+            ]
+        },
+        {
+            id: 'q3',
+            legend: 'Mandate definition. Where is it written what an agent may buy, from whom, and up to what?',
+            hint: 'The boundary between the third and fourth answer is who reads it, a person or the system. Storage format is irrelevant.',
+            options: [
+                { v: 0, t: 'Nowhere. Nothing states it.' },
+                { v: 1, t: 'In general terms, inside a policy, contract or terms of use that also cover other things.' },
+                { v: 2, t: 'In a dedicated written mandate per agent or use case, read by people. Any format, including a document, a policy record or a signed file.' },
+                { v: 3, t: 'In a configuration the system itself reads at transaction time.' }
+            ]
+        },
+        {
+            id: 'q4',
+            legend: 'Enforcement. What happens when a purchase falls outside those limits?',
+            options: [
+                { v: 0, t: 'Nothing prevents it.' },
+                { v: 1, t: 'It is flagged afterwards.' },
+                { v: 2, t: 'It is blocked for some categories.' },
+                { v: 3, t: 'It cannot execute. The limit is applied at the moment of the transaction.' }
+            ]
+        },
+        {
+            id: 'q5',
+            legend: 'Reconstruction. Take last month\'s largest agent-assisted purchase. How long to show which authorisation permitted it?',
+            options: [
+                { v: 0, t: 'It cannot be shown.' },
+                { v: 1, t: 'Days, by reconstructing from several systems.' },
+                { v: 2, t: 'Hours, from one system.' },
+                { v: 3, t: 'Immediately. The transaction carries its authorisation.' }
+            ]
+        },
+        {
+            id: 'q6',
+            legend: 'Exception ownership. An agent commits to something outside its limits. Who owns the consequence?',
+            options: [
+                { v: 0, t: 'It would be decided during the dispute.' },
+                { v: 1, t: 'It escalates to whoever notices.' },
+                { v: 2, t: 'A named role owns it by policy.' },
+                { v: 3, t: 'A named role owns it and the escalation path has been tested.' }
+            ]
+        },
+        {
+            id: 'q7',
+            legend: 'Revocation. A mandate must be narrowed today. How long until it takes effect?',
+            options: [
+                { v: 0, t: 'Unclear how it would be done.' },
+                { v: 1, t: 'Weeks, changed by hand across systems.' },
+                { v: 2, t: 'Days, through a defined change process.' },
+                { v: 3, t: 'Immediate, in one place, effective on the next transaction.' }
+            ]
+        }
+    ];
+
+    var LINKS = [
+        { key: 'q3', name: 'Definition', line: 'Nothing states what your agents may buy, so there is no limit to enforce or to point to later.' },
+        { key: 'q4', name: 'Enforcement', line: 'Your limits exist and are not applied at the moment of purchase.' },
+        { key: 'q5', name: 'Reconstruction', line: 'Transactions cannot be traced back to what permitted them.' },
+        { key: 'q6', name: 'Exception ownership', line: 'No one owns the outcome before it happens, so ownership gets decided under pressure.' },
+        { key: 'q7', name: 'Revocation', line: 'Narrowing a mandate takes longer than the exposure it is meant to stop.' }
+    ];
+
+    var TARGET_PHRASE = {
+        1: 'find and compare options while a person decides and buys',
+        2: 'prepare transactions for a person to approve before they execute',
+        3: 'complete transactions on their own within limits set in advance',
+        4: 'complete transactions across suppliers and systems, including ones not individually pre-approved'
+    };
+
+    var RESULTS = {
+        governed: {
+            name: 'Governed',
+            headline: 'Your mandate chain supports what you intend to delegate.',
+            body: 'The level of autonomy you are planning is matched by the controls that would have to carry it. That is uncommon, and it means your next constraint is commercial rather than one of governance. Your weakest link is [link]. It holds at your current target and it is the first thing to break if you go one step further.'
+        },
+        exposed: {
+            name: 'Exposed',
+            headline: 'Your plan runs one step ahead of your mandate chain.',
+            body: 'You intend agents to [target]. The chain that would make those purchases attributable stands at [chain], set by [link]. One step is recoverable and usually a matter of months. Close [link] before the first agent transacts rather than after, because the first disputed purchase is a poor place to discover the gap.'
+        },
+        unbacked: {
+            name: 'Unbacked',
+            headline: 'What you plan to delegate could not be reconstructed or defended.',
+            body: 'You intend agents to [target], and the chain sits at [chain] because of [link]. At that distance the question is not whether something goes wrong but what you would be able to show when it does. Purchases made under this configuration cannot be traced to an authorisation, which means the commitment gets disputed on its facts rather than on its terms. The gap is [n] levels, and it does not close in the order you might expect. Definition and enforcement come before autonomy, not after.'
+        },
+        ready: {
+            name: 'Ready',
+            headline: 'You have more governance than you are using.',
+            body: 'Your mandate chain would support a higher level of delegation than you plan. That is not a defect, and it does mean the thing holding back automation sits elsewhere, usually supplier readiness, systems, or internal confidence rather than control. Worth knowing before investing further in governance you already have.'
+        },
+        unenforced: {
+            name: 'Unenforced Mandate',
+            headline: 'Your mandate is defined and not enforced.',
+            body: 'You have recorded what agents may buy, and nothing stops a purchase outside that. This is the worst of the profiles, and not because the exposure is largest. It is because the expectation is documented. A limit that your own record shows should have applied, and that the system did not apply, is harder to defend than no limit at all. Enforcement at the moment of the transaction closes it. Nothing upstream of that does.'
+        },
+        unprovable: {
+            name: 'Unprovable',
+            headline: 'You cannot show what was authorised.',
+            body: 'At the level of delegation you are planning, attribution runs through the configuration set in advance. If a transaction cannot be traced back to the authorisation that permitted it, there is nothing to attribute it to. Every other link matters less than this one, because each of them is proven by the same record. Start here.'
+        },
+        observer: {
+            name: 'Observer',
+            headline: 'Nothing is delegated yet, so there is nothing to govern.',
+            body: 'You are not planning to let an agent commit to anything on your behalf. That is a legitimate position and it makes the rest of this diagnostic moot. The question worth holding is which of the five links you would need first if that changed, and on your answers it is [link].'
+        },
+        beyond: {
+            name: 'Beyond Chain',
+            headline: 'No mandate chain in current practice supports what you describe.',
+            body: 'An agent operating against an objective it interprets for itself is not governed by a list of permissions set in advance, because there is no specific transaction to permit. The instrument stops here deliberately rather than inventing a rung. If this is genuinely the target, the governing question moves from what the agent may buy to how its objective is bounded and audited, and that is a different conversation.'
+        }
+    };
+
+    var answers = {};
+    var arrowNav = false;
+
+    var qRoot = document.getElementById('dx-questions');
+    var progressEl = document.getElementById('dx-progress');
+    var resultEl = document.getElementById('dx-result');
+    var restartEl = document.getElementById('dx-restart');
+    if (!qRoot || !progressEl || !resultEl || !restartEl) return;
+
+    function esc(s) {
+        return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    function buildQuestions() {
+        var html = '';
+        for (var i = 0; i < QUESTIONS.length; i++) {
+            var q = QUESTIONS[i];
+            html += '<fieldset class="dx-q" id="fs-' + q.id + '" data-answered="false">';
+            html += '<legend><span class="dx-qnum">Question ' + (i + 1) + ' of 7</span>' + esc(q.legend) + '</legend>';
+            if (q.hint) {
+                html += '<p class="dx-hint">' + esc(q.hint) + '</p>';
+            }
+            for (var j = 0; j < q.options.length; j++) {
+                var o = q.options[j];
+                var id = q.id + '-' + j;
+                html += '<label class="dx-opt" for="' + id + '">';
+                html += '<input type="radio" name="' + q.id + '" id="' + id + '" value="' + o.v + '">';
+                html += '<span>' + esc(o.t) + '</span>';
+                html += '</label>';
+            }
+            html += '</fieldset>';
+        }
+        qRoot.innerHTML = html;
+    }
+
+    function firstUnanswered() {
+        for (var i = 0; i < QUESTIONS.length; i++) {
+            if (!(QUESTIONS[i].id in answers)) return i;
+        }
+        return -1;
+    }
+
+    function updateProgress() {
+        var next = firstUnanswered();
+        if (next === -1) {
+            progressEl.textContent = 'All 7 questions answered';
+        } else {
+            progressEl.textContent = 'Question ' + (next + 1) + ' of 7';
+        }
+    }
+
+    function focusQuestion(index) {
+        if (index < 0 || index >= QUESTIONS.length) return;
+        var fs = document.getElementById('fs-' + QUESTIONS[index].id);
+        if (!fs) return;
+        var target = fs.querySelector('input:checked') || fs.querySelector('input');
+        if (target) target.focus();
+    }
+
+    function joinNames(names) {
+        if (names.length === 1) return names[0];
+        if (names.length === 2) return names[0] + ' and ' + names[1];
+        return names.slice(0, -1).join(', ') + ' and ' + names[names.length - 1];
+    }
+
+    function chooseResult(T, C, S, G, a) {
+        if (a.q1 === 5) return 'beyond';
+        if (a.q5 === 0 && T >= 3) return 'unprovable';
+        if (a.q3 >= 2 && a.q4 <= 1) return 'unenforced';
+        if (T === 1) return 'observer';
+        if (S > T && T <= 2) return 'ready';
+        if (G <= 0) return 'governed';
+        if (G === 1) return 'exposed';
+        return 'unbacked';
+    }
+
+    function render() {
+        var a = {};
+        for (var i = 0; i < QUESTIONS.length; i++) {
+            a[QUESTIONS[i].id] = answers[QUESTIONS[i].id];
+        }
+
+        var T = Math.min(a.q1, a.q2);
+        var scores = [a.q3, a.q4, a.q5, a.q6, a.q7];
+        var C = Math.min.apply(null, scores);
+        var S = C + 1;
+        var G = T - S;
+
+        var weakest = [];
+        for (var k = 0; k < LINKS.length; k++) {
+            if (scores[k] === C) weakest.push(k);
+        }
+        var weakestNames = weakest.map(function (k) { return LINKS[k].name; });
+
+        var key = chooseResult(T, C, S, G, a);
+        var r = RESULTS[key];
+
+        var body = r.body
+            .replace(/\[link\]/g, esc(joinNames(weakestNames)))
+            .replace(/\[target\]/g, esc(TARGET_PHRASE[T] || ''))
+            .replace(/\[chain\]/g, 'level ' + S)
+            .replace(/\[n\]/g, String(G));
+
+        var html = '<div class="dx-card">';
+        html += '<p class="dx-label">Your result</p>';
+        html += '<p class="dx-name">' + esc(r.name) + '</p>';
+        html += '<p class="dx-headline">' + esc(r.headline) + '</p>';
+        html += '<p class="dx-body">' + body + '</p>';
+
+        html += '<p class="dx-sub">The five links</p>';
+        html += '<ul class="dx-links">';
+        for (var m = 0; m < LINKS.length; m++) {
+            var isWeak = scores[m] === C && C < 3;
+            html += '<li' + (isWeak ? ' class="dx-weakest"' : '') + '>';
+            html += '<span class="dx-score">' + scores[m] + ' / 3</span>';
+            html += '<span><span class="dx-linkname">' + esc(LINKS[m].name) + '</span>';
+            if (isWeak) {
+                html += ' <span class="dx-tag">weakest link</span>';
+            }
+            if (scores[m] <= 1) {
+                html += '<br><span class="dx-tag">' + esc(LINKS[m].line) + '</span>';
+            }
+            html += '</span></li>';
+        }
+        html += '</ul>';
+
+        var byScore = [];
+        for (var n = 0; n < LINKS.length; n++) byScore.push(n);
+        byScore.sort(function (x, y) { return (scores[x] - scores[y]) || (x - y); });
+        var ordered = byScore.slice(0, 2).sort(function (x, y) { return x - y; });
+
+        html += '<p class="dx-sub">Where to start</p>';
+        html += '<ol class="dx-next">';
+        for (var q = 0; q < ordered.length; q++) {
+            var oi = ordered[q];
+            html += '<li><strong>' + esc(LINKS[oi].name) + '.</strong>';
+            if (scores[oi] <= 1) {
+                html += ' ' + esc(LINKS[oi].line);
+            }
+            html += '</li>';
+        }
+        html += '</ol>';
+
+        var gapText;
+        if (G <= 0) {
+            gapText = 'Your chain is at <strong>level ' + S + '</strong> and your target is at <strong>level ' + T + '</strong>. There is no gap.';
+        } else {
+            gapText = 'Your chain is at <strong>level ' + S + '</strong> and your target is at <strong>level ' + T + '</strong>. The gap is <strong>' + G + (G === 1 ? ' level' : ' levels') + '</strong>.';
+        }
+        html += '<p class="dx-gap">' + gapText + '</p>';
+
+        html += '</div>';
+        resultEl.innerHTML = html;
+    }
+
+    qRoot.addEventListener('keydown', function (e) {
+        arrowNav = e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === 'ArrowLeft' || e.key === 'ArrowRight';
+    });
+
+    qRoot.addEventListener('change', function (e) {
+        var input = e.target;
+        if (!input || input.type !== 'radio') return;
+
+        answers[input.name] = parseInt(input.value, 10);
+
+        var fs = document.getElementById('fs-' + input.name);
+        if (fs) fs.setAttribute('data-answered', 'true');
+
+        updateProgress();
+
+        if (firstUnanswered() === -1) {
+            render();
+        } else {
+            resultEl.innerHTML = '';
+        }
+
+        if (!arrowNav) {
+            var index = -1;
+            for (var i = 0; i < QUESTIONS.length; i++) {
+                if (QUESTIONS[i].id === input.name) index = i;
+            }
+            var next = firstUnanswered();
+            if (next > index) focusQuestion(next);
+        }
+        arrowNav = false;
+    });
+
+    restartEl.addEventListener('click', function () {
+        answers = {};
+        var inputs = qRoot.querySelectorAll('input[type="radio"]');
+        for (var i = 0; i < inputs.length; i++) {
+            inputs[i].checked = false;
+        }
+        var sets = qRoot.querySelectorAll('.dx-q');
+        for (var j = 0; j < sets.length; j++) {
+            sets[j].setAttribute('data-answered', 'false');
+        }
+        resultEl.innerHTML = '';
+        updateProgress();
+        focusQuestion(0);
+    });
+
+    buildQuestions();
+    updateProgress();
+})();
+</script>
+</body>
+</html>
