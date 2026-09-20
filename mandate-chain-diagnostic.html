@@ -1183,7 +1183,8 @@
         governed: {
             name: 'Governed',
             headline: 'Your mandate chain supports what you intend to delegate.',
-            body: 'The level of autonomy you are planning is matched by the controls that would have to carry it. That is uncommon, and it means your next constraint is commercial rather than one of governance. Your weakest link is [link]. It holds at your current target and it is the first thing to break if you go one step further.'
+            body: 'The level of autonomy you are planning is matched by the controls that would have to carry it. That is uncommon, and it means your next constraint is commercial rather than one of governance. Your weakest link is [link]. It holds at your current target and it is the first thing to break if you go one step further.',
+            bodyNoWeak: 'The level of autonomy you are planning is matched by the controls that would have to carry it. That is uncommon, and it means your next constraint is commercial rather than one of governance. No link is weaker than the others, so the first thing to watch is whatever changes next, not a gap that exists today.'
         },
         exposed: {
             name: 'Exposed',
@@ -1319,7 +1320,9 @@
         var key = chooseResult(T, C, S, G, a);
         var r = RESULTS[key];
 
-        var body = r.body
+        var template = (C === 3 && r.bodyNoWeak) ? r.bodyNoWeak : r.body;
+
+        var body = template
             .replace(/\[link\]/g, esc(joinNames(weakestNames)))
             .replace(/\[target\]/g, esc(TARGET_PHRASE[T] || ''))
             .replace(/\[chain\]/g, 'level ' + S)
