@@ -1293,9 +1293,9 @@
 
     function chooseResult(T, C, S, G, a) {
         if (a.q1 === 5) return 'beyond';
+        if (T === 1) return 'observer';
         if (a.q5 === 0 && T >= 3) return 'unprovable';
         if (a.q3 >= 2 && a.q4 <= 1) return 'unenforced';
-        if (T === 1) return 'observer';
         if (S > T && T <= 2) return 'ready';
         if (G <= 0) return 'governed';
         if (G === 1) return 'exposed';
