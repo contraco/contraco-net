@@ -64,7 +64,7 @@ contraco publishes across four domains: [English](https://contraco.net), [German
 - [Agentic Commerce FAQ](https://contraco.net/faq.html)
 - [Europe's First Agentic Purchase Was a Trip](https://contraco.net/first-agentic-purchase-travel.html)
 - [Agentic Commerce Framework: Six Levels](https://contraco.net/framework-agentic-commerce.html)
-- [Agentic Commerce Governance](https://contraco.net/)
+- [contraco | Agentic Commerce Advisory Since 1998](https://contraco.net/)
 - [Insights: AI and Agentic Commerce](https://contraco.net/insights.html)
 - [Leading Teams Through AI Transformation](https://contraco.net/leading-ai-transformation.html)
 - [The Logic Void](https://contraco.net/logic-void.html)
