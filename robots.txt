@@ -1,5 +1,5 @@
 # Robots.txt for contraco.net
-# Updated: 2025-11-03 to fix duplicate content issues
+# Updated: 2026-09-21, AI training crawlers blocked
 
 # Allow all crawlers to access main content
 User-agent: *
@@ -12,30 +12,43 @@ Disallow: /yandex_*.html
 User-agent: Yandex
 Allow: /yandex_3d4a640028515d1b.html
 
-# AI answer engines — ALLOWED (surface content in AI-generated answers)
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
+# AI search and user-initiated fetch: allowed (surface content in AI answers)
 User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
 Allow: /
 
 User-agent: PerplexityBot
 Allow: /
 
-# AI training scrapers — BLOCKED (do not use content for model training)
-User-agent: GPTBot
-Disallow: /
+User-agent: Perplexity-User
+Allow: /
 
+# Gemini and Vertex AI grounding: allowed (ruled 2026-08-31)
 User-agent: Google-Extended
 Allow: /
 
-User-agent: CCBot
+# AI training crawlers: blocked (no use of content for model training)
+User-agent: GPTBot
 Disallow: /
 
-User-agent: Claude-Web
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: CCBot
 Disallow: /
 
 User-agent: Bytespider
