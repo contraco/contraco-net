@@ -148,7 +148,7 @@
     "@type": "WebPage",
     "url": "https://contraco.net/agentic-commerce-control-layer.html",
     "name": "The Control Layer in Agentic Commerce | Frank Meltke | contraco",
-    "dateModified": "2026-09-21",
+    "dateModified": "2026-09-27",
     "isPartOf": {
         "@type": "WebSite",
         "@id": "https://contraco.net/#website",
@@ -367,7 +367,7 @@
             <div class="container">
                 <div class="article-container">
                     <h2 class="section-h2">Visa Intelligent Commerce: Live Infrastructure</h2>
-                    <p class="article-p">Visa Intelligent Commerce launched in July 2026 with more than 30 European issuers already connected, including lastminute.com, Frasers, Cleverbridge, and BrickDepot. The Trusted Agent Protocol defines how agents are enrolled and authenticated. The Agent Directory provides merchants with a query mechanism to confirm that an agent presenting for payment is a registered, issuer-authorized entity. [Q1, Q2]</p>
+                    <p class="article-p">Visa Intelligent Commerce launched in July 2026 with more than 30 European issuers connected, and with merchants including lastminute.com, Frasers, Cleverbridge and BrickDepot live from the start. The Trusted Agent Protocol defines how agents are enrolled and authenticated. The Agent Directory provides merchants with a query mechanism to confirm that an agent presenting for payment is a registered, issuer-authorized entity. [Q1, Q2]</p>
                     <p class="article-p">What Visa controls in this model: enrollment, directory lookup, and transaction validation within the Visa network. What Visa does not control: the agent's behavior outside that transaction, multi-rail settlement, or authorization policy across competing networks.</p>
                 </div>
             </div>
@@ -377,7 +377,7 @@
             <div class="container">
                 <div class="article-container">
                     <h2 class="section-h2">Mastercard Agent Pay: Verifiable Intent and Multi-Rail</h2>
-                    <p class="article-p">Mastercard Agent Pay introduces Verifiable Intent: a signed record linking the account holder's authorization to the specific agent and transaction. The dispute and chargeback mechanism is built on top of this signed chain. Programmatic spending limits are set by the issuer at the time of mandate issuance. [Q3]</p>
+                    <p class="article-p">Verifiable Intent, which Mastercard announced with Google on March 5, 2026 for its Agent Pay programme, is a tamper-resistant record linking the account holder's identity, the instructions given to the agent and the resulting transaction, and it is the shared record on which disputes are resolved. [Q18]</p>
                     <p class="article-p">Mastercard Agent Pay for Machines extends this to multi-rail settlement, meaning a single mandate can authorize transactions across payment networks and settlement systems. [Q4] This is technically significant: it is the first major attempt to build a mandate framework that is not network-bound.</p>
                     <p class="article-p">The constraint remains the same as Visa's: Mastercard controls what happens within its own infrastructure. The authorization scope, the agent quality, and the behavior between the mandate and the execution are not addressed by the payment protocol.</p>
                 </div>
@@ -388,7 +388,7 @@
             <div class="container">
                 <div class="article-container">
                     <h2 class="section-h2">Google AP2 and the Signed Mandate</h2>
-                    <p class="article-p">Google's Agentic Payment Protocol version 0.2.0 introduced human-not-present payment execution via signed mandates, with more than 60 partners connected at launch. [Q5, Q6] The signed mandate is the key construct: the account holder issues a mandate to the agent, the agent signs transactions against that mandate, and the payment processor validates the signature.</p>
+                    <p class="article-p">Google's Agent Payments Protocol (AP2), announced in September 2025 with more than 60 partners, was extended at Google I/O 2026 in version 0.2 to let agents pay on a user's behalf within pre-set limits, using signed mandates. [Q5, Q6] The signed mandate is the key construct: the account holder issues a mandate to the agent, the agent signs transactions against that mandate, and the payment processor validates the signature.</p>
                     <p class="article-p"><a href="https://contraco.net/ap2-mandate-explained.html">AP2</a> is a developer-facing protocol. Its significance is in establishing the technical pattern for mandate-signed agentic payments, independent of any single network. Whether Google's ecosystem controls the dominant share of this pattern or whether it becomes an open standard is the competitive question for the next 18 months.</p>
                 </div>
             </div>
@@ -398,7 +398,7 @@
             <div class="container">
                 <div class="article-container">
                     <h2 class="section-h2">SAP AI Agent Hub: The ERP Integration Layer</h2>
-                    <p class="article-p">Announced at SAP Sapphire 2026, the SAP AI Agent Hub provides granular permission management and a full audit log for AI agents operating inside enterprise workflows. [Q7, Q8] Its significance is not payment processing but ERP integration: when an agent purchases, the authorization, the transaction record, and the reconciliation entry all flow through the same governed infrastructure.</p>
+                    <p class="article-p">Opened to more customers at SAP Sapphire 2026, the SAP AI Agent Hub is a vendor-agnostic system of record to inventory and govern AI agents, language models and MCP servers across an enterprise. [Q7, Q8] Its significance is not payment processing but ERP integration: when an agent purchases, the authorization, the transaction record, and the reconciliation entry all flow through the same governed infrastructure.</p>
                     <p class="article-p">SAP's position is the back-office end of <a href="https://contraco.net/agentic-commerce-governance.html">the control layer</a>. It governs what happens after the payment clears, not before it is initiated. Connecting the pre-purchase authorization layer to the post-purchase reconciliation layer is the integration challenge that no single provider has fully resolved.</p>
                 </div>
             </div>
@@ -408,7 +408,7 @@
             <div class="container">
                 <div class="article-container">
                     <h2 class="section-h2">The Benchmark: Alipay at Scale</h2>
-                    <p class="article-p">Ant International's Alipay is processing approximately 120 million AI-agent transactions per week. [Q9] This is not a pilot or a proof of concept. It is infrastructure running at consumer scale in a single-operator, single-market context where identity, payment, and the agent layer are controlled by one entity.</p>
+                    <p class="article-p">Alipay reported more than 120 million AI Pay transactions in a single week, February 5 to 11, 2026. [Q9] This is not a pilot or a proof of concept. It is infrastructure running at consumer scale in a single-operator, single-market context where identity, payment, and the agent layer are controlled by one entity.</p>
                     <p class="article-p">The European market is structurally different: multiple payment networks, multiple banking regulators, multiple identity frameworks, and a consumer base that surveys show is more skeptical of single-actor control. The Alipay benchmark demonstrates what is technically achievable. It does not provide the model for the European market.</p>
                 </div>
             </div>
@@ -420,7 +420,7 @@
                     <h2 class="section-h2">The Structural Gap: Each Provider Controls Only Its Own System</h2>
                     <p class="article-p">Visa controls the Visa network. Mastercard controls the Mastercard network. Google controls AP2 within its ecosystem. SAP controls the ERP layer for SAP deployments. Each provider has built or is building a control layer for its own system. None of them controls, or is positioned to control, the layer across all systems.</p>
                     <p class="article-p">The neutral control layer, which provides consistent agent identity verification, authorization policy, audit logging, and dispute resolution across payment networks, banking partners, and ERP systems, is the most structurally valuable position in the European agentic commerce market. It is also the most genuinely unclaimed.</p>
-                    <p class="article-p">For the trust dimension of this gap, see <a href="https://contraco.net/banks-agentic-commerce-trust.html">Trust Is the Bottleneck, and Banks Own It</a>. For the attribution consequence, see <a href="https://contraco.net/dark-agentic-traffic.html">Dark Agentic Traffic</a>. For the agent accountability question, see <a href="https://contraco.net/who-audits-the-ai-agent.html">Agentic Commerce Liability</a> For the market timing argument, see <a href="https://contraco.net/agentic-commerce-window.html">The Window</a>. For the travel vertical where this plays out first, see <a href="https://contraco.net/first-agentic-purchase-travel.html">Europe's First Agentic Purchase Was a Trip</a>. For a dated reference chronicle of the 2026 announcements, see <a href="https://contraco.net/agentic-commerce-summer-2026.html">The Loud Summer of 2026</a>. For the dedicated diagnostics property, see <a href="https://agentic.contraco.net/" target="_blank" rel="noopener">agentic.contraco.net</a>. For direct answers on the common questions this shift raises for businesses, see the <a href="https://contraco.net/faq.html">contraco FAQ</a>.</p>
+                    <p class="article-p">For the trust dimension of this gap, see <a href="https://contraco.net/banks-agentic-commerce-trust.html">Trust Is the Bottleneck, and Banks Own It</a>. For the attribution consequence, see <a href="https://contraco.net/dark-agentic-traffic.html">Dark Agentic Traffic</a>. For the agent accountability question, see <a href="https://contraco.net/who-audits-the-ai-agent.html">Agentic Commerce Liability</a>. For the market timing argument, see <a href="https://contraco.net/agentic-commerce-window.html">The Window</a>. For the travel vertical where this plays out first, see <a href="https://contraco.net/first-agentic-purchase-travel.html">Europe's First Agentic Purchase Was a Trip</a>. For a dated reference chronicle of the 2026 announcements, see <a href="https://contraco.net/agentic-commerce-summer-2026.html">The Loud Summer of 2026</a>. For the dedicated diagnostics property, see <a href="https://agentic.contraco.net/" target="_blank" rel="noopener">agentic.contraco.net</a>. For direct answers on the common questions this shift raises for businesses, see the <a href="https://contraco.net/faq.html">contraco FAQ</a>.</p>
                 </div>
             </div>
         </section>
@@ -431,15 +431,15 @@
                 <div class="article-container">
                     <p class="source-note"><strong>Sources:</strong></p>
                     <ul class="source-note" style="padding-left: 1.4em; margin-top: 8px;">
-            <li>Q1: Visa Intelligent Commerce press release, July 2026. Trusted Agent Protocol, Agent Directory, 30+ European issuers.</li>
-            <li>Q2: Visa Intelligent Commerce technical documentation. Protocol detail.</li>
-            <li>Q3: Mastercard Agent Pay press release. Verifiable Intent, programmatic limits, dispute and chargeback mechanism.</li>
-            <li>Q4: Mastercard Agent Pay for Machines. Multi-rail settlement detail.</li>
-            <li>Q5: Google AP2 v0.2.0 release notes. Human-not-present payments via signed mandates, 60+ partners.</li>
-            <li>Q6: Google AP2 developer documentation.</li>
-            <li>Q7: SAP AI Agent Hub announcement, Sapphire 2026. Granular permissions, full audit log.</li>
-            <li>Q8: SAP AI Agent Hub technical detail.</li>
-            <li>Q9: Ant International / Alipay. 120M AI-agent transactions per week.</li>
+            <li>Q1: <a href="https://www.visa.co.uk/about-visa/newsroom/press-releases.3457328.html" target="_blank" rel="noopener">Visa, press release on Visa Intelligent Commerce in Europe, issuer and merchant list.</a></li>
+            <li>Q2: <a href="https://www.globenewswire.com/news-release/2026/07/02/3321259/0/en/WORLDLINE-Worldline-ING-and-Visa-complete-a-live-agentic-payment-transaction-in-Europe-Press-release.html" target="_blank" rel="noopener">Worldline, ING and Visa complete a live agentic payment transaction in Europe, GlobeNewswire, July 2, 2026.</a></li>
+            <li>Q4: <a href="https://investor.mastercard.com/investor-news/investor-news-details/2026/Mastercard-Launches-Agent-Pay-for-Machines-to-Unlock-Super-Fast-Always-On-Payments/default.aspx" target="_blank" rel="noopener">Mastercard Investor Relations, Agent Pay for Machines, June 10, 2026.</a></li>
+            <li>Q5: <a href="https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol" target="_blank" rel="noopener">Google Cloud Blog, Announcing Agent Payments Protocol (AP2), September 16, 2025.</a></li>
+            <li>Q6: <a href="https://thenextweb.com/news/google-universal-cart-agent-payments-shopping-io-2026" target="_blank" rel="noopener">The Next Web, May 19, 2026, Google I/O 2026, Universal Cart and the AP2 update.</a></li>
+            <li>Q7: <a href="https://news.sap.com/2026/05/sap-sapphire-keynote-business-ai-platform-power-autonomous-enterprise/" target="_blank" rel="noopener">SAP News Center, Sapphire keynote 2026.</a></li>
+            <li>Q8: <a href="https://thenewstack.io/sap-ai-agent-hub/" target="_blank" rel="noopener">The New Stack, May 12, 2026, SAP launches AI Agent Hub at Sapphire 2026.</a></li>
+            <li>Q9: <a href="https://www.businesswire.com/news/home/20260213770962/en/Alipay-AI-Payment-Exceeds-120-Million-Transactions-in-One-Week-as-Agentic-Commerce-Accelerates-in-China" target="_blank" rel="noopener">Alipay via Business Wire, February 13, 2026, Alipay AI Pay exceeds 120 million transactions in one week.</a></li>
+            <li>Q18: <a href="https://www.mastercard.com/us/en/news-and-trends/stories/2026/verifiable-intent.html" target="_blank" rel="noopener">Mastercard, How Verifiable Intent builds trust in agentic AI commerce, March 5, 2026.</a></li>
                     </ul>
                 </div>
             </div>
