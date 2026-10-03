@@ -592,6 +592,23 @@
             }
         }
     </style>
+    <style>
+        /* Fliesstextlinks ohne eigene Klasse in Markenfarbe, 2026-10-03. Null-Spezifitaet, greift nur, wo kein anderes Seitenstyling die Linkfarbe setzt. */
+        :where(body) :where(a:not([class])) { color: var(--primary-red); }
+        :where(.cta-section, .leadership-insight, .change-challenge, .insight-box, footer) :where(a:not([class])) { color: inherit; }
+        /* Lange deutsche Komposita in Ueberschriften brechen auf schmalen Bildschirmen um, 2026-10-03. */
+        @media (max-width: 600px) {
+            :where(h1, h2, h3, h4) { overflow-wrap: break-word; hyphens: auto; }
+        }
+        /* Kopfzeile auf Smartphones im Hochformat, 2026-10-03. Logo, Menue-Symbol und Sprachumschalter passen ab 360 px in eine Zeile. */
+        @media (max-width: 480px) {
+            .nav-container, .header-content { padding-left: 12px; padding-right: 12px; }
+            .logo { margin-left: 0; }
+            .logo img { height: 44px; }
+            .language-switcher { margin-left: 6px; gap: 2px; }
+            .lang-link { padding: 4px 5px; }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -732,6 +749,7 @@
                         <a href="https://contraco.net/#services">Services</a>
                         <a href="https://contraco.net/#methodology">Methodology</a>
                         <a href="https://contraco.net/insights.html">Insights</a>
+                        <a href="https://contraco.net/faq.html">FAQ</a>
                         <a href="https://contraco.net/#contact">Contact</a>
                         <a href="https://contraco.net/press.html">Press</a>
                     </div>
