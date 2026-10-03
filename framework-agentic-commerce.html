@@ -1050,6 +1050,11 @@
             .language-switcher { margin-left: 6px; gap: 2px; }
             .lang-link { padding: 4px 5px; }
         }
+        /* CTA-Kasten mit Inline-Stil auf schmalen Smartphones, 2026-10-03. */
+        @media (max-width: 480px) {
+            div[style*="padding: 48px 56px"] { padding: 32px 20px !important; gap: 20px !important; }
+            a[style*="padding: 16px 32px"] { white-space: normal !important; padding: 14px 20px !important; }
+        }
     </style>
 </head>
 <body>
