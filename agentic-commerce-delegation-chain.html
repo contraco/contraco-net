@@ -155,10 +155,10 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "url": "https://contraco.net/agentic-commerce-delegation-chain.html",
-    "name": "The Delegation Chain: PSD2 and Agentic Payments | Frank Meltke | contraco",
+    "name": "The Delegation Chain: PSD2 and Agentic Payments | contraco",
     "description": "The EUDI Wallet solves the identity half of agentic commerce. PSD2 dynamic linking requires authentication tied to a specific amount and payee. Agent-committed transactions have neither.",
     "datePublished": "2026-07-23",
-    "dateModified": "2026-09-21",
+    "dateModified": "2026-10-03",
     "isPartOf": {
         "@type": "WebSite",
         "@id": "https://contraco.net/#website",
@@ -646,7 +646,7 @@
         <section class="hero-section">
             <div class="container">
                 <div class="hero-content">
-                    <span class="hero-label">Deep Dive | 7 min read</span>
+                    <span class="hero-label">Deep Dive | 4 min read</span>
                     <h1 class="hero-title">The Delegation Chain</h1>
                     <p class="hero-standfirst">Europe has built the identity half of agentic commerce ahead of anyone else. The authorization half is still open. Where European payment law and the agentic payment protocols meet, they describe the same boundary from opposite directions.</p>
                 </div>
@@ -697,7 +697,7 @@
             <div class="container">
                 <div class="article-container">
                     <h2 class="section-h2">Where dynamic linking breaks</h2>
-                    <p class="article-p">The fourth step is where it becomes interesting. Dynamic linking requires the authentication to be uniquely tied to the specific amount and the specific payee. The agentic payment protocols work differently by design: the user signs an intent mandate upfront with a price cap, a time window, and a merchant allowlist, and the agent generates the cart mandate itself when conditions are met. At the moment the amount and the payee become concrete, no human authenticates anything. A price cap is not an amount. An allowlist is not a payee. The wallet solves authentication beautifully, and in doing so makes visible a question it was never designed to answer. Not a flaw in the wallet. A boundary that was always there, now clearly lit.</p>
+                    <p class="article-p">The fourth step is where it becomes interesting. Dynamic linking requires the authentication to be uniquely tied to the specific amount and the specific payee. The agentic payment protocols work differently by design: the user signs open mandates upfront, carrying constraints such as a price cap, a time window and a merchant allowlist, and the agent signs the closed mandates for the concrete purchase itself when conditions are met. At the moment the amount and the payee become concrete, no human authenticates anything. A price cap is not an amount. An allowlist is not a payee. The wallet solves authentication beautifully, and in doing so makes visible a question it was never designed to answer. Not a flaw in the wallet. A boundary that was always there, now clearly lit.</p>
                 </div>
             </div>
         </section>
@@ -708,7 +708,7 @@
                 <div class="article-container">
                     <h2 class="section-h2">Three directions worth exploring</h2>
                     <p class="article-p">I do not think this is unsolvable, and I would rather contribute than complain.</p>
-                    <p class="article-p">The first direction is to treat the intent mandate itself as the dynamically linked act, with the wallet performing strong customer authentication at mandate signing against the constraint set rather than the final amount. That requires a regulatory view on whether a bounded constraint can stand in for a specific amount, and the European Banking Authority is already developing rulebooks in this area.</p>
+                    <p class="article-p">The first direction is to treat the open mandate itself as the dynamically linked act, with the wallet performing strong customer authentication at mandate signing against the constraint set rather than the final amount. That requires a regulatory view on whether a bounded constraint can stand in for a specific amount, and the European Banking Authority is already developing rulebooks in this area.</p>
                     <p class="article-p">The second is to use the wallet to attest the delegation rather than the payment: a qualified electronic attestation that this agent acts for this person within these limits, verifiable by the issuer at authorization time. The wallet already issues attestations of attributes. Delegation is an attribute.</p>
                     <p class="article-p">The third is to accept that the fourth step belongs under existing exemptions, low value, recurring, trusted beneficiary, and to build agentic commerce inside those boundaries rather than around them.</p>
                 </div>
@@ -730,7 +730,7 @@
             <div class="container">
                 <div class="article-container">
                     <h2 class="section-h2">The week this argument arrived</h2>
-                    <p class="article-p">For completeness, and because the timing is difficult to ignore: we are discussing how much authority to delegate to machines in the same week that OpenAI disclosed that two of its models broke out of a controlled test environment and hacked into another company's production infrastructure in order to cheat on an evaluation. The company called it an unprecedented cyber incident. Anthropic has reported a comparable sandbox escape during safety testing. The models in the OpenAI case were being tested without guardrails limiting cyber capability, and OpenAI's own account is that they were fixated on solving a narrow benchmark. That is not emergent agency. It is a system optimizing exactly what it was told to optimize, with no regard for the boundary it was told to stay inside. Which is precisely the risk profile of an agent holding an intent mandate.</p>
+                    <p class="article-p">For completeness, and because the timing is difficult to ignore: we are discussing how much authority to delegate to machines in the same week that OpenAI disclosed that two of its models broke out of a controlled test environment and hacked into another company's production infrastructure in order to cheat on an evaluation. The company called it an unprecedented cyber incident. Anthropic has reported a comparable sandbox escape during safety testing. The models in the OpenAI case were being tested without guardrails limiting cyber capability, and OpenAI's own account is that they were fixated on solving a narrow benchmark. That is not emergent agency. It is a system optimizing exactly what it was told to optimize, with no regard for the boundary it was told to stay inside. Which is precisely the risk profile of an agent holding an open mandate.</p>
                 </div>
             </div>
         </section>

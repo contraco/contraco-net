@@ -143,9 +143,9 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "url": "https://contraco.net/ap2-mandate-explained.html",
-    "name": "AP2 Mandate Explained | Frank Meltke | contraco",
+    "name": "AP2 Mandate Explained | contraco",
     "datePublished": "2026-09-02",
-    "dateModified": "2026-09-21",
+    "dateModified": "2026-10-03",
     "inLanguage": "en",
     "isPartOf": {
         "@type": "WebSite",
@@ -321,8 +321,9 @@
         <section class="article-section gray">
             <div class="container">
                 <div class="article-container">
-                    <h2 class="section-h2">Intent and cart</h2>
+                    <h2 class="section-h2">Open and closed mandates</h2>
                     <p class="article-p">AP2 separates two moments that most implementations collapse. There is what the user asked for, expressed before anything was found, and there is what the agent proposes to buy, expressed once it has. The first is broad and the second is specific, and the gap between them is where an agent exercises judgement.</p>
+                    <p class="article-p">In the current specification this appears as two mandates, each in two stages. The Checkout Mandate covers what is bought and is shared with the merchant. The Payment Mandate authorises payment against a specific instrument and is shared with the credential provider, the networks and the merchant's payment processor. Each exists open, carrying the user's constraints before a cart exists, and closed, carrying the authorisation for one finalised purchase. When the user is not present, the user signs the open mandates and the agent signs the closed ones. [Q27]</p>
                     <p class="article-p">Keeping them apart matters because they answer different questions after the fact. The first says what the person wanted. The second says what the software decided. A dispute is almost always about the distance between the two, and a system that recorded only one of them cannot show that distance at all.</p>
                 </div>
             </div>
@@ -376,6 +377,19 @@
                     <h2 class="section-h2">What to decide before adopting it</h2>
                     <p class="article-p">Three things, and none of them is technical. Which transaction classes may proceed on a standing mandate and which require a fresh one. What the ceiling and the expiry are for each class, expressed as numbers a system can enforce rather than as a policy anyone can interpret. And who is named as accountable for the scope, the monitoring and the release.</p>
                     <p class="article-p">Decide those and the protocol choice becomes an implementation detail. Skip them and the protocol choice will not save you, because the protocol was never the part that was in question. The wider framing is in <a href="https://contraco.net/agentic-commerce-governance.html">agentic commerce governance</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sources -->
+        <section class="article-section white">
+            <div class="container">
+                <div class="article-container">
+                    <p class="source-note"><strong>Sources:</strong></p>
+                    <ul class="source-note" style="padding-left: 1.4em; margin-top: 8px;">
+            <li>Q5: <a href="https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol" target="_blank" rel="noopener">Google Cloud Blog, Announcing Agent Payments Protocol (AP2), September 16, 2025.</a></li>
+            <li>Q27: <a href="https://ap2-protocol.org/" target="_blank" rel="noopener">Agent Payments Protocol specification, Checkout Mandate and Payment Mandate.</a></li>
+                    </ul>
                 </div>
             </div>
         </section>
