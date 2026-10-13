@@ -33,6 +33,7 @@ contraco publishes across four domains: [English](https://contraco.net), [German
 
 <!-- AUTO-PAGES:START -->
 - [Transformation Consulting Since 1998](https://contraco.net/about.html)
+- [Why Your US Agentic Checkout Breaks in Europe](https://contraco.net/agentic-checkout-europe.html)
 - [Agentic Commerce Consulting](https://contraco.net/agentic-commerce-consulting.html)
 - [The Control Layer in Agentic Commerce](https://contraco.net/agentic-commerce-control-layer.html)
 - [The Delegation Chain: PSD2 and Agentic Payments](https://contraco.net/agentic-commerce-delegation-chain.html)
