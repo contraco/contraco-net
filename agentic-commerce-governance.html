@@ -145,7 +145,7 @@
     "@type": "WebPage",
     "url": "https://contraco.net/agentic-commerce-governance.html",
     "name": "Agentic Commerce Governance | Frank Meltke | contraco",
-    "dateModified": "2026-09-21",
+    "dateModified": "2026-10-14",
     "inLanguage": "en",
     "isPartOf": {
         "@type": "WebSite",
@@ -241,6 +241,20 @@
         .imprint-details p { margin-bottom: 6px; }
         .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px; text-align: center; font-size: 0.85rem; }
         .trademark-notice { margin-top: 8px; font-size: 0.8rem; opacity: 0.8; }
+
+        /* Diagram, worked example and sources, added 2026-10-14 */
+        .figure-block { background: white; border: 1px solid var(--warm-gray-light); border-radius: 8px; padding: 32px; margin: 36px 0 32px; overflow-x: auto; }
+        .figure-caption { font-size: 0.85rem; color: var(--warm-gray-dark); text-align: center; margin-top: 16px; font-style: italic; }
+        .example-table-wrap { margin: 32px 0 0; overflow-x: auto; }
+        .example-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; line-height: 1.6; color: var(--deep-charcoal); background: white; }
+        .example-table caption { caption-side: top; text-align: left; font-family: var(--font-serif); font-size: 1.15rem; font-weight: 600; margin-bottom: 12px; color: var(--deep-charcoal); }
+        .example-table th, .example-table td { text-align: left; vertical-align: top; padding: 12px 14px; border-bottom: 1px solid var(--warm-gray-light); }
+        .example-table thead th { background: var(--warm-gray-light); font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; }
+        .example-table tbody th { width: 30%; font-weight: 700; color: var(--primary-red); }
+        .example-note { font-size: 0.85rem; color: var(--warm-gray-dark); font-style: italic; margin-top: 10px; }
+        .source-note { font-size: 0.85rem; color: var(--warm-gray-dark); font-style: italic; margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--warm-gray-medium); }
+        .source-note a { color: var(--primary-red); text-decoration: none; }
+        .source-note a:hover { text-decoration: underline; }
 
         @media (max-width: 768px) {
             .container, .nav-container { padding: 0 20px; }
@@ -383,6 +397,94 @@
                     <h2 class="section-h2">What follows operationally</h2>
                     <p class="article-p">Governance stops being abstract at the point where it produces four artefacts. A mandate scope per transaction class, saying what may proceed on a standing authorisation and what requires a fresh one. An exception policy, written before the exception, covering a price above the ceiling, a payee outside the permitted set, an expired mandate, and a good that does not match the intent. An evidence trail that survives the retention period of your logging. And a named accountable person for configuration, monitoring and release.</p>
                     <p class="article-p">Three answers exist at the exception and each costs something. Fail the transaction and lose the sale. Escalate to the human and lose the automation. Or allow it inside a wider tolerance and carry the liability. Only one of those can be chosen calmly, and only in advance.</p>
+                    <!-- Backward attribution diagram, contraco original, added 2026-10-14 -->
+                    <figure class="figure-block">
+                        <svg viewBox="0 0 780 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="acg-attr-title acg-attr-desc" style="width:100%;max-width:780px;height:auto;display:block;margin:0 auto;">
+                            <title id="acg-attr-title">Attribution runs backwards, from the transaction to the configuration</title>
+                            <desc id="acg-attr-desc">A contraco diagram. Configuration sets the frame, the agent acts inside it and the transaction completes the declaration. Attribution runs back from the transaction to the configuration. The configuration has to produce four artefacts, mandate scope, exception policy, evidence trail and an accountable person. The exception policy decides in advance which of three answers applies to a transaction outside the mandate, fail, escalate or allow inside a wider tolerance.</desc>
+                            <defs>
+                                <marker id="acg-arr-fwd" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" style="fill: var(--warm-gray-medium);"/></marker>
+                                <marker id="acg-arr-back" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" style="fill: var(--primary-red);"/></marker>
+                            </defs>
+                            <rect x="0" y="0" width="780" height="400" rx="8" style="fill: var(--warm-white);"/>
+                            <!-- Row 1: order of events -->
+                            <text x="20" y="26" text-anchor="start" font-family="Lato, sans-serif" font-size="11" font-weight="600" style="fill: var(--warm-gray-dark);">Order of events</text>
+                            <rect x="20" y="36" width="164" height="64" rx="6" style="fill: var(--deep-charcoal);"/>
+                            <text x="102.0" y="63" text-anchor="middle" font-family="Lato, sans-serif" font-size="13" font-weight="700" style="fill: white;">Configuration</text>
+                            <text x="102.0" y="83" text-anchor="middle" font-family="Lato, sans-serif" font-size="10.5" font-weight="400" style="fill: white;">the person configures</text>
+                            <line x1="186" y1="68" x2="209" y2="68" style="stroke: var(--warm-gray-medium); stroke-width: 2;" marker-end="url(#acg-arr-fwd)"/>
+                            <rect x="212" y="36" width="164" height="64" rx="6" style="fill: white; stroke: var(--warm-gray-medium); stroke-width: 1;"/>
+                            <text x="294.0" y="63" text-anchor="middle" font-family="Lato, sans-serif" font-size="13" font-weight="700" style="fill: var(--deep-charcoal);">Frame</text>
+                            <text x="294.0" y="83" text-anchor="middle" font-family="Lato, sans-serif" font-size="10.5" font-weight="400" style="fill: var(--warm-gray-dark);">scope set in advance</text>
+                            <line x1="378" y1="68" x2="401" y2="68" style="stroke: var(--warm-gray-medium); stroke-width: 2;" marker-end="url(#acg-arr-fwd)"/>
+                            <rect x="404" y="36" width="164" height="64" rx="6" style="fill: white; stroke: var(--warm-gray-medium); stroke-width: 1;"/>
+                            <text x="486.0" y="63" text-anchor="middle" font-family="Lato, sans-serif" font-size="13" font-weight="700" style="fill: var(--deep-charcoal);">Agent acts</text>
+                            <text x="486.0" y="83" text-anchor="middle" font-family="Lato, sans-serif" font-size="10.5" font-weight="400" style="fill: var(--warm-gray-dark);">inside the frame</text>
+                            <line x1="570" y1="68" x2="593" y2="68" style="stroke: var(--warm-gray-medium); stroke-width: 2;" marker-end="url(#acg-arr-fwd)"/>
+                            <rect x="596" y="36" width="164" height="64" rx="6" style="fill: white; stroke: var(--warm-gray-medium); stroke-width: 1;"/>
+                            <text x="678.0" y="63" text-anchor="middle" font-family="Lato, sans-serif" font-size="13" font-weight="700" style="fill: var(--deep-charcoal);">Transaction</text>
+                            <text x="678.0" y="83" text-anchor="middle" font-family="Lato, sans-serif" font-size="10.5" font-weight="400" style="fill: var(--warm-gray-dark);">completes the declaration</text>
+                            <!-- Attribution runs backwards -->
+                            <path d="M678 100 L678 128 L102 128 L102 102" style="fill: none; stroke: var(--primary-red); stroke-width: 2.5;" marker-end="url(#acg-arr-back)"/>
+                            <text x="390.0" y="150" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" font-weight="700" style="fill: var(--primary-red);">Attribution runs backwards, from the transaction to the configuration</text>
+                            <!-- Row 3: four artefacts -->
+                            <text x="20" y="184" text-anchor="start" font-family="Lato, sans-serif" font-size="11" font-weight="600" style="fill: var(--warm-gray-dark);">Four artefacts the configuration has to produce</text>
+                            <rect x="20" y="194" width="164" height="76" rx="6" style="fill: var(--warm-gray-light); stroke: var(--warm-gray-medium); stroke-width: 1;"/>
+                            <text x="102.0" y="218" text-anchor="middle" font-family="Lato, sans-serif" font-size="12.5" font-weight="700" style="fill: var(--deep-charcoal);">Mandate scope</text>
+                            <text x="102.0" y="238" text-anchor="middle" font-family="Lato, sans-serif" font-size="10.5" font-weight="400" style="fill: var(--warm-gray-dark);">per transaction class,</text>
+                            <text x="102.0" y="254" text-anchor="middle" font-family="Lato, sans-serif" font-size="10.5" font-weight="400" style="fill: var(--warm-gray-dark);">standing or fresh</text>
+                            <rect x="212" y="194" width="164" height="76" rx="6" style="fill: var(--warm-gray-light); stroke: var(--warm-gray-medium); stroke-width: 1;"/>
+                            <text x="294.0" y="218" text-anchor="middle" font-family="Lato, sans-serif" font-size="12.5" font-weight="700" style="fill: var(--deep-charcoal);">Exception policy</text>
+                            <text x="294.0" y="238" text-anchor="middle" font-family="Lato, sans-serif" font-size="10.5" font-weight="400" style="fill: var(--warm-gray-dark);">written before</text>
+                            <text x="294.0" y="254" text-anchor="middle" font-family="Lato, sans-serif" font-size="10.5" font-weight="400" style="fill: var(--warm-gray-dark);">the exception</text>
+                            <rect x="404" y="194" width="164" height="76" rx="6" style="fill: var(--warm-gray-light); stroke: var(--warm-gray-medium); stroke-width: 1;"/>
+                            <text x="486.0" y="218" text-anchor="middle" font-family="Lato, sans-serif" font-size="12.5" font-weight="700" style="fill: var(--deep-charcoal);">Evidence trail</text>
+                            <text x="486.0" y="238" text-anchor="middle" font-family="Lato, sans-serif" font-size="10.5" font-weight="400" style="fill: var(--warm-gray-dark);">survives the retention</text>
+                            <text x="486.0" y="254" text-anchor="middle" font-family="Lato, sans-serif" font-size="10.5" font-weight="400" style="fill: var(--warm-gray-dark);">period of your logging</text>
+                            <rect x="596" y="194" width="164" height="76" rx="6" style="fill: var(--warm-gray-light); stroke: var(--warm-gray-medium); stroke-width: 1;"/>
+                            <text x="678.0" y="218" text-anchor="middle" font-family="Lato, sans-serif" font-size="12.5" font-weight="700" style="fill: var(--deep-charcoal);">Accountable person</text>
+                            <text x="678.0" y="238" text-anchor="middle" font-family="Lato, sans-serif" font-size="10.5" font-weight="400" style="fill: var(--warm-gray-dark);">for configuration,</text>
+                            <text x="678.0" y="254" text-anchor="middle" font-family="Lato, sans-serif" font-size="10.5" font-weight="400" style="fill: var(--warm-gray-dark);">monitoring and release</text>
+                            <path d="M294 270 L294 290 L102 290 L102 306" style="fill: none; stroke: var(--warm-gray-medium); stroke-width: 1.5; stroke-dasharray: 4 3;" marker-end="url(#acg-arr-fwd)"/>
+                            <!-- Row 4: outside the frame -->
+                            <rect x="20" y="310" width="164" height="76" rx="6" style="fill: var(--primary-red);"/>
+                            <text x="102.0" y="334" text-anchor="middle" font-family="Lato, sans-serif" font-size="12.5" font-weight="700" style="fill: white;">Outside the mandate</text>
+                            <text x="102.0" y="354" text-anchor="middle" font-family="Lato, sans-serif" font-size="10.5" font-weight="400" style="fill: white;">answer chosen calmly,</text>
+                            <text x="102.0" y="370" text-anchor="middle" font-family="Lato, sans-serif" font-size="10.5" font-weight="400" style="fill: white;">and only in advance</text>
+                            <line x1="186" y1="348" x2="209" y2="348" style="stroke: var(--primary-red); stroke-width: 2;" marker-end="url(#acg-arr-fwd)"/>
+                            <rect x="212" y="310" width="164" height="76" rx="6" style="fill: white; stroke: var(--primary-red); stroke-width: 1.5;"/>
+                            <text x="294.0" y="334" text-anchor="middle" font-family="Lato, sans-serif" font-size="12.5" font-weight="700" style="fill: var(--deep-charcoal);">Fail</text>
+                            <text x="294.0" y="354" text-anchor="middle" font-family="Lato, sans-serif" font-size="10.5" font-weight="400" style="fill: var(--warm-gray-dark);">the transaction,</text>
+                            <text x="294.0" y="370" text-anchor="middle" font-family="Lato, sans-serif" font-size="10.5" font-weight="400" style="fill: var(--warm-gray-dark);">lose the sale</text>
+                            <text x="390.0" y="352" text-anchor="middle" font-family="Lato, sans-serif" font-size="10" font-weight="400" font-style="italic" style="fill: var(--warm-gray-dark);">or</text>
+                            <rect x="404" y="310" width="164" height="76" rx="6" style="fill: white; stroke: var(--primary-red); stroke-width: 1.5;"/>
+                            <text x="486.0" y="334" text-anchor="middle" font-family="Lato, sans-serif" font-size="12.5" font-weight="700" style="fill: var(--deep-charcoal);">Escalate</text>
+                            <text x="486.0" y="354" text-anchor="middle" font-family="Lato, sans-serif" font-size="10.5" font-weight="400" style="fill: var(--warm-gray-dark);">to the human,</text>
+                            <text x="486.0" y="370" text-anchor="middle" font-family="Lato, sans-serif" font-size="10.5" font-weight="400" style="fill: var(--warm-gray-dark);">lose the automation</text>
+                            <text x="582.0" y="352" text-anchor="middle" font-family="Lato, sans-serif" font-size="10" font-weight="400" font-style="italic" style="fill: var(--warm-gray-dark);">or</text>
+                            <rect x="596" y="310" width="164" height="76" rx="6" style="fill: white; stroke: var(--primary-red); stroke-width: 1.5;"/>
+                            <text x="678.0" y="334" text-anchor="middle" font-family="Lato, sans-serif" font-size="12.5" font-weight="700" style="fill: var(--deep-charcoal);">Allow</text>
+                            <text x="678.0" y="354" text-anchor="middle" font-family="Lato, sans-serif" font-size="10.5" font-weight="400" style="fill: var(--warm-gray-dark);">in a wider tolerance,</text>
+                            <text x="678.0" y="370" text-anchor="middle" font-family="Lato, sans-serif" font-size="10.5" font-weight="400" style="fill: var(--warm-gray-dark);">carry the liability</text>
+                        </svg>
+                        <figcaption class="figure-caption">Attribution runs backwards from the transaction to the configuration, which has to produce four artefacts and settle the exception answer in advance. Diagram: contraco original.</figcaption>
+                    </figure>
+                    <!-- Worked example table, built only from this page's own terms, added 2026-10-14 -->
+                    <div class="example-table-wrap">
+                        <table class="example-table">
+                            <caption>Illustrative example: one transaction class, a hotel booking under a set spending limit</caption>
+                            <thead>
+                                <tr><th scope="col">Artefact</th><th scope="col">For this transaction class</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><th scope="row">Mandate scope</th><td>A hotel booking up to the set spending limit, with a payee from the permitted set and a room that matches the intent, proceeds on the standing authorisation. Anything beyond that requires a fresh one.</td></tr>
+                                <tr><th scope="row">Exception policy</th><td>Written before the exception. A price above the ceiling, a payee outside the permitted set, an expired mandate or a room that does not match the intent is escalated to the human. The answer was chosen in advance, and the cost is that this booking loses its automation.</td></tr>
+                                <tr><th scope="row">Evidence trail</th><td>For each booking, the scope that authorised it, the version of that scope in force at the time, the person who approved it and the record of the agent staying inside it, kept beyond the retention period of the logging.</td></tr>
+                                <tr><th scope="row">Accountable person</th><td>One named person for configuration, monitoring and release of the booking agent.</td></tr>
+                            </tbody>
+                        </table>
+                        <p class="example-note">The example uses only the four artefacts and the exception answers described on this page. It is not drawn from any client work.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -405,6 +507,20 @@
                     <h2 class="section-h2">The way in</h2>
                     <p class="article-p">Start with the assessment rather than the architecture. Two to three weeks establishes your autonomy level, what a machine can currently see of your catalogue, and where a purchase made by an agent would attach to nobody. Most organisations should stop there until that has been read and argued with internally.</p>
                     <p class="article-p">Our positions on all of this are published and checkable before you speak to us. The service page is <a href="https://contraco.net/agentic-commerce-consulting.html">agentic commerce consulting</a>, and the direct answers to the questions buyers actually ask are in <a href="https://contraco.net/faq.html">the FAQ</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sources, added 2026-10-14 -->
+        <section class="article-section gray">
+            <div class="container">
+                <div class="article-container">
+                    <p class="source-note"><strong>Sources:</strong></p>
+                    <ul class="source-note" style="padding-left: 1.4em; margin-top: 8px;">
+                        <li>Dynamic linking to a specific amount and a specific payee: <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32018R0389" target="_blank" rel="noopener">Commission Delegated Regulation (EU) 2018/389 of 27 November 2017 supplementing Directive (EU) 2015/2366, Article 5, EUR-Lex.</a></li>
+                        <li>Agentic Commerce Protocol, checkout and merchant integration: <a href="https://www.agenticcommerce.dev/" target="_blank" rel="noopener">Agentic Commerce Protocol, open standard and specification.</a></li>
+                        <li>Agent Payments Protocol, authorisation and consent: <a href="https://ap2-protocol.org/" target="_blank" rel="noopener">Agent Payments Protocol (AP2), protocol documentation.</a></li>
+                    </ul>
                 </div>
             </div>
         </section>

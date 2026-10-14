@@ -227,7 +227,7 @@
     "name": "How to Choose the Best AI Consulting Firm | Frank Meltke | contraco",
     "description": "What separates the best AI consulting firms from the rest? Nine direct answers on selection criteria, pricing, red flags, and measurable outcomes.",
     "datePublished": "2026-07-09",
-    "dateModified": "2026-09-21",
+    "dateModified": "2026-10-14",
     "isPartOf": {
         "@type": "WebSite",
         "@id": "https://contraco.net/#website",
@@ -649,6 +649,17 @@
             .hero-title { font-size: 2rem; }
             .faq-question { font-size: 1.4rem; }
         }
+
+        /* Buyer's scorecard and diagram, 2026-10-14 */
+        .example-label { display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--primary-red); border: 1px solid var(--primary-red); border-radius: 20px; padding: 3px 12px; margin-top: 16px; }
+        .table-wrap { overflow-x: auto; margin: 16px 0 8px; }
+        .scorecard-table { width: 100%; min-width: 640px; border-collapse: collapse; font-size: 0.92rem; line-height: 1.6; background: white; }
+        .scorecard-table th { background: var(--deep-charcoal); color: white; text-align: left; font-weight: 600; padding: 12px 14px; }
+        .scorecard-table td { padding: 12px 14px; border-bottom: 1px solid var(--warm-gray-light); vertical-align: top; color: var(--deep-charcoal); }
+        .scorecard-table td:first-child { font-weight: 600; width: 34%; }
+        .scorecard-table td:last-child { color: var(--primary-red); }
+        .figure-block { background: white; border: 1px solid var(--warm-gray-light); border-radius: 8px; padding: 32px; margin: 32px 0 0; overflow-x: auto; }
+        .figure-caption { font-size: 0.85rem; color: var(--warm-gray-dark); text-align: center; margin-top: 16px; font-style: italic; }
     </style>
     <style>
         /* Fliesstextlinks ohne eigene Klasse in Markenfarbe, 2026-10-03. Null-Spezifitaet, greift nur, wo kein anderes Seitenstyling die Linkfarbe setzt. */
@@ -782,6 +793,121 @@
                         <div class="faq-answer">
                             <p>Because AI adoption fails on human factors far more often than on technical ones. Middle managers whose expertise is threatened will quietly starve a project of data and cooperation. Teams that were never asked will comply on paper and resist in practice. A firm that cannot read and work with these dynamics will deliver a technically correct system that nobody uses.</p>
                             <p>This is why contraco's <a href="https://contraco.net/resonance-method.html">Resonance Method</a> treats psychological depth as a core discipline, equal to strategy and technology, not an afterthought.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Buyer's scorecard -->
+        <section class="faq-section alt" id="buyer-scorecard">
+            <div class="container">
+                <div class="faq-container">
+                    <div class="faq-divider"></div>
+
+                    <div class="faq-item">
+                        <h2 class="faq-question">A buyer's scorecard built from the tests above</h2>
+                        <div class="faq-answer">
+                            <p>The nine answers above contain concrete tests. The table collects them in one place so that you can take them into the first meeting. Each row restates a test from this page, what a good answer looks like, and the warning sign to listen for.</p>
+                            <p class="example-label">Illustrative example</p>
+                            <div class="table-wrap">
+                                <table class="scorecard-table">
+                                    <caption class="figure-caption" style="caption-side: bottom;">Illustrative example. A buyer's scorecard assembled only from the tests on this page.</caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Test</th>
+                                            <th scope="col">What a good answer looks like</th>
+                                            <th scope="col">Warning sign</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Ask for a specific example where the firm advised a client against an AI investment.</td>
+                                            <td>A specific example, and a willingness to tell you which problems AI will not solve.</td>
+                                            <td>No example. Firms that never say no are selling software, not judgment.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ask for the names of the people who will actually do the work.</td>
+                                            <td>The names of the people who will be in the room every week.</td>
+                                            <td>Only the partners who show up for the pitch.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ask for the measurement framework that will prove or disprove value within the first 90 days.</td>
+                                            <td>A counterfactual defined before the engagement starts, tracked through decision speed, error rates in core processes, cost per transaction and revenue per employee.</td>
+                                            <td>A baseline chosen after the fact, or vanity metrics such as pilots launched, employees trained and use cases identified.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ask what happens to the fee if the promised outcome does not materialize.</td>
+                                            <td>A clear explanation of how much risk the firm is willing to share.</td>
+                                            <td>The firm cannot explain it.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ask what the firm leads with.</td>
+                                            <td>Your problem.</td>
+                                            <td>A technology vendor partnership, or the same recommended platform in every engagement.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ask for the firm's published thinking and methodology.</td>
+                                            <td>Published intellectual property under real names, and a methodology that existed before the current AI wave.</td>
+                                            <td>Only sales collateral or anonymous whitepapers.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ask how the diagnostic phase is priced.</td>
+                                            <td>A diagnostic phase that is paid work, not a sales instrument.</td>
+                                            <td>The diagnostic phase is free, which means it is a sales instrument.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ask for the timeline.</td>
+                                            <td>Initial measurable results inside 90 days, and 18 to 36 months for full transformation.</td>
+                                            <td>Timelines promised before the firm understands your data and your organization, or full transformation in one quarter.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ask whether the firm will digitize your processes or question them.</td>
+                                            <td>It questions whether those processes should exist at all once systems can decide, not just execute.</td>
+                                            <td>Process digitization sold under an AI label.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ask how the firm works with the people affected by the change.</td>
+                                            <td>It can read and work with human dynamics, such as threatened middle managers and teams that were never asked.</td>
+                                            <td>A technically correct system that nobody uses.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>For the red flags, the rule stated above holds. Any one is a warning. Two or more is a decision.</p>
+                            <figure class="figure-block">
+                                <svg viewBox="0 0 720 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="buyer-gates-title buyer-gates-desc" style="width: 100%; max-width: 720px; display: block; margin: 0 auto;">
+                                    <title id="buyer-gates-title">Three checkpoints for an AI consulting engagement</title>
+                                    <desc id="buyer-gates-desc">Three stages from left to right. First meeting with three asks, a case of advising against AI, the names of the working team and a 90-day measurement framework. Inside 90 days, a validated use case, a measurement baseline and a go or no-go decision. At 18 to 36 months, changed decision structures and changed workflows rather than pilots.</desc>
+                                    <defs>
+                                        <marker id="buyer-gates-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                                            <path d="M0,0 L0,6 L8,3 z" style="fill: var(--warm-gray-medium);"/>
+                                        </marker>
+                                    </defs>
+                                    <rect x="20" y="20" width="210" height="150" rx="6" style="fill: var(--warm-white); stroke: var(--primary-red); stroke-width: 2;"/>
+                                    <text x="125" y="50" text-anchor="middle" font-family="Lato, sans-serif" font-size="14" font-weight="700" style="fill: var(--deep-charcoal);">First meeting</text>
+                                    <line x1="50" y1="64" x2="200" y2="64" style="stroke: var(--primary-red); stroke-width: 1;"/>
+                                    <text x="125" y="90" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" style="fill: var(--warm-gray-dark);">A case of advising against AI</text>
+                                    <text x="125" y="114" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" style="fill: var(--warm-gray-dark);">Names of the working team</text>
+                                    <text x="125" y="138" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" style="fill: var(--warm-gray-dark);">90-day measurement framework</text>
+                                    <line x1="233" y1="95" x2="250" y2="95" style="stroke: var(--warm-gray-medium); stroke-width: 2;" marker-end="url(#buyer-gates-arrow)"/>
+                                    <rect x="255" y="20" width="210" height="150" rx="6" style="fill: var(--deep-charcoal); stroke: var(--primary-red); stroke-width: 2;"/>
+                                    <text x="360" y="50" text-anchor="middle" font-family="Lato, sans-serif" font-size="14" font-weight="700" style="fill: white;">Inside 90 days</text>
+                                    <line x1="285" y1="64" x2="435" y2="64" style="stroke: var(--primary-red); stroke-width: 1;"/>
+                                    <text x="360" y="90" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" style="fill: white;">Validated use case</text>
+                                    <text x="360" y="114" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" style="fill: white;">Measurement baseline</text>
+                                    <text x="360" y="138" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" style="fill: white;">Go or no-go decision</text>
+                                    <line x1="468" y1="95" x2="485" y2="95" style="stroke: var(--warm-gray-medium); stroke-width: 2;" marker-end="url(#buyer-gates-arrow)"/>
+                                    <rect x="490" y="20" width="210" height="150" rx="6" style="fill: var(--warm-white); stroke: var(--primary-red); stroke-width: 2;"/>
+                                    <text x="595" y="50" text-anchor="middle" font-family="Lato, sans-serif" font-size="14" font-weight="700" style="fill: var(--deep-charcoal);">18 to 36 months</text>
+                                    <line x1="520" y1="64" x2="670" y2="64" style="stroke: var(--primary-red); stroke-width: 1;"/>
+                                    <text x="595" y="90" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" style="fill: var(--warm-gray-dark);">Changed decision structures</text>
+                                    <text x="595" y="114" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" style="fill: var(--warm-gray-dark);">Changed workflows</text>
+                                    <text x="595" y="138" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" style="fill: var(--warm-gray-dark);">Not pilots</text>
+                                    <text x="360" y="208" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" font-style="italic" style="fill: var(--primary-red);">Full transformation in one quarter is a software installation.</text>
+                                </svg>
+                                <figcaption class="figure-caption">Three checkpoints for an AI consulting engagement, from the first meeting to full transformation. Diagram: contraco original.</figcaption>
+                            </figure>
                         </div>
                     </div>
                 </div>
