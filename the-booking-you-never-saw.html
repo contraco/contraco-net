@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Booking You Never Saw | contraco</title>
+
+    <link rel="canonical" href="https://contraco.net/the-booking-you-never-saw.html">
+    <link rel="entity-manifest" href="https://contraco.net/.well-known/entity-manifest.json">
+    <link rel="jwks" href="https://contraco.net/.well-known/jwks.json">
+    <meta name="robots" content="index, follow">
+
+    <!-- International SEO hreflang -->
+    <link rel="alternate" href="https://contraco.com/" hreflang="x-default" />
+    <link rel="alternate" href="https://contraco.net/the-booking-you-never-saw.html" hreflang="en" />
+    <link rel="alternate" href="https://contraco.de/die-buchung-die-sie-nie-gesehen-haben.html" hreflang="de" />
+
+    <!-- Fonts -->
+    <style>
+@font-face { font-family: 'Crimson Text'; font-style: normal; font-weight: 400; src: url('/fonts/crimson-text-v21-latin-regular.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Crimson Text'; font-style: normal; font-weight: 600; src: url('/fonts/crimson-text-v21-latin-600.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Crimson Text'; font-style: italic; font-weight: 400; src: url('/fonts/crimson-text-v21-latin-italic.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 300; src: url('/fonts/lato-v24-latin-300.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 400; src: url('/fonts/lato-v24-latin-regular.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Lato'; font-style: italic; font-weight: 400; src: url('/fonts/lato-v24-latin-italic.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 500; src: url('/fonts/lato-v24-latin-regular.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 600; src: url('/fonts/lato-v24-latin-700.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 700; src: url('/fonts/lato-v24-latin-700.woff2') format('woff2'); font-display: swap; }
+</style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#C00000">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#C00000">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="An AI agent booked flight, hotel and rental car, and no supplier ever saw the customer. Our talk at fvw|TravelTalk Kongress 2026 in Leipzig.">
+    <meta name="keywords" content="AI agent travel booking, agentic travel commerce, fvw TravelTalk Kongress, travel distribution AI, contraco">
+    <meta name="author" content="contraco">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://contraco.net/the-booking-you-never-saw.html">
+    <meta property="og:title" content="The Booking You Never Saw: When AI Agents Replace the Travel Portal">
+    <meta property="og:description" content="An AI agent booked flight, hotel and rental car, and no supplier ever saw the customer. Our talk at fvw|TravelTalk Kongress 2026 in Leipzig.">
+    <meta property="og:logo" content="https://contraco.net/Logo_rectangle.svg">
+    <meta property="og:image" content="https://contraco.net/contraco_4K.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="contraco - Digital Transformation Consulting">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Booking You Never Saw: When AI Agents Replace the Travel Portal">
+    <meta name="twitter:description" content="An AI agent booked flight, hotel and rental car, and no supplier ever saw the customer. Our talk at fvw|TravelTalk Kongress 2026 in Leipzig.">
+    <meta name="twitter:image" content="https://contraco.net/contraco_4K.png">
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "contraco",
+    "url": "https://contraco.net/",
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https://contraco.net/Logo_rectangle.svg",
+        "width": 400,
+        "height": 100
+    },
+    "email": "transformation@contraco.net",
+    "telephone": "+13129400326",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1209 10th Ln.",
+        "addressLocality": "Ava",
+        "addressRegion": "MO",
+        "postalCode": "65608",
+        "addressCountry": "US"
+    },
+    "foundingDate": "1998",
+    "founder": {
+        "@type": "Person",
+        "@id": "https://meltke.com/#person",
+        "name": "Frank Meltke",
+        "url": "https://meltke.com"
+    },
+    "areaServed": "Global",
+    "sameAs": ["https://www.wikidata.org/wiki/Q139681815","https://www.linkedin.com/company/contraco","https://contraco.com","https://contraco.ru","https://contraco.co.kr"]
+}
+</script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "The Booking You Never Saw",
+    "description": "An AI agent booked flight, hotel and rental car, and no supplier ever saw the customer. Our talk at fvw|TravelTalk Kongress 2026 in Leipzig.",
+    "url": "https://contraco.net/the-booking-you-never-saw.html",
+    "datePublished": "2026-10-18",
+    "author": { "@type": "Person", "@id": "https://meltke.com/#person", "name": "Frank Meltke", "url": "https://meltke.com" },
+    "publisher": { "@type": "Organization", "name": "contraco", "url": "https://contraco.net/" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://contraco.net/the-booking-you-never-saw.html" }
+}
+</script>
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "contraco",
+            "item": "https://contraco.net/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Insights",
+            "item": "https://contraco.net/insights.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "The Booking You Never Saw",
+            "item": "https://contraco.net/the-booking-you-never-saw.html"
+        }
+    ]
+}
+</script>
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "url": "https://contraco.net/the-booking-you-never-saw.html",
+    "name": "The Booking You Never Saw | contraco",
+    "description": "An AI agent booked flight, hotel and rental car, and no supplier ever saw the customer. Our talk at fvw|TravelTalk Kongress 2026 in Leipzig.",
+    "datePublished": "2026-10-18",
+    "dateModified": "2026-10-18",
+    "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://contraco.net/#website",
+        "name": "contraco",
+        "url": "https://contraco.net/"
+    }
+}
+</script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-red: #C00000;
+            --deep-charcoal: #404040;
+            --warm-white: #F8F6F3;
+            --warm-gray-light: #E5E2DD;
+            --warm-gray-medium: #A8A5A0;
+            --warm-gray-dark: #6B6B6B;
+            --container-max: 1200px;
+            --font-serif: 'Crimson Text', Georgia, serif;
+            --font-sans: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --section-padding: 100px 0;
+            --transition-fast: all 0.3s ease;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            color: var(--deep-charcoal);
+            background-color: var(--warm-white);
+        }
+
+        .container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(248, 246, 243, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 12px 0;
+            transition: var(--transition-fast);
+        }
+
+        .nav-container {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .logo {
+            margin-left: 60px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 58px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover img {
+            transform: scale(1.05);
+        }
+
+        .logo-fallback {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-red);
+            letter-spacing: -0.02em;
+            font-family: var(--font-serif);
+            transition: var(--transition-fast);
+            display: none;
+        }
+
+        .logo.logo-failed img {
+            display: none;
+        }
+
+        .logo.logo-failed .logo-fallback {
+            display: block;
+        }
+
+        .nav-menu {
+            margin-right: 60px;
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--deep-charcoal);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-red);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--primary-red);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-link.active {
+            color: var(--primary-red);
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            display: flex;
+            gap: 8px;
+            margin-left: 20px;
+        }
+
+        .lang-link {
+            text-decoration: none;
+            color: var(--warm-gray-medium);
+            font-weight: 500;
+            font-size: 0.85rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .lang-link:hover {
+            color: var(--primary-red);
+            background-color: var(--warm-white);
+        }
+
+        .lang-link.active {
+            color: var(--primary-red);
+            background-color: var(--warm-white);
+            font-weight: 600;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding-top: 100px;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--warm-white) 0%, var(--warm-gray-light) 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-label {
+            display: inline-block;
+            background: var(--primary-red);
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            padding: 6px 16px;
+            border-radius: 20px;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+        }
+
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: var(--deep-charcoal);
+            line-height: 1.2;
+        }
+
+        .hero-standfirst {
+            font-size: 1.2rem;
+            color: var(--warm-gray-dark);
+            line-height: 1.7;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        /* Article Sections */
+        .article-section {
+            padding: 80px 0;
+        }
+
+        .article-section.white {
+            background: white;
+        }
+
+        .article-section.gray {
+            background: var(--warm-gray-light);
+        }
+
+        .article-container {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .section-h2 {
+            font-family: var(--font-serif);
+            font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+            font-weight: 600;
+            color: var(--deep-charcoal);
+            margin-bottom: 28px;
+            line-height: 1.3;
+        }
+
+        .article-p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--deep-charcoal);
+            margin-bottom: 20px;
+        }
+
+        .article-p a {
+            color: var(--primary-red);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .article-p a:hover {
+            text-decoration: underline;
+        }
+
+        /* Closing Section */
+        .closing-section {
+            background: white;
+            padding: 80px 0;
+            border-top: 3px solid var(--primary-red);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--deep-charcoal);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .cta-title {
+            font-family: var(--font-serif);
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .cta-description {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--primary-red);
+            color: white;
+            padding: 16px 36px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transition-fast);
+        }
+
+        .cta-button:hover {
+            background: #D63E20;
+            transform: translateY(-2px);
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--deep-charcoal);
+            color: var(--warm-gray-light);
+            padding: 50px 0 35px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 50px;
+            align-items: start;
+            margin-bottom: 32px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+
+        .footer-links a {
+            color: var(--warm-gray-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-red);
+        }
+
+        .footer-privacy-links {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .footer-privacy-links a {
+            color: var(--warm-gray-medium);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-privacy-links a:hover {
+            color: var(--primary-red);
+        }
+
+        .company-info h4 {
+            color: var(--primary-red);
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            font-family: var(--font-serif);
+        }
+
+        .company-info p {
+            margin-bottom: 8px;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .company-info strong {
+            color: var(--warm-gray-light);
+        }
+
+        .imprint-section h4 {
+            color: var(--primary-red);
+            font-size: 1rem;
+            margin-bottom: 12px;
+            font-family: var(--font-serif);
+        }
+
+        .imprint-details {
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .imprint-details p {
+            margin-bottom: 6px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 25px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        .trademark-notice {
+            margin-top: 8px;
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .container,
+            .nav-container {
+                padding: 0 20px;
+            }
+
+            .logo {
+                margin-left: 20px;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+
+            .hero-title {
+                font-size: 2.2rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+    <style>
+        /* Fliesstextlinks ohne eigene Klasse in Markenfarbe, 2026-10-03. Null-Spezifitaet, greift nur, wo kein anderes Seitenstyling die Linkfarbe setzt. */
+        :where(body) :where(a:not([class])) { color: var(--primary-red); }
+        :where(.cta-section, .leadership-insight, .change-challenge, .insight-box, footer) :where(a:not([class])) { color: inherit; }
+        /* Lange deutsche Komposita in Ueberschriften brechen auf schmalen Bildschirmen um, 2026-10-03. */
+        @media (max-width: 600px) {
+            :where(h1, h2, h3, h4) { overflow-wrap: break-word; hyphens: auto; }
+        }
+        /* Kopfzeile auf Smartphones im Hochformat, 2026-10-03. Logo, Menue-Symbol und Sprachumschalter passen ab 360 px in eine Zeile. */
+        @media (max-width: 480px) {
+            .nav-container, .header-content { padding-left: 12px; padding-right: 12px; }
+            .logo { margin-left: 0; }
+            .logo img { height: 44px; }
+            .language-switcher { margin-left: 6px; gap: 2px; }
+            .lang-link { padding: 4px 5px; }
+        }
+    </style>
+    <style>
+        /* Page-specific, The Booking You Never Saw */
+        .hero-meta { font-size: 0.85rem; color: var(--warm-gray-dark); margin-top: 18px; }
+        .article-list { margin: 0 0 20px 22px; color: var(--deep-charcoal); }
+        .article-list li { font-size: 1.05rem; line-height: 1.8; margin-bottom: 10px; }
+        .article-container strong { font-weight: 700; }
+        .chart-figure { margin: 30px 0; }
+        .chart-figure figcaption { font-size: 0.85rem; color: var(--warm-gray-dark); margin-top: 8px; }
+        .source-list { margin: 0 0 0 22px; font-size: 0.9rem; color: var(--warm-gray-dark); }
+        .source-list li { margin-bottom: 8px; line-height: 1.6; }
+        .source-list a { color: var(--warm-gray-dark); }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="https://contraco.net/" class="logo" id="site-logo">
+                <img src="https://contraco.net/Logo_rectangle.svg" alt="contraco" onerror="this.parentElement.classList.add('logo-failed');">
+                <span class="logo-fallback">contraco</span>
+            </a>
+            <div style="display: flex; align-items: center;">
+                <ul class="nav-menu">
+                    <li><a href="https://contraco.net/" class="nav-link">Home</a></li>
+                    <li><a href="https://contraco.net/#services" class="nav-link">Services</a></li>
+                    <li><a href="https://contraco.net/#methodology" class="nav-link">Methodology</a></li>
+                    <li><a href="https://contraco.net/insights.html" class="nav-link active">Insights</a></li>
+                    <li><a href="https://contraco.net/about.html" class="nav-link">About</a></li>
+                    <li><a href="https://contraco.net/press.html" class="nav-link">Press</a></li>
+                    <li><a href="https://contraco.net/#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <a href="https://contraco.net/the-booking-you-never-saw.html" class="lang-link active">EN</a>
+                    <a href="https://contraco.de/die-buchung-die-sie-nie-gesehen-haben.html" class="lang-link">DE</a>
+                    <a href="https://contraco.com/" class="lang-link">RU</a>
+                    <a href="https://contraco.com/" class="lang-link">KO</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Hero -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-label">Talk | 8 min read</span>
+                    <h1 class="hero-title">The Booking You Never Saw</h1>
+                    <p class="hero-standfirst">An AI agent booked a complete trip, flight, hotel and rental car, and no tour operator, booking site or travel agency ever saw the customer. What that means for the travel industry was the subject of our talk at the fvw|TravelTalk Kongress in Leipzig.</p>
+                    <p class="hero-meta">contraco | fvw|TravelTalk Kongress, Leipzig, September 16, 2026</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1 -->
+        <section class="article-section white">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">One instruction, four constraints</h2>
+                    <p class="article-p">For the talk we made a test purchase. The instruction to an AI travel planner was short and said nothing about how to carry it out. In substance it read as follows.</p>
+                    <ul class="article-list">
+                        <li>Two travellers, Thursday to Sunday, late October, Miami.</li>
+                        <li>A hotel within walking distance of the beach, not on the Strip.</li>
+                        <li>A rental car for one day outside the city.</li>
+                        <li>The instruction given in English, on an English-language platform.</li>
+                    </ul>
+                    <p class="article-p">The agent assembled a complete trip from that, booked it and paid for it. Flight, hotel and rental car were confirmed. The planner holds no inventory of its own. It sells visibility to hotels and destinations, from a published price list. The new commission therefore already has a price. It is simply paid at a point where the established industry does not sit.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="article-section gray">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">What did not happen in this booking</h2>
+                    <p class="article-p">The more telling observation concerns what was missing. Three things on which twenty years of online business were built did not occur in this booking.</p>
+                    <ul class="article-list">
+                        <li><strong>No visit.</strong> No traffic reached the suppliers' own platforms, so there was no visibility in their own channel.</li>
+                        <li><strong>No results page.</strong> Search, filtering and selection happened inside the agent. No supplier's results page lay on the purchase path.</li>
+                        <li><strong>No reactivation.</strong> There was no direct customer contact and no customer account, so nothing to build a newsletter, a campaign or a repeat booking on.</li>
+                    </ul>
+                    <p class="article-p">All three suppliers were paid all the same, the airline, the hotel and the car rental company. What arrived at each supplier was a query and a payment, with no customer attached.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="article-section white">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">The channels are the same. The chooser is new</h2>
+                    <p class="article-p">Suppliers, travel agencies and tour operators still exist, and the booking runs through the same channels as before. What has changed is the point at which someone decides which channel is used. The traveller used to choose. In a growing share of cases an agent now chooses on the traveller's behalf.</p>
+                    <p class="article-p">That does not mean a channel disappears. In Germany, high-street travel retail has survived twenty years of online booking. It stood at EUR 21.0 billion in 2025, against EUR 22.0 billion in 2005, after a collapse to EUR 8.3 billion in 2021. Germany has about 8,000 travel agencies with a high-street business and a further 3,900 other points of sale. The agent is a third channel next to the travel agency and online booking. It takes share from both.</p>
+                    <figure class="chart-figure">
+                        <svg viewBox="0 0 700 290" role="img" aria-label="High-street travel retail revenue in Germany, 2005 to 2025, EUR billion" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto;">
+                            <line x1="30" y1="240" x2="690" y2="240" style="stroke: var(--warm-gray-medium); stroke-width: 1;"/>
+                            <rect x="40" y="65.4" width="60" height="174.6" style="fill: var(--deep-charcoal);"/>
+                            <rect x="135" y="40" width="60" height="200" style="fill: var(--deep-charcoal);"/>
+                            <rect x="230" y="174.1" width="60" height="65.9" style="fill: var(--deep-charcoal);"/>
+                            <rect x="325" y="109.8" width="60" height="130.2" style="fill: var(--deep-charcoal);"/>
+                            <rect x="420" y="75.7" width="60" height="164.3" style="fill: var(--deep-charcoal);"/>
+                            <rect x="515" y="65.4" width="60" height="174.6" style="fill: var(--deep-charcoal);"/>
+                            <rect x="610" y="73.3" width="60" height="166.7" style="fill: var(--primary-red);"/>
+                            <g style="font-family: var(--font-sans); font-size: 14px; fill: var(--deep-charcoal);" text-anchor="middle">
+                                <text x="70" y="57">22.0</text>
+                                <text x="165" y="32">25.2</text>
+                                <text x="260" y="166">8.3</text>
+                                <text x="355" y="102">16.4</text>
+                                <text x="450" y="68">20.7</text>
+                                <text x="545" y="57">22.0</text>
+                                <text x="640" y="65">21.0</text>
+                                <text x="70" y="262">2005</text>
+                                <text x="165" y="262">2016</text>
+                                <text x="260" y="262">2021</text>
+                                <text x="355" y="262">2022</text>
+                                <text x="450" y="262">2023</text>
+                                <text x="545" y="262">2024</text>
+                                <text x="640" y="262">2025</text>
+                            </g>
+                        </svg>
+                        <figcaption>High-street travel retail revenue in Germany, EUR billion, nominal. Source DRV, Der deutsche Reisemarkt, Zahlen und Fakten 2025.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="article-section gray">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">One contract instead of three</h2>
+                    <p class="article-p">For an agent, the package holiday is the simpler transaction. Booking flight, hotel and rental car separately creates three contracts with three prices, three cancellation rules and nobody responsible for the combination. If one connection fails, the risk sits with the customer, and there is no insolvency protection for the combination. A package holiday bundles one contract, one total price, one cancellation rule and one point of contact, including when a component fails, plus liability and insolvency protection.</p>
+                    <p class="article-p">That is an advantage the German tour operator industry already holds.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5 -->
+        <section class="article-section white">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">The product exists. The connection is missing</h2>
+                    <p class="article-p">The German travel market reached EUR 87.9 billion in 2025, packaged and individually booked travel combined. The question for the industry is not whether it has products, but how much of that an agent can book today.</p>
+                    <p class="article-p">The direction is visible. On August 27, 2026, Google began rolling out hotel booking inside AI Mode in Search, in the United States and in English. The traveller pays through Google Pay, and the hotel or booking site remains the merchant of record. The ten launch partners are five online travel agencies and five hotel chains. No European tour operator is among them.</p>
+                    <p class="article-p">German travellers are ahead of the industry. In a representative 2025 survey by Bitkom, 58 percent of holidaymakers said they would trust an AI to plan and book a complete holiday based on their preferences. Among 16 to 29 year olds it was 66 percent, and among those aged 65 and over it was still 46 percent.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6 -->
+        <section class="article-section gray">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">The infrastructure is being built now</h2>
+                    <ul class="article-list">
+                        <li>January 7, 2026. Sabre demonstrates agentic booking out of its own global distribution system, with search, booking, servicing and payment by chat or voice.</li>
+                        <li>July 9, 2026. Dida opens about 75,000 directly contracted hotels to partners' AI agents through an API, with no redirect.</li>
+                        <li>August 27, 2026. Google starts hotel booking inside AI Mode in Search, with ten partners and payment through Google Pay.</li>
+                        <li>September 3, 2026. Amadeus brings flight and destination content into AI tools, two months after closing its self-service developer portal.</li>
+                    </ul>
+                    <p class="article-p">In eight months the entire supply chain opened up to agents.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7 -->
+        <section class="article-section white">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">The platform keeps the decision data</h2>
+                    <p class="article-p">Four items of master data reach the supplier, being name, address, date of birth and travel dates. The agent saw more. It knows the reason for the trip, how long the traveller spent looking, the alternatives in the comparison, why this offer won, and how flexible the traveller was on price. On its call for the second quarter of 2026, Expedia's chief executive said that its conversational features yield more than 60 percent more information about traveller intent, while they do not yet drive conversion.</p>
+                    <p class="article-p"><strong>Whoever knows who booked sends the invoice. Whoever knows why gets the next booking.</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8 -->
+        <section class="article-section gray">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">At the fifth step, nobody can say who is liable</h2>
+                    <p class="article-p">A purchase has five steps. Selection, checking the terms, confirmation and payment have already moved to the agent. The fifth step, the conclusion of the contract, no longer has a clear addressee. Who is acting, on whose behalf, and who is liable? It used to be the customer and the supplier. Today the question is open.</p>
+                    <p class="article-p">Part of the German civil-law literature rules out representation, because software has no legal capacity. Those who accept it by analogy get no further on the result, because the agent has no assets of its own, so liability as a representative acting without authority runs into nothing. Some providers respond by excluding orders placed by agents in their terms and conditions. How attribution works through the configuration the user sets in advance is set out in <a href="https://contraco.net/agentic-commerce-governance.html">Agentic Commerce Governance</a>. What applies to the payment is covered in <a href="https://contraco.net/autonomous-payments.html">Autonomous Payments</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9 -->
+        <section class="article-section white">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">Once you are bookable, an agent buys from you</h2>
+                    <p class="article-p">Trust in agentic commerce has three layers. Identity is being built, with the European Digital Identity Wallet and an industry association project. The mandate is open, because today nobody checks on whose behalf an agent buys. Liability is open, because there is no recourse. Whoever can check and prove the mandate holds the trust.</p>
+                    <p class="article-p">The first step is in your own house. Review your terms and conditions and your booking flow for the agent case.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 10 -->
+        <section class="article-section gray">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">Ship a product, not a catalogue</h2>
+                    <p class="article-p">If you are not bookable, you are not on offer. That means making at least one product or service bookable through an interface, through to confirmation, and giving the agent decision context rather than bare attributes.</p>
+                    <p class="article-p">The test is simple. Have an agent search for your best-selling package and answer four questions.</p>
+                    <ul class="article-list">
+                        <li>Does it find it?</li>
+                        <li>Does it get a price?</li>
+                        <li>Can it book?</li>
+                        <li>Does it receive a travel confirmation?</li>
+                    </ul>
+                    <p class="article-p">You know it is working when the agent gives a reason for its recommendation instead of only reporting availability, and when your product appears in answers you never saw.</p>
+                    <p class="article-p">Two paths are open. Building your own agent wins you your own customer interface and the data from it, and you carry the build and the operation. Becoming bookable for other people's agents wins you reach where you are absent today, and in that channel you hand over the decision data. Both paths are business models. Staying undecided is not one.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 11 -->
+        <section class="article-section white">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">Eight seconds</h2>
+                    <p class="article-p">In June it was a single flight, booked in eight seconds. In September it was a whole trip. Your answer should not take eight years.</p>
+                    <p class="article-p">How it started is covered in our analysis of <a href="https://contraco.net/first-agentic-purchase-travel.html">why a trip was among Europe's first agentic purchases</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sources -->
+        <section class="article-section gray">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">Sources</h2>
+                    <ul class="source-list">
+                        <li>Test purchase through an AI travel planner that holds no inventory of its own, contraco's own observation, September 2026. Visibility packages for hotels and destinations sold from a published price list.</li>
+                        <li>DRV, Der deutsche Reisemarkt, Zahlen und Fakten 2025, as of March 2026. Revenue series nominal, data from the YouGov MobilitätsMonitor. Agency count after the industry structure analysis by Dr. Fried &amp; Partner. Total market EUR 87.9 billion.</li>
+                        <li><a href="https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/" target="_blank" rel="noopener">Google, "3 new ways to plan and book travel in Search", August 27, 2026.</a></li>
+                        <li><a href="https://www.bitkom.org/Presse/Presseinformation/Mehrheit-KI-Urlaub-planen-lassen" target="_blank" rel="noopener">Bitkom, press release "Mehrheit würde sich von KI den kompletten Urlaub planen lassen", July 24, 2025. Bitkom Research, representative, n = 1,006 aged 16 and over, of whom 955 holidaymakers, telephone, calendar weeks 18 to 21 of 2025.</a></li>
+                        <li>PhocusWire and Sabre Newsroom, January 2026. Dida Holdings, July 9, 2026. Skift and Amadeus blog, September 3, 2026.</li>
+                        <li>Pravemann, Künstliche Intelligenz im Vertragsrecht, RDi 2025, 620 to 626. Lukas, Willenserklärungen und Vertragsschluss selbststeuernder Systeme, LRZ 2021, 97. Heilmann, Iubenda, interviewed by Springer Professional, August 31, 2026.</li>
+                        <li>Expedia Group, second-quarter 2026 earnings call.</li>
+                        <li><a href="https://dev.to/zologic/we-just-completed-a-live-ai-agent-flight-booking-end-to-end-3b2" target="_blank" rel="noopener">Zologic, "We Just Completed a Live AI-Agent Flight Booking End to End", June 1, 2026.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="cta-title">Is your product bookable for an agent?</h2>
+                <p class="cta-description">contraco checks with you whether your best-selling product can be found, priced and booked by an agent, and which of the two paths fits your business model. The framework behind it is set out in <a href="https://contraco.net/agentic-commerce-governance.html">Agentic Commerce Governance</a>.</p>
+                <a href="https://contraco.net/#contact" class="cta-button">
+                    Start the conversation
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="company-info">
+                    <div class="footer-links">
+                        <a href="https://contraco.net/">Home</a>
+                        <a href="https://contraco.net/about.html">About Us</a>
+                        <a href="https://contraco.net/#services">Services</a>
+                        <a href="https://contraco.net/#methodology">Methodology</a>
+                        <a href="https://contraco.net/insights.html">Insights</a>
+                        <a href="https://contraco.net/faq.html">FAQ</a>
+                        <a href="https://contraco.net/#contact">Contact</a>
+                        <a href="https://contraco.net/press.html">Press</a>
+                    </div>
+                    <h4>contraco USA</h4>
+                    <p>Premium transformation consulting combining strategic clarity, technological intelligence, and psychological depth.</p>
+                    <p><strong>Email:</strong> transformation@contraco.net</p>
+                    <p><strong>Phone:</strong> +1 (312) 940-0326</p>
+                </div>
+                <div class="imprint-section">
+                    <h4>Company Information</h4>
+                    <div class="imprint-details">
+                        <p><strong>contraco</strong></p>
+                        <p>1209 10th Ln.</p>
+                        <p>Ava, MO 65608</p>
+                        <p>United States</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-privacy-links">
+                    <a href="/privacy-statement.html">Privacy Statement</a> &bull; <a href="https://www.linkedin.com/company/contraco" rel="noopener">LinkedIn</a> &bull; <a href="https://www.linkedin.com/in/frankmeltke" rel="noopener">Frank Meltke on LinkedIn</a> &bull; <a href="https://meltke.com" rel="noopener">Frank Meltke</a>
+                </div>
+                <p>&copy; 2026 contraco. All rights reserved.</p>
+                <p class="trademark-notice">The Resonance Method™ is a trademark of contraco.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const logo = document.getElementById('site-logo');
+            const img = logo.querySelector('img');
+            let retryCount = 0;
+            const maxRetries = 2;
+
+            function retryLoadLogo() {
+                retryCount++;
+                if (retryCount <= maxRetries) {
+                    img.src = img.src + '?retry=' + retryCount;
+                } else {
+                    logo.classList.add('logo-failed');
+                }
+            }
+
+            img.addEventListener('error', retryLoadLogo);
+            img.addEventListener('load', function() {
+                logo.classList.remove('logo-failed');
+            });
+        })();
+
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(248, 246, 243, 0.98)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.background = 'rgba(248, 246, 243, 0.95)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+<script>
+  window.goatcounter = { path: function(p) { return location.host + p } }
+</script>
+<script data-goatcounter="https://contraco.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
