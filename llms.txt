@@ -85,6 +85,7 @@ contraco publishes across four domains: [English](https://contraco.net), [German
 - [Privacy Statement](https://contraco.net/privacy-statement.html)
 - [The Resonance Method™](https://contraco.net/resonance-method.html)
 - [Strategic Intelligence for AI Transformation](https://contraco.net/strategic-intelligence.html)
+- [The Booking You Never Saw](https://contraco.net/the-booking-you-never-saw.html)
 - [Vendor Selection Mastery](https://contraco.net/vendor-selection-mastery.html)
 - [Agentic Commerce Liability](https://contraco.net/who-audits-the-ai-agent.html)
 <!-- AUTO-PAGES:END -->
