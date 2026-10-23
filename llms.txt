@@ -33,6 +33,7 @@ contraco publishes across four domains: [English](https://contraco.net), [German
 
 <!-- AUTO-PAGES:START -->
 - [Transformation Consulting Since 1998](https://contraco.net/about.html)
+- [Confirmation Is Not Authorisation in Agentic Travel](https://contraco.net/agent-mandate-travel-terms.html)
 - [Why Your US Agentic Checkout Breaks in Europe](https://contraco.net/agentic-checkout-europe.html)
 - [Agentic Commerce Consulting](https://contraco.net/agentic-commerce-consulting.html)
 - [The Control Layer in Agentic Commerce](https://contraco.net/agentic-commerce-control-layer.html)
