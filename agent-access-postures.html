@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prohibit, Disclaim, Authorise. How Sellers Answer the AI Agent | contraco</title>
+
+    <link rel="canonical" href="https://contraco.net/agent-access-postures.html">
+    <link rel="entity-manifest" href="https://contraco.net/.well-known/entity-manifest.json">
+    <link rel="jwks" href="https://contraco.net/.well-known/jwks.json">
+    <meta name="robots" content="index, follow">
+
+    <!-- International SEO hreflang -->
+    <link rel="alternate" href="https://contraco.com/" hreflang="x-default" />
+    <link rel="alternate" href="https://contraco.net/agent-access-postures.html" hreflang="en" />
+    <link rel="alternate" href="https://contraco.de/agent-access-postures.html" hreflang="de" />
+
+    <!-- Fonts -->
+    <style>
+@font-face { font-family: 'Crimson Text'; font-style: normal; font-weight: 400; src: url('/fonts/crimson-text-v21-latin-regular.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Crimson Text'; font-style: normal; font-weight: 600; src: url('/fonts/crimson-text-v21-latin-600.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Crimson Text'; font-style: italic; font-weight: 400; src: url('/fonts/crimson-text-v21-latin-italic.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 300; src: url('/fonts/lato-v24-latin-300.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 400; src: url('/fonts/lato-v24-latin-regular.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Lato'; font-style: italic; font-weight: 400; src: url('/fonts/lato-v24-latin-italic.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 500; src: url('/fonts/lato-v24-latin-regular.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 600; src: url('/fonts/lato-v24-latin-700.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 700; src: url('/fonts/lato-v24-latin-700.woff2') format('woff2'); font-display: swap; }
+</style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#C00000">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#C00000">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Booking.com prohibits AI agents, Delta disclaims them, Walmart authorises them. Read side by side, the terms show who built controls and who built an exit.">
+    <meta name="keywords" content="AI agent terms of use, agentic commerce, agent authorisation, Booking.com, Delta, Walmart agent profiles, contraco">
+    <meta name="author" content="contraco">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://contraco.net/agent-access-postures.html">
+    <meta property="og:title" content="Prohibit, Disclaim, Authorise. How Sellers Answer the AI Agent">
+    <meta property="og:description" content="Booking.com prohibits AI agents, Delta disclaims them, Walmart authorises them. Read side by side, the terms show who built controls and who built an exit.">
+    <meta property="og:logo" content="https://contraco.net/Logo_rectangle.svg">
+    <meta property="og:image" content="https://contraco.net/contraco_4K.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="contraco - Digital Transformation Consulting">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Prohibit, Disclaim, Authorise. How Sellers Answer the AI Agent">
+    <meta name="twitter:description" content="Booking.com prohibits AI agents, Delta disclaims them, Walmart authorises them. Read side by side, the terms show who built controls and who built an exit.">
+    <meta name="twitter:image" content="https://contraco.net/contraco_4K.png">
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "contraco",
+    "url": "https://contraco.net/",
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https://contraco.net/Logo_rectangle.svg",
+        "width": 400,
+        "height": 100
+    },
+    "email": "transformation@contraco.net",
+    "telephone": "+13129400326",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1209 10th Ln.",
+        "addressLocality": "Ava",
+        "addressRegion": "MO",
+        "postalCode": "65608",
+        "addressCountry": "US"
+    },
+    "foundingDate": "1998",
+    "founder": {
+        "@type": "Person",
+        "@id": "https://meltke.com/#person",
+        "name": "Frank Meltke",
+        "url": "https://meltke.com"
+    },
+    "areaServed": "Global",
+    "sameAs": ["https://www.wikidata.org/wiki/Q139681815","https://www.linkedin.com/company/contraco","https://contraco.com","https://contraco.ru","https://contraco.co.kr"]
+}
+</script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Prohibit, Disclaim, Authorise",
+    "description": "Booking.com prohibits AI agents, Delta disclaims them, Walmart authorises them. Read side by side, the terms show who built controls and who built an exit.",
+    "url": "https://contraco.net/agent-access-postures.html",
+    "datePublished": "2026-10-24",
+    "author": {
+        "@type": "Person",
+        "@id": "https://meltke.com/#person",
+        "name": "Frank Meltke",
+        "url": "https://meltke.com"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "contraco",
+        "url": "https://contraco.net/"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://contraco.net/agent-access-postures.html"
+    }
+}
+</script>
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "contraco",
+            "item": "https://contraco.net/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Insights",
+            "item": "https://contraco.net/insights.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Prohibit, Disclaim, Authorise",
+            "item": "https://contraco.net/agent-access-postures.html"
+        }
+    ]
+}
+</script>
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "url": "https://contraco.net/agent-access-postures.html",
+    "name": "Prohibit, Disclaim, Authorise. How Sellers Answer the AI Agent | contraco",
+    "description": "Booking.com prohibits AI agents, Delta disclaims them, Walmart authorises them. Read side by side, the terms show who built controls and who built an exit.",
+    "datePublished": "2026-10-24",
+    "dateModified": "2026-10-24",
+    "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://contraco.net/#website",
+        "name": "contraco",
+        "url": "https://contraco.net/"
+    }
+}
+</script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-red: #C00000;
+            --deep-charcoal: #404040;
+            --warm-white: #F8F6F3;
+            --warm-gray-light: #E5E2DD;
+            --warm-gray-medium: #A8A5A0;
+            --warm-gray-dark: #6B6B6B;
+            --container-max: 1200px;
+            --font-serif: 'Crimson Text', Georgia, serif;
+            --font-sans: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --section-padding: 100px 0;
+            --transition-fast: all 0.3s ease;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            color: var(--deep-charcoal);
+            background-color: var(--warm-white);
+        }
+
+        .container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(248, 246, 243, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 12px 0;
+            transition: var(--transition-fast);
+        }
+
+        .nav-container {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .logo {
+            margin-left: 60px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 58px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover img {
+            transform: scale(1.05);
+        }
+
+        .logo-fallback {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-red);
+            letter-spacing: -0.02em;
+            font-family: var(--font-serif);
+            transition: var(--transition-fast);
+            display: none;
+        }
+
+        .logo.logo-failed img {
+            display: none;
+        }
+
+        .logo.logo-failed .logo-fallback {
+            display: block;
+        }
+
+        .nav-menu {
+            margin-right: 60px;
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--deep-charcoal);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-red);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--primary-red);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-link.active {
+            color: var(--primary-red);
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            display: flex;
+            gap: 8px;
+            margin-left: 20px;
+        }
+
+        .lang-link {
+            text-decoration: none;
+            color: var(--warm-gray-medium);
+            font-weight: 500;
+            font-size: 0.85rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .lang-link:hover {
+            color: var(--primary-red);
+            background-color: var(--warm-white);
+        }
+
+        .lang-link.active {
+            color: var(--primary-red);
+            background-color: var(--warm-white);
+            font-weight: 600;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding-top: 100px;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--warm-white) 0%, var(--warm-gray-light) 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-label {
+            display: inline-block;
+            background: var(--primary-red);
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            padding: 6px 16px;
+            border-radius: 20px;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+        }
+
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: var(--deep-charcoal);
+            line-height: 1.2;
+        }
+
+        .hero-standfirst {
+            font-size: 1.2rem;
+            color: var(--warm-gray-dark);
+            line-height: 1.7;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        /* Article Sections */
+        .article-section {
+            padding: 80px 0;
+        }
+
+        .article-section.white {
+            background: white;
+        }
+
+        .article-section.gray {
+            background: var(--warm-gray-light);
+        }
+
+        .article-container {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .section-h2 {
+            font-family: var(--font-serif);
+            font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+            font-weight: 600;
+            color: var(--deep-charcoal);
+            margin-bottom: 28px;
+            line-height: 1.3;
+        }
+
+        .article-p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--deep-charcoal);
+            margin-bottom: 20px;
+        }
+
+        .article-p a {
+            color: var(--primary-red);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .article-p a:hover {
+            text-decoration: underline;
+        }
+
+        /* Closing Section */
+        .closing-section {
+            background: white;
+            padding: 80px 0;
+            border-top: 3px solid var(--primary-red);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--deep-charcoal);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .cta-title {
+            font-family: var(--font-serif);
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .cta-description {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--primary-red);
+            color: white;
+            padding: 16px 36px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transition-fast);
+        }
+
+        .cta-button:hover {
+            background: #D63E20;
+            transform: translateY(-2px);
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--deep-charcoal);
+            color: var(--warm-gray-light);
+            padding: 50px 0 35px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 50px;
+            align-items: start;
+            margin-bottom: 32px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+
+        .footer-links a {
+            color: var(--warm-gray-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-red);
+        }
+
+        .footer-privacy-links {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .footer-privacy-links a {
+            color: var(--warm-gray-medium);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-privacy-links a:hover {
+            color: var(--primary-red);
+        }
+
+        .company-info h4 {
+            color: var(--primary-red);
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            font-family: var(--font-serif);
+        }
+
+        .company-info p {
+            margin-bottom: 8px;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .company-info strong {
+            color: var(--warm-gray-light);
+        }
+
+        .imprint-section h4 {
+            color: var(--primary-red);
+            font-size: 1rem;
+            margin-bottom: 12px;
+            font-family: var(--font-serif);
+        }
+
+        .imprint-details {
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .imprint-details p {
+            margin-bottom: 6px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 25px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        .trademark-notice {
+            margin-top: 8px;
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .container,
+            .nav-container {
+                padding: 0 20px;
+            }
+
+            .logo {
+                margin-left: 20px;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+
+            .hero-title {
+                font-size: 2.2rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+    <style>
+        /* Fliesstextlinks ohne eigene Klasse in Markenfarbe, 2026-10-03. Null-Spezifitaet, greift nur, wo kein anderes Seitenstyling die Linkfarbe setzt. */
+        :where(body) :where(a:not([class])) { color: var(--primary-red); }
+        :where(.cta-section, .leadership-insight, .change-challenge, .insight-box, footer) :where(a:not([class])) { color: inherit; }
+        /* Lange deutsche Komposita in Ueberschriften brechen auf schmalen Bildschirmen um, 2026-10-03. */
+        @media (max-width: 600px) {
+            :where(h1, h2, h3, h4) { overflow-wrap: break-word; hyphens: auto; }
+        }
+        /* Kopfzeile auf Smartphones im Hochformat, 2026-10-03. Logo, Menue-Symbol und Sprachumschalter passen ab 360 px in eine Zeile. */
+        @media (max-width: 480px) {
+            .nav-container, .header-content { padding-left: 12px; padding-right: 12px; }
+            .logo { margin-left: 0; }
+            .logo img { height: 44px; }
+            .language-switcher { margin-left: 6px; gap: 2px; }
+            .lang-link { padding: 4px 5px; }
+        }
+    </style>
+    <style>
+        /* Page-specific, agent-access-postures */
+        .table-wrap { overflow-x: auto; margin: 32px 0; }
+        .audit-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; line-height: 1.5; background: white; }
+        .audit-table caption { text-align: left; font-size: 0.85rem; color: var(--warm-gray-dark); font-style: italic; margin-bottom: 10px; }
+        .audit-table th, .audit-table td { border-bottom: 1px solid var(--warm-gray-light); padding: 10px 12px; text-align: left; vertical-align: top; }
+        .audit-table thead th { background: var(--deep-charcoal); color: white; font-weight: 600; }
+        .audit-table tbody th { font-weight: 600; color: var(--deep-charcoal); }
+        .compare-table td:nth-child(3) { border-left: 3px solid var(--primary-red); }
+        .source-list { padding-left: 1.4em; margin-top: 8px; }
+        .source-list li { margin-bottom: 6px; }
+        .source-note { font-size: 0.85rem; color: var(--warm-gray-dark); }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="https://contraco.net/" class="logo" id="site-logo">
+                <img src="https://contraco.net/Logo_rectangle.svg" alt="contraco" onerror="this.parentElement.classList.add('logo-failed');">
+                <span class="logo-fallback">contraco</span>
+            </a>
+            <div style="display: flex; align-items: center;">
+                <ul class="nav-menu">
+                    <li><a href="https://contraco.net/" class="nav-link">Home</a></li>
+                    <li><a href="https://contraco.net/#services" class="nav-link">Services</a></li>
+                    <li><a href="https://contraco.net/#methodology" class="nav-link">Methodology</a></li>
+                    <li><a href="https://contraco.net/insights.html" class="nav-link active">Insights</a></li>
+                    <li><a href="https://contraco.net/about.html" class="nav-link">About</a></li>
+                    <li><a href="https://contraco.net/press.html" class="nav-link">Press</a></li>
+                    <li><a href="https://contraco.net/#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <a href="https://contraco.net/agent-access-postures.html" class="lang-link active">EN</a>
+                    <a href="https://contraco.de/agent-access-postures.html" class="lang-link">DE</a>
+                    <a href="https://contraco.com/" class="lang-link">RU</a>
+                    <a href="https://contraco.com/" class="lang-link">KO</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Hero -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-label">Analysis | 6 min read</span>
+                    <h1 class="hero-title">Prohibit, Disclaim, Authorise</h1>
+                    <p class="hero-standfirst">Consumer AI agents now shop and book on a person's behalf. Sellers have started to answer in their terms of use, and the answers fall into three postures. Which one a seller chose says less about technology than about who pays when the agent gets it wrong.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1 -->
+        <section class="article-section white">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">The agent is already at the door</h2>
+                    <p class="article-p">On 8 September 2026 Meta introduced Muse, a personal AI agent that can book travel, fill out forms and make purchases, rolling out in the United States. Meta describes a component it calls the Sentinel, through which nothing the agent does reaches the internet unless it is approved, and which asks the person for permission when needed. Payment runs through Link, built by Stripe, which generates a one-time-use card so that the real card details stay hidden. [Q1]</p>
+                    <p class="article-p">Agents like this reach sellers whose terms were written for people and for crawlers. Three published terms show three different answers to the same visitor.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="article-section gray">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">Three postures, in the sellers' own terms</h2>
+                    <div class="table-wrap">
+                    <table class="audit-table">
+                        <caption>Published terms read on 24 October 2026</caption>
+                        <thead>
+                            <tr><th scope="col">Seller</th><th scope="col">Document</th><th scope="col">Posture</th><th scope="col">What the terms say about an agent acting for the customer</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Booking.com</td><td>Customer terms of service, clause A15.2, updated 25 August 2025</td><td>Prohibition</td><td>Bars access by automated means or automated assistants, AI-powered assistants included, whether or not the purpose is commercial, and does not authorise their use to make bookings. [Q2]</td></tr>
+                            <tr><td>Delta Air Lines</td><td>Terms of Use, no date shown</td><td>Disclaimer</td><td>A customer who relies on an AI assistant or automated agent does so at their own risk. The agent is neither authorised, approved nor endorsed, and Delta may refuse to service it. [Q3]</td></tr>
+                            <tr><td>Walmart</td><td>Terms for AI agents, newsroom post of 21 October 2026</td><td>Authorisation</td><td>Agent purchases need the customer's approval by default, or stay within a spending limit the customer sets. Agents never receive card details, and the returns process applies even if an agent does not act as intended. [Q4]</td></tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <p class="article-p">Booking.com answered before the agents arrived. Its clause states plainly that "Booking.com does not authorize the use of automated means or automated assistants" to make bookings, and the same terms claim an entitlement to injunctive relief. [Q2]</p>
+                    <p class="article-p">Delta neither prohibits nor authorises. Its terms tolerate the agent, place its acts on the passenger, and say that such use "does not constitute Delta's authorization, approval, or endorsement". [Q3]</p>
+                    <p class="article-p">Walmart writes the contract the agent must satisfy. Agent Profiles, announced for the following month, give each agent its own profile that the customer links, limits and can delete, and agents that break the terms will be blocked from Walmart's site. [Q4]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="article-section white">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">The cheapest errors got the controls</h2>
+                    <figure style="margin: 32px 0;">
+                        <svg viewBox="0 0 760 250" width="100%" role="img" aria-labelledby="postures-title postures-desc" style="max-width: 760px; display: block;">
+                            <title id="postures-title">Three postures toward the AI agent, ordered by the cost of an agent's error</title>
+                            <desc id="postures-desc">Walmart, where an agent's error is cheapest to undo, authorises agents with an approval default and a spending limit. Delta, where an error is a flown segment, disclaims the agent. Booking.com, where an error can be a non-refundable rate, prohibits agent bookings.</desc>
+                            <line x1="40" y1="200" x2="720" y2="200" style="stroke: var(--deep-charcoal); stroke-width: 2;"/>
+                            <polygon points="720,194 732,200 720,206" style="fill: var(--deep-charcoal);"/>
+                            <text x="40" y="232" font-size="13" style="fill: var(--warm-gray-dark); font-family: var(--font-sans);">Error easy to undo</text>
+                            <text x="720" y="232" font-size="13" text-anchor="end" style="fill: var(--warm-gray-dark); font-family: var(--font-sans);">Error hard to undo</text>
+                            <rect x="40" y="40" width="200" height="130" rx="6" style="fill: white; stroke: var(--primary-red); stroke-width: 3;"/>
+                            <text x="140" y="80" font-size="20" text-anchor="middle" style="fill: var(--primary-red); font-family: var(--font-serif); font-weight: 600;">Authorise</text>
+                            <text x="140" y="110" font-size="14" text-anchor="middle" style="fill: var(--deep-charcoal); font-family: var(--font-sans); font-weight: 700;">Walmart</text>
+                            <text x="140" y="135" font-size="12" text-anchor="middle" style="fill: var(--warm-gray-dark); font-family: var(--font-sans);">approval, limit, revocation</text>
+                            <text x="140" y="153" font-size="12" text-anchor="middle" style="fill: var(--warm-gray-dark); font-family: var(--font-sans);">remedy: returns</text>
+                            <rect x="280" y="40" width="200" height="130" rx="6" style="fill: white; stroke: var(--warm-gray-medium); stroke-width: 2;"/>
+                            <text x="380" y="80" font-size="20" text-anchor="middle" style="fill: var(--deep-charcoal); font-family: var(--font-serif); font-weight: 600;">Disclaim</text>
+                            <text x="380" y="110" font-size="14" text-anchor="middle" style="fill: var(--deep-charcoal); font-family: var(--font-sans); font-weight: 700;">Delta Air Lines</text>
+                            <text x="380" y="135" font-size="12" text-anchor="middle" style="fill: var(--warm-gray-dark); font-family: var(--font-sans);">no mandate, no endorsement</text>
+                            <text x="380" y="153" font-size="12" text-anchor="middle" style="fill: var(--warm-gray-dark); font-family: var(--font-sans);">risk: the passenger</text>
+                            <rect x="520" y="40" width="200" height="130" rx="6" style="fill: white; stroke: var(--deep-charcoal); stroke-width: 2;"/>
+                            <text x="620" y="80" font-size="20" text-anchor="middle" style="fill: var(--deep-charcoal); font-family: var(--font-serif); font-weight: 600;">Prohibit</text>
+                            <text x="620" y="110" font-size="14" text-anchor="middle" style="fill: var(--deep-charcoal); font-family: var(--font-sans); font-weight: 700;">Booking.com</text>
+                            <text x="620" y="135" font-size="12" text-anchor="middle" style="fill: var(--warm-gray-dark); font-family: var(--font-sans);">no agent bookings</text>
+                            <text x="620" y="153" font-size="12" text-anchor="middle" style="fill: var(--warm-gray-dark); font-family: var(--font-sans);">remedy: refusal</text>
+                        </svg>
+                        <figcaption class="source-note" style="margin-top: 8px;">The three postures, ordered by how hard an agent's error is to undo. Diagram: contraco original, from the terms in Q2 to Q4.</figcaption>
+                    </figure>
+                    <p class="article-p">Read side by side, the order runs against intuition. Walmart, whose errors are the cheapest to undo, is the only one of the three to build a mandate construct, with an approval default, a spending limit, revocation and separate attribution. It can afford to, because it already owns the remedy and says so in the same list of terms. Delta, whose error is a flown segment, and Booking.com, whose error can be a non-refundable rate, publish no mandate. One places the agent's acts on the passenger. The other refuses the agent.</p>
+                    <p class="article-p">The party with the cheapest errors built the control. The parties with the most expensive errors built the exit. That is our reading of the documents, not a statement by any of the three companies.</p>
+                    <p class="article-p">It also shows what none of them does. Walmart's controls govern permission, meaning how much an agent may spend and with whose approval. None of the three verifies correctness, meaning whether the item the agent chose is the item the shopper wanted. Walmart answers that question with returns, Delta by leaving the passenger to carry the agent's acts, and Booking.com by not letting the agent book at all. Why that check is still missing is the subject of <a href="https://contraco.net/who-audits-the-ai-agent.html">Who Is Liable When an AI Agent Buys?</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Closing Section -->
+        <section class="closing-section">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="section-h2">The fourth posture</h2>
+                    <p class="article-p">The other European travel companies we read on 23 October 2026 have written no rule for an agent acting for a customer, as <a href="https://contraco.net/agent-mandate-travel-terms.html">Confirmation Is Not Authorisation</a> shows, and the only delegation construct we found in European travel was built in 2018 for a person.</p>
+                    <p class="article-p">What a seller needs is a fourth posture, admission on written terms. Which agents may enter, with what scope and spending limit, how the customer revokes that authority, and how the seller records it so that an auditor can read it afterwards. How that record fits into a governance model is set out in <a href="https://contraco.net/agentic-commerce-governance.html">Agentic Commerce Governance</a>, and the <a href="https://contraco.net/mandate-chain-diagnostic.html">mandate chain diagnostic</a> tests whether your own controls would carry it.</p>
+                    <p class="article-p">Statements about a company's terms are taken from the documents named in the table, read on 24 October 2026.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sources -->
+        <section class="article-section white">
+            <div class="container">
+                <div class="article-container">
+                    <p class="source-note"><strong>Sources</strong></p>
+                    <ul class="source-note source-list">
+                        <li>Q1: <a href="https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/" target="_blank" rel="noopener">Meta, Introducing Muse: The World's First Personal AI Agent Built for Everyone, 8 September 2026.</a></li>
+                        <li>Q2: <a href="https://www.booking.com/content/terms.html" target="_blank" rel="noopener">Booking.com, Customer terms of service, clause A15.2, updated 25 August 2025.</a></li>
+                        <li>Q3: <a href="https://www.delta.com/us/en/legal/terms-of-use" target="_blank" rel="noopener">Delta Air Lines, Terms of Use, no date shown.</a></li>
+                        <li>Q4: <a href="https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers" target="_blank" rel="noopener">Walmart, Walmart Makes It Possible for Agents to Shop on Behalf of Customers, While Keeping Customers in Control, 21 October 2026.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="cta-title">Start the conversation</h2>
+                <p class="cta-description">Whether you are deciding which agents to admit or how to write the terms they must satisfy, contraco can help you choose your posture before the first dispute chooses it for you.</p>
+                <a href="https://contraco.net/#contact" class="cta-button">
+                    Contact us
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="company-info">
+                    <div class="footer-links">
+                        <a href="https://contraco.net/">Home</a>
+                        <a href="https://contraco.net/about.html">About Us</a>
+                        <a href="https://contraco.net/#services">Services</a>
+                        <a href="https://contraco.net/#methodology">Methodology</a>
+                        <a href="https://contraco.net/insights.html">Insights</a>
+                        <a href="https://contraco.net/faq.html">FAQ</a>
+                        <a href="https://contraco.net/#contact">Contact</a>
+                        <a href="https://contraco.net/press.html">Press</a>
+                    </div>
+                    <h4>contraco USA</h4>
+                    <p>Premium transformation consulting combining strategic clarity, technological intelligence, and psychological depth.</p>
+                    <p><strong>Email:</strong> transformation@contraco.net</p>
+                    <p><strong>Phone:</strong> +1 (312) 940-0326</p>
+                </div>
+                <div class="imprint-section">
+                    <h4>Company Information</h4>
+                    <div class="imprint-details">
+                        <p><strong>contraco</strong></p>
+                        <p>1209 10th Ln.</p>
+                        <p>Ava, MO 65608</p>
+                        <p>United States</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-privacy-links">
+                    <a href="/privacy-statement.html">Privacy Statement</a> &bull; <a href="https://www.linkedin.com/company/contraco" rel="noopener">LinkedIn</a> &bull; <a href="https://www.linkedin.com/in/frankmeltke" rel="noopener">Frank Meltke on LinkedIn</a> &bull; <a href="https://meltke.com" rel="noopener">Frank Meltke</a>
+                </div>
+                <p>&copy; 2026 contraco. All rights reserved.</p>
+                <p class="trademark-notice">The Resonance Method™ is a trademark of contraco.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const logo = document.getElementById('site-logo');
+            const img = logo.querySelector('img');
+            let retryCount = 0;
+            const maxRetries = 2;
+
+            function retryLoadLogo() {
+                retryCount++;
+                if (retryCount <= maxRetries) {
+                    img.src = img.src + '?retry=' + retryCount;
+                } else {
+                    logo.classList.add('logo-failed');
+                }
+            }
+
+            img.addEventListener('error', retryLoadLogo);
+            img.addEventListener('load', function() {
+                logo.classList.remove('logo-failed');
+            });
+        })();
+
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(248, 246, 243, 0.98)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.background = 'rgba(248, 246, 243, 0.95)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+<script>
+  window.goatcounter = { path: function(p) { return location.host + p } }
+</script>
+<script data-goatcounter="https://contraco.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
