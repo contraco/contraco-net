@@ -1,0 +1,288 @@
+name: IndexNow Submit + Sitemap Update (contraco.net)
+
+# Estate-standard workflow, identical in every contraco repository.
+# Only three lines differ per repository: this name, DOMAIN below, and the
+# IndexNow secret name in the step "Submit to IndexNow".
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**/*.html'
+      - '**/*.htm'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  DOMAIN: https://contraco.net
+
+jobs:
+  submit-and-update-sitemap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Get changed HTML files (paths -> normalized URLs)
+        id: changed-files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          BEFORE="${{ github.event.before }}"
+          if git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
+            BASE="$BEFORE"
+          elif git rev-parse -q --verify HEAD~1 >/dev/null; then
+            BASE="HEAD~1"
+          else
+            BASE=""
+          fi
+
+          if [[ -n "$BASE" ]]; then
+            git diff --name-only --diff-filter=AMR "${BASE}" HEAD > changed_all.txt || true
+          else
+            git diff-tree --root --no-commit-id -r --name-only HEAD > changed_all.txt || true
+          fi
+
+          # Same exclusions as the sitemap below
+          grep -Ei '\.(html|htm)$' changed_all.txt \
+          | grep -Ev '(^|/)\.git/|(^|/)404\.html?$|(^|/)yandex_[^/]*\.html$|(^|/)google[^/]*\.html$|(^|/)[^/]*template[^/]*\.html$|(^|/)css_base_styles\.html$' \
+          | sort -u > changed_paths.clean.txt || true
+
+          normalize() {
+            local path="$1"
+            path="${path#./}"
+            local url="${DOMAIN}/${path}"
+            url="${url%/index.html}"
+            url="${url%/index.htm}"
+            if [[ "$path" == "index.html" || "$path" == "index.htm" ]]; then
+              url="${DOMAIN}/"
+            fi
+            printf '%s\n' "$url"
+          }
+
+          : > urls_to_submit.txt
+          if [[ -s changed_paths.clean.txt ]]; then
+            while IFS= read -r p; do
+              normalize "$p"
+            done < changed_paths.clean.txt | sort -u > urls_to_submit.txt
+            echo "URLs to submit:"
+            cat urls_to_submit.txt
+            echo "found_files=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "No HTML/HTM changes detected."
+            echo "found_files=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Generate sitemap.xml
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          normalize() {
+            local path="$1"
+            path="${path#./}"
+            local url="${DOMAIN}/${path}"
+            url="${url%/index.html}"
+            url="${url%/index.htm}"
+            if [[ "$path" == "index.html" || "$path" == "index.htm" ]]; then
+              url="${DOMAIN}/"
+            fi
+            printf '%s\n' "$url"
+          }
+
+          mapfile -t html_files < <(
+            find . \( -name "*.html" -o -name "*.htm" \) \
+              -not -path "./.git/*" \
+              -not -name "404.html" \
+              -not -name "404.htm" \
+              -not -name "yandex_*.html" \
+              -not -name "google*.html" \
+              -not -name "*template*.html" \
+              -not -name "css_base_styles.html" \
+            | sort
+          )
+
+          {
+            printf '%s\n' '<?xml version="1.0" encoding="UTF-8"?>'
+            printf '%s\n' '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+            for file in "${html_files[@]}"; do
+              url="$(normalize "$file")"
+              lastmod="$(git log -1 --format="%cs" -- "$file" 2>/dev/null || true)"
+              lastmod="${lastmod:-$(date -u +"%Y-%m-%d")}"
+              if [[ "$url" == "${DOMAIN}/" ]]; then priority="1.0"; else priority="0.8"; fi
+              printf '  <url>\n'
+              printf '    <loc>%s</loc>\n' "$url"
+              printf '    <lastmod>%s</lastmod>\n' "$lastmod"
+              printf '    <changefreq>weekly</changefreq>\n'
+              printf '    <priority>%s</priority>\n' "$priority"
+              printf '  </url>\n'
+            done
+            printf '%s\n' '</urlset>'
+          } > sitemap.xml
+
+          echo "Generated sitemap with $(grep -c '<url>' sitemap.xml) URLs"
+
+      - name: Regenerate llms.txt page list
+        id: llms
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          START='<!-- AUTO-PAGES:START -->'
+          END='<!-- AUTO-PAGES:END -->'
+
+          # Every estate property must have llms.txt with both markers. If not, the
+          # sitemap is still committed below, then the step "Fail on missing llms.txt" turns the run red.
+          if [[ ! -f llms.txt ]]; then
+            echo "::error::llms.txt is missing. Every estate property must have one."
+            echo "llms_ok=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if ! grep -qF "$START" llms.txt || ! grep -qF "$END" llms.txt; then
+            echo "::error::llms.txt has no AUTO-PAGES markers, page list not regenerated."
+            echo "llms_ok=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "llms_ok=true" >> "$GITHUB_OUTPUT"
+
+          normalize() {
+            local path="$1"
+            path="${path#./}"
+            local url="${DOMAIN}/${path}"
+            url="${url%/index.html}"
+            url="${url%/index.htm}"
+            if [[ "$path" == "index.html" || "$path" == "index.htm" ]]; then
+              url="${DOMAIN}/"
+            fi
+            printf '%s\n' "$url"
+          }
+
+          mapfile -t html_files < <(
+            find . \( -name "*.html" -o -name "*.htm" \) \
+              -not -path "./.git/*" \
+              -not -name "404.html" \
+              -not -name "404.htm" \
+              -not -name "yandex_*.html" \
+              -not -name "google*.html" \
+              -not -name "*template*.html" \
+              -not -name "css_base_styles.html" \
+              -not -name "thank-you.html" \
+              -not -name "contact.html" \
+            | sort
+          )
+
+          : > pages_block.txt
+          for file in "${html_files[@]}"; do
+            url="$(normalize "$file")"
+            title="$(sed -n 's:.*<title>\(.*\)</title>.*:\1:p' "$file" | head -1)"
+            title="$(printf '%s' "$title" | sed -E 's/[[:space:]]*\|[[:space:]]*(contraco|Frank Meltke|Signal).*$//')"
+            title="$(printf '%s' "$title" | sed -e 's/&nbsp;/ /g' -e 's/&trade;/™/g' -e 's/&#8482;/™/g' -e 's/&quot;/"/g' -e "s/&#0*39;/'/g" -e "s/&apos;/'/g" -e 's/&lt;/</g' -e 's/&gt;/>/g' -e 's/&amp;/\&/g')"
+            title="$(printf '%s' "$title" | sed 's/^[[:space:]]*//; s/[[:space:]]*$//')"
+            if [[ -z "$title" ]]; then
+              title="$(basename "$file" .html)"
+            fi
+            printf -- '- [%s](%s)\n' "$title" "$url" >> pages_block.txt
+          done
+
+          entries="$(grep -c '^- \[' pages_block.txt || true)"
+
+          awk -v s="$START" -v e="$END" -v f="pages_block.txt" '
+            $0 == s { print; while ((getline line < f) > 0) print line; skip = 1; next }
+            $0 == e { skip = 0; print; next }
+            !skip   { print }
+          ' llms.txt > llms.txt.new && mv llms.txt.new llms.txt
+
+          rm -f pages_block.txt
+          echo "llms.txt page list regenerated with ${entries} entries"
+
+      - name: Submit to IndexNow
+        if: steps.changed-files.outputs.found_files == 'true'
+        # A failed ping must not block the sitemap commit below.
+        continue-on-error: true
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          command -v jq >/dev/null || { sudo apt-get update -q && sudo apt-get install -y -q jq; }
+          HOST="${DOMAIN#https://}"
+          urls_json="$(jq -R -s -c 'split("\n") | map(select(length > 0))' urls_to_submit.txt)"
+          payload="$(jq -n -c --arg host "$HOST" --arg key "$INDEXNOW_KEY" \
+            --arg loc "${DOMAIN}/${INDEXNOW_KEY}.txt" --argjson urls "$urls_json" \
+            '{host: $host, key: $key, keyLocation: $loc, urlList: $urls}')"
+          http_code="$(curl -s -o /tmp/indexnow_response.txt -w '%{http_code}' -X POST \
+            'https://api.indexnow.org/indexnow' \
+            -H 'Content-Type: application/json; charset=utf-8' -d "$payload")"
+          if [[ "$http_code" == "200" || "$http_code" == "202" ]]; then
+            echo "Successfully submitted $(wc -l < urls_to_submit.txt) URLs to IndexNow (HTTP $http_code)"
+          else
+            echo "IndexNow submission failed. HTTP Status: $http_code"
+            cat /tmp/indexnow_response.txt || true
+            exit 1
+          fi
+
+      - name: Submit to Google Indexing API
+        if: steps.changed-files.outputs.found_files == 'true'
+        # Same reason as IndexNow above; exits non-zero if any URL fails, including a transient 429.
+        continue-on-error: true
+        env:
+          GOOGLE_INDEXING_SA_KEY: ${{ secrets.GOOGLE_INDEXING_SA_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          printf '%s' "$GOOGLE_INDEXING_SA_KEY" > /tmp/sa_key.json
+          trap 'rm -f /tmp/sa_key.json /tmp/gindex.py' EXIT
+          pip install --quiet google-auth 2>/dev/null || true
+          cat > /tmp/gindex.py <<'PY'
+          import json, sys, urllib.request
+          import google.auth.transport.requests
+          from google.oauth2 import service_account
+          creds = service_account.Credentials.from_service_account_file(
+              "/tmp/sa_key.json", scopes=["https://www.googleapis.com/auth/indexing"])
+          creds.refresh(google.auth.transport.requests.Request())
+          urls = [u.strip() for u in open("urls_to_submit.txt") if u.strip()]
+          ok, fail = 0, 0
+          for url in urls:
+              body = json.dumps({"url": url, "type": "URL_UPDATED"}).encode()
+              req = urllib.request.Request(
+                  "https://indexing.googleapis.com/v3/urlNotifications:publish",
+                  data=body,
+                  headers={"Authorization": "Bearer " + creds.token, "Content-Type": "application/json"},
+                  method="POST")
+              try:
+                  with urllib.request.urlopen(req) as r:
+                      print("OK", url, r.status); ok += 1
+              except Exception as e:
+                  print("FAIL", url, e); fail += 1
+          print("Google Indexing API:", ok, "submitted,", fail, "failed")
+          sys.exit(1 if fail > 0 else 0)
+          PY
+          python3 /tmp/gindex.py
+
+      - name: Commit and push sitemap.xml and llms.txt
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions[bot]"
+          git add sitemap.xml
+          if [[ -f llms.txt ]]; then git add llms.txt; fi
+          if git diff --staged --quiet; then
+            echo "No changes to sitemap.xml or llms.txt"
+            exit 0
+          fi
+          git commit -m "Auto-update sitemap.xml"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - name: Fail on missing llms.txt
+        if: steps.llms.outputs.llms_ok != 'true'
+        run: |
+          echo "::error::llms.txt is missing or has no AUTO-PAGES markers. The sitemap was committed; fix llms.txt."
+          exit 1
