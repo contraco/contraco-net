@@ -49,6 +49,7 @@ contraco publishes across four domains: [English](https://contraco.net), [German
 - [When AI Agents Replace the Travel Portal](https://contraco.net/ai-agents-travel-booking.html)
 - [AI Does Not Replace Thinking](https://contraco.net/ai-cognition-essay.html)
 - [AI Strategy Framework: Pilot to Enterprise](https://contraco.net/ai-strategy-framework.html)
+- [AI Terms for Decision-Makers](https://contraco.net/ai-terms.html)
 - [AP2 Mandate Explained](https://contraco.net/ap2-mandate-explained.html)
 - [Autonomous Payments](https://contraco.net/autonomous-payments.html)
 - [Trust Is the Bottleneck, and Banks Own It](https://contraco.net/banks-agentic-commerce-trust.html)
