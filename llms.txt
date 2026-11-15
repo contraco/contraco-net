@@ -44,6 +44,7 @@ contraco publishes across four domains: [English](https://contraco.net), [German
 - [Agentic Commerce, Summer 2026: A Chronicle](https://contraco.net/agentic-commerce-summer-2026.html)
 - [The Agentic Commerce Window: Twelve Months](https://contraco.net/agentic-commerce-window.html)
 - [How AI Agents Dismantle Travel Distribution](https://contraco.net/agentic-travel-distribution.html)
+- [Who Takes the Money When an Agent Books the Trip](https://contraco.net/agentic-travel-payment.html)
 - [Agents Are Not Buying Yet](https://contraco.net/agents-are-not-buying-yet.html)
 - [AI Adoption Research & Strategies](https://contraco.net/ai-adoption-research.html)
 - [When AI Agents Replace the Travel Portal](https://contraco.net/ai-agents-travel-booking.html)
