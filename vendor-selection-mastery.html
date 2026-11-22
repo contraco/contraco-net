@@ -1037,7 +1037,7 @@
     "@type": "WebPage",
     "url": "https://contraco.net/vendor-selection-mastery.html",
     "name": "Vendor Selection Mastery | contraco",
-    "dateModified": "2026-10-03",
+    "dateModified": "2026-11-22",
     "isPartOf": {
         "@type": "WebSite",
         "@id": "https://contraco.net/#website",
@@ -1542,6 +1542,28 @@
                         <p>Organizations typically underestimate total cost of ownership by 35-60% when relying on vendor estimates alone. The largest estimation errors occur in integration complexity (underestimated by 80% on average), customization requirements (underestimated by 60%), and training/change management (underestimated by 70%).</p>
                         <p><strong>Best Practice:</strong> Engage independent consultants with implementation experience for realistic TCO estimates rather than relying solely on vendor projections.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TCO Integration Factor -->
+        <section class="content-section white">
+            <div class="container">
+                <div class="article-container">
+                    <h2 class="content-title">A TCO Model with an Integration Factor</h2>
+                    <p class="content-text">Where vendors differ in how hard they are to integrate, a single integration line in the TCO hides the difference that decides the outcome. The model below makes it explicit. Each vendor's integration cost is its base estimate multiplied by an integration factor, which the buying team scores before any price is compared.</p>
+                    <div class="practice-card" style="margin: 30px 0;">
+                        <p class="content-text" style="margin-bottom: 0; color: var(--deep-charcoal); font-weight: 600;">Five-year TCO = licences + implementation + (integration base cost × integration factor) + training and change + support + customisation and upgrades + exit cost</p>
+                    </div>
+                    <p class="content-text">The integration factor starts at 1.0 and rises by 0.25 for each of the following that applies to the vendor:</p>
+                    <ul class="content-text" style="padding-left: 22px;">
+                        <li>No documented, versioned API for a system that must be connected</li>
+                        <li>No pre-built connector for one of your core systems</li>
+                        <li>A data model that needs mapping your team has not done before</li>
+                        <li>More than three of your systems must change for it to work</li>
+                        <li>Integration not yet proven in a proof of concept with your own data</li>
+                    </ul>
+                    <p class="illustrative-note">Illustrative. Two vendors quote the same integration base cost of $1.0M. Vendor A meets two of the five conditions, a factor of 1.5, and carries $1.5M of integration cost into the model. Vendor B meets four, a factor of 2.0, and carries $2.0M. The cheaper licence can lose on that line alone. The weights are a modelling convention set by contraco, not a measured average.</p>
                 </div>
             </div>
         </section>
