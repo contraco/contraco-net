@@ -153,6 +153,7 @@
             --warm-gray-light: #E5E2DD;
             --warm-gray-medium: #A8A5A0;
             --warm-gray-dark: #6B6B6B;
+            --pure-white: #FFFFFF;
             
             /* Typography */
             --font-serif: 'Crimson Text', Georgia, 'Times New Roman', serif;
@@ -480,21 +481,21 @@
         }
 
         .warning-box {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
+            background: var(--warm-white);
+            border-left: 4px solid var(--primary-red);
             padding: 25px;
             margin: 40px 0;
             border-radius: 0 8px 8px 0;
         }
 
         .warning-box h4 {
-            color: #856404;
+            color: var(--deep-charcoal);
             margin-bottom: 15px;
             font-size: 1.2rem;
         }
 
         .warning-box p {
-            color: #856404;
+            color: var(--deep-charcoal);
             margin-bottom: 10px;
         }
 
@@ -765,7 +766,7 @@
         .cta-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 12px 35px rgba(192, 0, 0, 0.3);
-            background: #A00000;
+            background: #D63E20;
             color: white;
             text-decoration: none;
         }

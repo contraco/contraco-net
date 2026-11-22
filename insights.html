@@ -11,6 +11,7 @@
     <meta property="og:url" content="https://contraco.net/insights.html">
     <meta property="og:title" content="Strategic Insights Library: AI & Transformation Frameworks | contraco">
     <meta property="og:description" content="AI strategy, transformation ROI, pricing psychology & organisational design from 28 years and 325 clients since 1998. Strategic intelligence, free to access.">
+    <meta property="og:logo" content="https://contraco.net/Logo_rectangle.svg">
     <meta property="og:image" content="https://contraco.net/contraco_4K.png">
 
     <!-- Twitter Card -->
@@ -66,6 +67,21 @@
     <meta name="theme-color" content="#C00000">
 
     <style>
+        :root {
+            --primary-red: #C00000;
+            --deep-charcoal: #404040;
+            --warm-white: #F8F6F3;
+            --warm-gray-light: #E5E2DD;
+            --warm-gray-medium: #A8A5A0;
+            --warm-gray-dark: #6B6B6B;
+            --pure-white: #FFFFFF;
+            --container-max: 1200px;
+            --font-serif: 'Crimson Text', Georgia, serif;
+            --font-sans: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --section-padding: 100px 0;
+            --transition-fast: all 0.3s ease;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -75,8 +91,8 @@
         body {
             font-family: var(--font-sans, 'Lato', sans-serif);
             line-height: 1.6;
-            color: #404040;
-            background-color: #F8F6F3;
+            color: var(--deep-charcoal);
+            background-color: var(--warm-white);
         }
 
         .container {
@@ -120,7 +136,7 @@
         .logo-fallback {
             font-size: 1.8rem;
             font-weight: 700;
-            color: #C00000;
+            color: var(--primary-red);
             font-family: 'Crimson Text', serif;
             display: none;
         }
@@ -142,7 +158,7 @@
 
        .nav-link {
             text-decoration: none;
-            color: #404040;
+            color: var(--deep-charcoal);
             font-weight: 500;
             font-size: 0.95rem;
             transition: color 0.3s ease;
@@ -150,7 +166,7 @@
         }
 
         .nav-link:hover {
-            color: #C00000;
+            color: var(--primary-red);
         }
 
         .nav-link::after {
@@ -160,7 +176,7 @@
             height: 2px;
             bottom: -5px;
             left: 0;
-            background-color: #C00000;
+            background-color: var(--primary-red);
             transition: width 0.3s ease;
         }
 
@@ -170,7 +186,7 @@
         }
 
         .nav-link.active {
-            color: #C00000;
+            color: var(--primary-red);
         }
 
         /* Language Switcher */
@@ -182,7 +198,7 @@
 
         .lang-link {
             text-decoration: none;
-            color: #A8A5A0;
+            color: var(--warm-gray-medium);
             font-weight: 500;
             font-size: 0.85rem;
             padding: 4px 8px;
@@ -191,13 +207,13 @@
         }
 
         .lang-link:hover {
-            color: #C00000;
-            background-color: #ffffff;
+            color: var(--primary-red);
+            background-color: var(--pure-white);
         }
 
         .lang-link.active {
-            color: #C00000;
-            background-color: #ffffff;
+            color: var(--primary-red);
+            background-color: var(--pure-white);
             font-weight: 600;
         }
 
@@ -210,7 +226,7 @@
 
         .lang-link {
             text-decoration: none;
-            color: #A8A5A0;
+            color: var(--warm-gray-medium);
             font-weight: 500;
             font-size: 0.85rem;
             padding: 4px 8px;
@@ -219,13 +235,13 @@
         }
 
         .lang-link:hover {
-            color: #C00000;
-            background-color: #ffffff;
+            color: var(--primary-red);
+            background-color: var(--pure-white);
         }
 
         .lang-link.active {
-            color: #C00000;
-            background-color: #ffffff;
+            color: var(--primary-red);
+            background-color: var(--pure-white);
             font-weight: 600;
         }
 
@@ -236,7 +252,7 @@
 
         /* Hero Section */
         .hero-section {
-            background: linear-gradient(135deg, #F8F6F3 0%, #E5E2DD 100%);
+            background: linear-gradient(135deg, var(--warm-white) 0%, var(--warm-gray-light) 100%);
             padding: 120px 0 80px;
             text-align: center;
         }
@@ -246,16 +262,16 @@
             font-size: 4rem;
             font-weight: 600;
             margin-bottom: 30px;
-            color: #404040;
+            color: var(--deep-charcoal);
         }
 
         .highlight {
-            color: #C00000;
+            color: var(--primary-red);
         }
 
         .hero-subtitle {
             font-size: 1.3rem;
-            color: #6B6B6B;
+            color: var(--warm-gray-dark);
             margin-bottom: 50px;
             line-height: 1.6;
             max-width: 800px;
@@ -270,10 +286,10 @@
         }
 
         .featured-article {
-            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            background: linear-gradient(135deg, var(--warm-white) 0%, var(--pure-white) 100%);
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
-            border: 1px solid #E5E2DD;
+            border: 1px solid var(--warm-gray-light);
             margin-bottom: 0;
         }
 
@@ -291,7 +307,7 @@
         }
 
         .featured-badge {
-            background: #C00000;
+            background: var(--primary-red);
             color: white;
             padding: 8px 16px;
             border-radius: 20px;
@@ -302,7 +318,7 @@
         }
 
         .featured-date {
-            color: #6B6B6B;
+            color: var(--warm-gray-dark);
             font-size: 0.9rem;
             margin-bottom: 20px;
         }
@@ -313,13 +329,13 @@
             font-weight: 600;
             margin-bottom: 20px;
             line-height: 1.3;
-            color: #404040;
+            color: var(--deep-charcoal);
         }
 
         .featured-excerpt {
             font-size: 1.1rem;
             margin-bottom: 20px;
-            color: #6B6B6B;
+            color: var(--warm-gray-dark);
             line-height: 1.6;
         }
 
@@ -336,25 +352,25 @@
             border-radius: 8px;
             text-align: center;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            border: 1px solid #E5E2DD;
+            border: 1px solid var(--warm-gray-light);
         }
 
         .stat-number {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #C00000;
+            color: var(--primary-red);
             font-family: 'Crimson Text', serif;
             margin-bottom: 8px;
         }
 
         .stat-label {
             font-size: 0.85rem;
-            color: #6B6B6B;
+            color: var(--warm-gray-dark);
             line-height: 1.3;
         }
 
         .featured-cta {
-            background: #C00000;
+            background: var(--primary-red);
             color: white;
             text-decoration: none;
             font-weight: 600;
@@ -367,7 +383,7 @@
         }
 
         .featured-visual {
-            background: #E5E2DD;
+            background: var(--warm-gray-light);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -385,7 +401,7 @@
             font-weight: 600;
             text-align: center;
             margin-bottom: 25px;
-            color: #404040;
+            color: var(--deep-charcoal);
         }
 
         .chart-item {
@@ -394,12 +410,12 @@
 
         .chart-label {
             font-size: 0.9rem;
-            color: #6B6B6B;
+            color: var(--warm-gray-dark);
             margin-bottom: 5px;
         }
 
         .chart-bar {
-            background: #e9ecef;
+            background: var(--warm-gray-light);
             height: 24px;
             border-radius: 12px;
             overflow: hidden;
@@ -436,17 +452,17 @@
             border-radius: 8px;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
             overflow: hidden;
-            border-top: 4px solid #C00000;
+            border-top: 4px solid var(--primary-red);
         }
 
         .insight-header {
             padding: 30px;
-            background: #F8F6F3;
+            background: var(--warm-white);
         }
 
         .insight-meta {
             font-size: 0.85rem;
-            color: #6B6B6B;
+            color: var(--warm-gray-dark);
             margin-bottom: 15px;
             font-weight: 500;
         }
@@ -456,12 +472,12 @@
             font-size: 1.4rem;
             font-weight: 600;
             margin-bottom: 15px;
-            color: #404040;
+            color: var(--deep-charcoal);
             line-height: 1.3;
         }
 
         .insight-excerpt {
-            color: #6B6B6B;
+            color: var(--warm-gray-dark);
             line-height: 1.6;
             font-size: 0.95rem;
         }
@@ -480,8 +496,8 @@
         }
 
         .tag {
-            background: #E5E2DD;
-            color: #6B6B6B;
+            background: var(--warm-gray-light);
+            color: var(--warm-gray-dark);
             padding: 4px 12px;
             border-radius: 15px;
             font-size: 0.8rem;
@@ -489,7 +505,7 @@
         }
 
         .insight-cta {
-            color: #C00000;
+            color: var(--primary-red);
             text-decoration: none;
             font-weight: 600;
             display: inline-flex;
@@ -501,7 +517,7 @@
             grid-column: 1 / -1;
             display: grid;
             grid-template-columns: 320px 1fr;
-            border-top: 4px solid #C00000;
+            border-top: 4px solid var(--primary-red);
         }
 
         @media (max-width: 900px) {
@@ -513,7 +529,7 @@
         /* Footer */
         .footer {
             background: var(--deep-charcoal);
-            color: #E5E2DD;
+            color: var(--warm-gray-light);
             padding: 50px 0 35px;
         }
 
@@ -532,7 +548,7 @@
         }
 
         .footer-links a {
-            color: #E5E2DD;
+            color: var(--warm-gray-light);
             text-decoration: none;
             font-size: 0.95rem;
         }
@@ -556,7 +572,7 @@
         }
 
         .company-info h4 {
-            color: #C00000;
+            color: var(--primary-red);
             font-size: 1.1rem;
             margin-bottom: 16px;
             font-family: 'Crimson Text', serif;
@@ -569,7 +585,7 @@
         }
 
         .imprint-section h4 {
-            color: #C00000;
+            color: var(--primary-red);
             font-size: 1rem;
             margin-bottom: 12px;
             font-family: 'Crimson Text', serif;
@@ -595,6 +611,20 @@
             margin-top: 8px;
             font-size: 0.8rem;
             opacity: 0.8;
+        }
+        @media (max-width: 768px) {
+            .container,
+            .nav-container {
+                padding: 0 20px;
+            }
+
+            .logo {
+                margin-left: 20px;
+            }
+
+            .nav-menu {
+                display: none;
+            }
         }
     </style>
     <script type="application/ld+json">
@@ -754,12 +784,12 @@
                                 <h2 class="featured-title">The Consulting Addiction: What Happens Inside Organisations That Hired the Best and Got Worse</h2>
                                 <p class="featured-excerpt">Four field reports from 28 years of transformation work. Not a critique of consulting firms. A clinical description of what repeated MBB engagements do to the organisations that hire them.</p>
                                 <div style="margin-top: 24px; font-size: 0.95rem;">
-                                    <p style="color: #404040; font-weight: 600; margin-bottom: 10px;">Field Reports:</p>
+                                    <p style="color: var(--deep-charcoal); font-weight: 600; margin-bottom: 10px;">Field Reports:</p>
                                     <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px;">
-                                        <li><a href="https://contraco.net/consulting-addiction-1-executive-muscle-atrophy.html" style="color: #C00000; text-decoration: none; font-weight: 500;">Part 1: Executive Muscle Atrophy</a></li>
-                                        <li><a href="https://contraco.net/consulting-addiction-2-malicious-compliance.html" style="color: #C00000; text-decoration: none; font-weight: 500;">Part 2: Malicious Compliance from the Operators</a></li>
-                                        <li><a href="https://contraco.net/consulting-addiction-3-translator-class.html" style="color: #C00000; text-decoration: none; font-weight: 500;">Part 3: The Ascendancy of the Translator Class</a></li>
-                                        <li><a href="https://contraco.net/consulting-addiction-4-deck-as-shield.html" style="color: #C00000; text-decoration: none; font-weight: 500;">Part 4: The 200-Page Deck as a Shield, Not a Map</a></li>
+                                        <li><a href="https://contraco.net/consulting-addiction-1-executive-muscle-atrophy.html" style="color: var(--primary-red); text-decoration: none; font-weight: 500;">Part 1: Executive Muscle Atrophy</a></li>
+                                        <li><a href="https://contraco.net/consulting-addiction-2-malicious-compliance.html" style="color: var(--primary-red); text-decoration: none; font-weight: 500;">Part 2: Malicious Compliance from the Operators</a></li>
+                                        <li><a href="https://contraco.net/consulting-addiction-3-translator-class.html" style="color: var(--primary-red); text-decoration: none; font-weight: 500;">Part 3: The Ascendancy of the Translator Class</a></li>
+                                        <li><a href="https://contraco.net/consulting-addiction-4-deck-as-shield.html" style="color: var(--primary-red); text-decoration: none; font-weight: 500;">Part 4: The 200-Page Deck as a Shield, Not a Map</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -789,16 +819,16 @@
                                 <p class="featured-excerpt">Ten operational reports for US technology founders, CEOs, and CROs that have decided to grow in Europe. Risk aversion, procurement culture, reference customer architecture, legal norms, and the trust-before-transaction sequence that cannot be shortcut. What the pitch decks do not cover.</p>
                                 <div style="margin-top: 24px; font-size: 0.95rem;">
                                     <ul style="list-style: none; padding: 0;">
-                                        <li><a href="https://contraco.net/european-entry-1-germany-problem.html" style="color: #C00000; text-decoration: none; font-weight: 500;">Part 1: The Germany Problem Nobody Warns You About</a></li>
-                                        <li><a href="https://contraco.net/european-entry-2-us-playbook.html" style="color: #C00000; text-decoration: none; font-weight: 500;">Part 2: Why Your US Playbook Fails at the Rhine</a></li>
-                                        <li><a href="https://contraco.net/european-entry-3-hire-a-local-trap.html" style="color: #C00000; text-decoration: none; font-weight: 500;">Part 3: The Hire-a-Local Trap</a></li>
-                                        <li><a href="https://contraco.net/european-entry-4-legal-risk.html" style="color: #C00000; text-decoration: none; font-weight: 500;">Part 4: GDPR Is Not Your Biggest Legal Risk</a></li>
-                                        <li><a href="https://contraco.net/european-entry-5-germany-or-uk-first.html" style="color: #C00000; text-decoration: none; font-weight: 500;">Part 5: When to Enter Germany vs. When to Enter the UK First</a></li>
-                                        <li><a href="https://contraco.net/european-entry-6-distribution-partner-illusion.html" style="color: #C00000; text-decoration: none; font-weight: 500;">Part 6: The Distribution Partner Illusion</a></li>
-                                        <li><a href="https://contraco.net/european-entry-7-localisation-not-translation.html" style="color: #C00000; text-decoration: none; font-weight: 500;">Part 7: Localisation Is Not Translation</a></li>
-                                        <li><a href="https://contraco.net/european-entry-8-brussels-variable.html" style="color: #C00000; text-decoration: none; font-weight: 500;">Part 8: The Brussels Variable</a></li>
-                                        <li><a href="https://contraco.net/european-entry-9-year-two-stall.html" style="color: #C00000; text-decoration: none; font-weight: 500;">Part 9: Why European Expansion Stalls in Year Two</a></li>
-                                        <li><a href="https://contraco.net/european-entry-10-european-beachhead.html" style="color: #C00000; text-decoration: none; font-weight: 500;">Part 10: What a Real European Beachhead Looks Like</a></li>
+                                        <li><a href="https://contraco.net/european-entry-1-germany-problem.html" style="color: var(--primary-red); text-decoration: none; font-weight: 500;">Part 1: The Germany Problem Nobody Warns You About</a></li>
+                                        <li><a href="https://contraco.net/european-entry-2-us-playbook.html" style="color: var(--primary-red); text-decoration: none; font-weight: 500;">Part 2: Why Your US Playbook Fails at the Rhine</a></li>
+                                        <li><a href="https://contraco.net/european-entry-3-hire-a-local-trap.html" style="color: var(--primary-red); text-decoration: none; font-weight: 500;">Part 3: The Hire-a-Local Trap</a></li>
+                                        <li><a href="https://contraco.net/european-entry-4-legal-risk.html" style="color: var(--primary-red); text-decoration: none; font-weight: 500;">Part 4: GDPR Is Not Your Biggest Legal Risk</a></li>
+                                        <li><a href="https://contraco.net/european-entry-5-germany-or-uk-first.html" style="color: var(--primary-red); text-decoration: none; font-weight: 500;">Part 5: When to Enter Germany vs. When to Enter the UK First</a></li>
+                                        <li><a href="https://contraco.net/european-entry-6-distribution-partner-illusion.html" style="color: var(--primary-red); text-decoration: none; font-weight: 500;">Part 6: The Distribution Partner Illusion</a></li>
+                                        <li><a href="https://contraco.net/european-entry-7-localisation-not-translation.html" style="color: var(--primary-red); text-decoration: none; font-weight: 500;">Part 7: Localisation Is Not Translation</a></li>
+                                        <li><a href="https://contraco.net/european-entry-8-brussels-variable.html" style="color: var(--primary-red); text-decoration: none; font-weight: 500;">Part 8: The Brussels Variable</a></li>
+                                        <li><a href="https://contraco.net/european-entry-9-year-two-stall.html" style="color: var(--primary-red); text-decoration: none; font-weight: 500;">Part 9: Why European Expansion Stalls in Year Two</a></li>
+                                        <li><a href="https://contraco.net/european-entry-10-european-beachhead.html" style="color: var(--primary-red); text-decoration: none; font-weight: 500;">Part 10: What a Real European Beachhead Looks Like</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1303,7 +1333,7 @@
                     </article>
 
                     <article class="insight-card full-width">
-                        <div style="background: #F8F6F3; display: flex; align-items: center; justify-content: center; padding: 30px; border-right: 1px solid #E5E2DD;">
+                        <div style="background: var(--warm-white); display: flex; align-items: center; justify-content: center; padding: 30px; border-right: 1px solid var(--warm-gray-light);">
                             <svg viewBox="0 0 280 180" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-sans, 'Lato', sans-serif); max-height: 180px;">
                                 <!-- Upper track: L0-L2 (below liability) -->
                                 <line x1="30" y1="55" x2="250" y2="55" stroke="#E5E2DD" stroke-width="2"/>
@@ -1851,15 +1881,47 @@
     </footer>
 
     <script>
-        // Logo fallback
         (function() {
             const logo = document.getElementById('site-logo');
             const img = logo.querySelector('img');
-            
-            img.addEventListener('error', function() {
-                logo.classList.add('logo-failed');
+            let retryCount = 0;
+            const maxRetries = 2;
+
+            function retryLoadLogo() {
+                retryCount++;
+                if (retryCount <= maxRetries) {
+                    img.src = img.src + '?retry=' + retryCount;
+                } else {
+                    logo.classList.add('logo-failed');
+                }
+            }
+
+            img.addEventListener('error', retryLoadLogo);
+            img.addEventListener('load', function() {
+                logo.classList.remove('logo-failed');
             });
         })();
+
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(248, 246, 243, 0.98)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.background = 'rgba(248, 246, 243, 0.95)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
     </script>
 <script>
   window.goatcounter = { path: function(p) { return location.host + p } }

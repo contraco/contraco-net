@@ -153,6 +153,7 @@
             --warm-gray-light: #E5E2DD;
             --warm-gray-medium: #A8A5A0;
             --warm-gray-dark: #6B6B6B;
+            --pure-white: #FFFFFF;
             
             /* Typography */
             --font-serif: 'Crimson Text', Georgia, 'Times New Roman', serif;
@@ -481,21 +482,21 @@
         }
 
         .warning-box {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
+            background: var(--warm-white);
+            border-left: 4px solid var(--primary-red);
             padding: 25px;
             margin: 40px 0;
             border-radius: 0 8px 8px 0;
         }
 
         .warning-box h4 {
-            color: #856404;
+            color: var(--deep-charcoal);
             margin-bottom: 15px;
             font-size: 1.2rem;
         }
 
         .warning-box p {
-            color: #856404;
+            color: var(--deep-charcoal);
             margin-bottom: 10px;
         }
 
@@ -625,12 +626,12 @@
             background: white;
             padding: 25px;
             border-radius: 8px;
-            border-left: 4px solid #dc3545;
+            border-left: 4px solid var(--primary-red);
             box-shadow: var(--shadow-small);
         }
 
         .risk-title {
-            color: #dc3545;
+            color: var(--primary-red);
             font-weight: 600;
             margin-bottom: 12px;
             font-size: 1.1rem;
@@ -644,7 +645,7 @@
         }
 
         .risk-mitigation {
-            background: #f8f9fa;
+            background: var(--warm-white);
             padding: 15px;
             border-radius: 4px;
             font-size: 0.9rem;
